@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ObjectInteractions : MonoBehaviour
 {
     //Reference to playerdata
-    private PlayerData myData;
+    public SavedData myData = null;
     //Reference to the item being used
     private bool ItemUsed;
     //The item being interacted with
@@ -40,13 +40,13 @@ public class ObjectInteractions : MonoBehaviour
         {
             ItemUsed = myData.KeyItem;
         }
-
-        else if (IsAxeItem == true)
+        else
+        if (IsAxeItem == true)
         {
             ItemUsed = myData.AxeItem;
         }
-
-        else if (IsMatchItem == true)
+        else
+        if (IsMatchItem == true)
         {
             ItemUsed = myData.MatchItem;
         }
@@ -56,13 +56,13 @@ public class ObjectInteractions : MonoBehaviour
         {
             NewItem = myData.KeyItem;
         }
-
-        else if (NewItemAxe == true)
+        else
+        if (NewItemAxe == true)
         {
             NewItem = myData.AxeItem;
         }
-
-        else if (NewItemMatch == true)
+        else
+        if (NewItemMatch == true)
         {
             NewItem = myData.MatchItem;
         }
@@ -77,14 +77,14 @@ public class ObjectInteractions : MonoBehaviour
                 GameObject.Destroy(ItemInteracted);
                 ItemUsed = false;
             }
-
+            else
             if (ItemChange == true)
             {
                 GameObject.Destroy(ItemInteracted);
                 ItemUsed = false;
                 NewItem = true;
             }
-
+            else
             if (FloorEnd == true)
             {
                 ItemUsed = false;
