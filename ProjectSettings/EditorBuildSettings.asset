@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Adonai's Work Place.unity
+    guid: 8643ab565a105c741bbae026c2823d2c
   m_configObjects: {}
