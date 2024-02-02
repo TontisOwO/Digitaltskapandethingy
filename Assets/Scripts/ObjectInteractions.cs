@@ -10,6 +10,7 @@ public class ObjectInteractions : MonoBehaviour
     public SavedData myData = null;
     //Reference to the item being used
     private bool ItemUsed;
+    public bool ItemDestroyed = false;
     //The item being interacted with
     public GameObject ItemInteracted = null;
     //What should happen upon interaction
@@ -39,32 +40,38 @@ public class ObjectInteractions : MonoBehaviour
         if (IsKeyItem == true)
         {
             ItemUsed = myData.KeyItem;
+            myData.KeyItem = ItemUsed;
         }
         else
         if (IsAxeItem == true)
         {
             ItemUsed = myData.AxeItem;
+            myData.AxeItem = ItemUsed;
         }
         else
         if (IsMatchItem == true)
         {
             ItemUsed = myData.MatchItem;
+            myData.MatchItem = ItemUsed;
         }
 
         //Check what new item should be added
         if (NewItemKey == true)
         {
             NewItem = myData.KeyItem;
+            myData.KeyItem = NewItem;
         }
         else
         if (NewItemAxe == true)
         {
             NewItem = myData.AxeItem;
+            myData.AxeItem = NewItem;
         }
         else
         if (NewItemMatch == true)
         {
             NewItem = myData.MatchItem;
+            myData.MatchItem = NewItem;
         }
     }
 
@@ -75,21 +82,26 @@ public class ObjectInteractions : MonoBehaviour
             if (ObstacleRemoval == true)
             {
                 GameObject.Destroy(ItemInteracted);
-                ItemUsed = false;
             }
             else
             if (ItemChange == true)
             {
                 GameObject.Destroy(ItemInteracted);
-                ItemUsed = false;
                 NewItem = true;
             }
             else
             if (FloorEnd == true)
             {
-                ItemUsed = false;
                 SceneManager.LoadScene(SceneName);
             }
+        }
+    }
+
+    public void ItemDestruction()
+    {
+        if (ItemDestroyed == true)
+        {
+
         }
     }
 }
