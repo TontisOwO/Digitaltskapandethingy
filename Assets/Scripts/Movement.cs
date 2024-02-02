@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
                 Debug.Log("The current x position is " + mousePos.x);
                 Debug.Log("The current y position is " + mousePos.y);
             }
+            gameObject.transform.position = (mousePos / 37.95f) - new Vector3(6.65f, 5f, 0.0f); 
         }
     }
 }
