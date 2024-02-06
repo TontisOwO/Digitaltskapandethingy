@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Floor: 3
   SampleItem: 0
-  KeyItem: 1
+  KeyItem: 0
   AxeItem: 0
   MatchItem: 0
