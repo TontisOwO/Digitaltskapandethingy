@@ -1,5 +1,7 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -101,7 +103,20 @@ public class ObjectInteractions : MonoBehaviour
     {
         if (ItemDestroyed == true)
         {
+            if (ItemUsed == IsKeyItem)
+            {
+                myData.KeyItem = false;
+            }
 
+            if (ItemUsed == IsAxeItem)
+            {
+                myData.AxeItem = false;
+            }
+
+            if (ItemUsed == IsMatchItem)
+            {
+                myData.MatchItem = false;
+            }
         }
     }
 }
