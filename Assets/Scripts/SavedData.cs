@@ -7,11 +7,30 @@ using UnityEngine;
 public class SavedData : ScriptableObject
 {
     private ObjectInteractions ItemUsage;
-    public int Floor = 3;
+    public int CurrentFloor = 1;
+    private int MaxFloor = 4;
+    private int MinFloor = 1;
 
+    //Sample Item
     public bool SampleItem = false;
+    //Key Item
     public bool KeyItem = false;
+    //Axe Item
     public bool AxeItem = false;
+    //Match Item
     public bool MatchItem = false;
+    //Crubr Item
+    public bool CrubrItem = false;
 
+    public void Update()
+    {
+        if (CurrentFloor <= MinFloor)
+        {
+            CurrentFloor = 1;
+        }
+        if (CurrentFloor >= MaxFloor) 
+        {
+            CurrentFloor = 4;
+        }
+    }
 }

@@ -8,8 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class ObjectInteractions : MonoBehaviour
 {
-    //Reference to playerdata
+    //Reference to playerdata and inventory
     public SavedData myData = null;
+    public InventoryScript myInv = null;
     //Reference to the item being used
     private bool ItemUsed;
     public bool ItemDestroyed = false;
@@ -23,11 +24,13 @@ public class ObjectInteractions : MonoBehaviour
     public bool IsKeyItem = false;
     public bool IsAxeItem = false;
     public bool IsMatchItem = false;
+    public bool IsCrubrItem = false;
     //Reference to ItemChange event
     private bool NewItem;
     public bool NewItemKey = false;
     public bool NewItemAxe = false;
     public bool NewItemMatch = false;
+    public bool NewItemCrubr = false;
     //The scene that should be loaded
     public string SceneName = "Adonai's Work Place";
 
@@ -56,6 +59,12 @@ public class ObjectInteractions : MonoBehaviour
             ItemUsed = myData.MatchItem;
             myData.MatchItem = ItemUsed;
         }
+        else
+        if (IsCrubrItem == true)
+        {
+            ItemUsed = myData.CrubrItem;
+            myData.CrubrItem = ItemUsed;
+        }
 
         //Check what new item should be added
         if (NewItemKey == true)
@@ -75,10 +84,17 @@ public class ObjectInteractions : MonoBehaviour
             NewItem = myData.MatchItem;
             myData.MatchItem = NewItem;
         }
+        else
+        if (NewItemCrubr == true)
+        {
+            NewItem = myData.CrubrItem;
+            myData.CrubrItem = NewItem;
+        }
     }
 
     public void ButtonPressed()
     {
+        //Does the player have the required item?
         if (ItemUsed == true)
         {
             if (ObstacleRemoval == true)
@@ -88,8 +104,18 @@ public class ObjectInteractions : MonoBehaviour
             else
             if (ItemChange == true)
             {
-                GameObject.Destroy(ItemInteracted);
-                NewItem = true;
+                if (myInv.ItemCount < myInv.MaxItems)
+                {
+                    GameObject.Destroy(ItemInteracted);
+                    NewItem = true;
+                }
+                else
+                //Do not allow item pick up if the player's inventory is full
+                if (myInv.ItemCount >= myInv.MaxItems)
+                {
+                    NewItem = false;
+                    ItemDestroyed = false;
+                }
             }
             else
             if (FloorEnd == true)
@@ -116,6 +142,11 @@ public class ObjectInteractions : MonoBehaviour
             if (ItemUsed == IsMatchItem)
             {
                 myData.MatchItem = false;
+            }
+
+            if (ItemUsed == IsCrubrItem)
+            {
+                myData.CrubrItem = false;
             }
         }
     }
