@@ -9,7 +9,9 @@ public class TextManipulation : MonoBehaviour
     public Basic_Touch_Script touch_Script;
     public bool mouseExit;
     public bool mouseOver;
+    public bool mouseDown;
     public TextMeshProUGUI text;
+    public TextMeshProUGUI touchText;
     public Color alpha;
 
     // Update is called once per frame

@@ -12,10 +12,19 @@ public class Basic_Touch_Script : MonoBehaviour
     public TextMeshProUGUI TextMesh;
     public TextManipulation textManipulation;
     public string splashText = "Beep Boop";
+    public string touchText = "Fuck off!";
     void Start()
     {
         
     }
+
+    void OnMouseDown()
+    {
+        TextMesh.text = splashText;
+        textManipulation.mouseDown = true;
+        textManipulation.mouseExit = false;
+    }
+
     void OnMouseOver()
     {
         TextMesh.text = splashText;
