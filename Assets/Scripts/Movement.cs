@@ -13,8 +13,8 @@ public class Movement : MonoBehaviour
             Vector3 mousePos = Input.mousePosition;
             Debug.Log("The current x position is " + mousePos.x);
             Debug.Log("The current y position is " + mousePos.y);
-            
-            mousePos.x = (mousePos.x / 37.95f) - 6.65f;
+
+            mousePos.x = (mousePos.x / 34.25f) - 8.8f;
             mousePos.y = (mousePos.y / 379.5f) - 2.45f;
             gameObject.transform.position = mousePos + CameraScript.CameraPos;
         }
