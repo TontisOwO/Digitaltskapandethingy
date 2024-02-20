@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public CameraScript CameraScript;
     // Update is called once per frame
     void Update()
     {
@@ -15,7 +16,7 @@ public class Movement : MonoBehaviour
             
             mousePos.x = (mousePos.x / 37.95f) - 6.65f;
             mousePos.y = (mousePos.y / 379.5f) - 2.45f;
-            gameObject.transform.position = mousePos; 
+            gameObject.transform.position = mousePos + CameraScript.CameraPos;
         }
     }
 }
