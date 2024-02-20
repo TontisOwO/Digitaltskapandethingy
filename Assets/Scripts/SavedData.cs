@@ -24,11 +24,11 @@ public class SavedData : ScriptableObject
 
     public void Update()
     {
-        if (CurrentFloor <= 1)
+        if (CurrentFloor <= MinFloor)
         {
             CurrentFloor = 1;
         }
-        if (CurrentFloor >= 4) 
+        if (CurrentFloor >= MaxFloor) 
         {
             CurrentFloor = 4;
         }
