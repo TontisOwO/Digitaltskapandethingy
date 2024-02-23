@@ -16,9 +16,9 @@ public class Movement : MonoBehaviour
             Debug.Log("The current y position is " + mousePos.y);
 
             //Scale the mouse correctly so it matches the camera
-            mousePos.x = (mousePos.x / 34.25f) - 8.8f;
+            mousePos.x = (mousePos.x / 34.855f) - 8.9f;
             mousePos.y = (mousePos.y / 379.5f) - 2.45f;
-
+        
             //Set the position of the character to scaled mouse and adjust for camera position
             gameObject.transform.position = mousePos + CameraScript.CameraPos;
         }
