@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public SavedData playerData = null;
+    public string floor1 = "SampleScene";
     public string SceneName = "SampleScene";
     public string SecondaryScene = "Adonai's Work Place";
 
@@ -34,5 +35,16 @@ public class SceneLoader : MonoBehaviour
     public void ContinueGame()
     {
         SceneManager.LoadScene(playerData.CurrentFloor);
+    }
+
+    public void EraseData()
+    {
+        playerData.AxeItem = false;
+        playerData.CrubrItem = false;
+        playerData.MatchItem = false;
+        playerData.KeyItem = false;
+        playerData.SampleItem = false;
+        playerData.CurrentFloor = 1;
+        SceneManager.LoadScene(floor1);
     }
 }
