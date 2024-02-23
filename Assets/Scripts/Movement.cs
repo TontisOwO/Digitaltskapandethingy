@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.AI;
 
 public class Movement : MonoBehaviour
 {
@@ -10,17 +11,25 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            //Get the Position of the mouse
-            Vector3 mousePos = Input.mousePosition;
-            Debug.Log("The current x position is " + mousePos.x);
-            Debug.Log("The current y position is " + mousePos.y);
+            //Get the position of the mouse
+            Vector3 ScreenMousePos = Input.mousePosition;
 
-            //Scale the mouse correctly so it matches the camera
-            mousePos.x = (mousePos.x / 34.25f) - 8.8f;
-            mousePos.y = (mousePos.y / 379.5f) - 2.45f;
+            //Convert the screen position of the mouse to the world position
+            Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
+            worldMousePos.z = -1; //set the z value to -1
+            
+            //Top constraint
+            if (worldMousePos.y > -1.40f)
+            {
+                worldMousePos.y = -1.40f;
+            }
+            //Bottom constraint
+            if (worldMousePos.y < -2.50f)
+            {
+                worldMousePos.y = -2.50f;
+            }
 
-            //Set the position of the character to scaled mouse and adjust for camera position
-            gameObject.transform.position = mousePos + CameraScript.CameraPos;
+            gameObject.transform.position = worldMousePos;
         }
     }
 }
