@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 167403596}
   - component: {fileID: 167403595}
   - component: {fileID: 167403597}
+  - component: {fileID: 167403598}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -247,9 +248,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 460546039}
+      - m_Target: {fileID: 167403598}
         m_TargetAssemblyTypeName: ObjectInteractions, Assembly-CSharp
-        m_MethodName: ButtonPressed
+        m_MethodName: ItemDestruction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -259,9 +260,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 460546039}
+      - m_Target: {fileID: 167403598}
         m_TargetAssemblyTypeName: ObjectInteractions, Assembly-CSharp
-        m_MethodName: ItemDestruction
+        m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -378,6 +379,35 @@ MonoBehaviour:
   TextMesh: {fileID: 225505888}
   textManipulation: {fileID: 0}
   splashText: Beep Boop
+  touchText: Fuck off!
+--- !u!114 &167403598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167403589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef1db6db6708134baf3d55a99fa8cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  myInv: {fileID: 0}
+  ItemDestroyed: 1
+  ItemInteracted: {fileID: 167403589}
+  ObstacleRemoval: 1
+  ItemChange: 0
+  FloorEnd: 0
+  IsKeyItem: 1
+  IsAxeItem: 0
+  IsMatchItem: 0
+  IsCrubrItem: 0
+  NewItemKey: 0
+  NewItemAxe: 0
+  NewItemMatch: 0
+  NewItemCrubr: 0
+  SceneName: Adonai's Work Place
 --- !u!1 &225505886
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +554,6 @@ GameObject:
   - component: {fileID: 460546036}
   - component: {fileID: 460546035}
   - component: {fileID: 460546038}
-  - component: {fileID: 460546039}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -651,34 +680,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &460546039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460546034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef1db6db6708134baf3d55a99fa8cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
-  myInv: {fileID: 0}
-  ItemDestroyed: 1
-  ItemInteracted: {fileID: 167403589}
-  ObstacleRemoval: 1
-  ItemChange: 0
-  FloorEnd: 0
-  IsKeyItem: 1
-  IsAxeItem: 0
-  IsMatchItem: 0
-  IsCrubrItem: 0
-  NewItemKey: 0
-  NewItemAxe: 0
-  NewItemMatch: 0
-  NewItemCrubr: 0
-  SceneName: Adonai's Work Place
 --- !u!1 &656341683
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,12 +732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd6c5bdcbb03274083dadb0265c52e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
-  DescText: {fileID: 225505888}
-  lines:
-  - There are planks blocking the door.
-  - Would you like to use an item to destroy them?
-  textSpeed: 0.1
 --- !u!114 &656341686
 MonoBehaviour:
   m_ObjectHideFlags: 0
