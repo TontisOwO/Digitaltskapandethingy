@@ -152,11 +152,42 @@ public class InventoryScript : MonoBehaviour
                 ItemCount += 1;
             }
         }
-
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            if (transform.position.x >= -100)
+            {
+                Slide(30);
+            }
+        }
+        
     }
 
     void DropItems()
     {
         
     }
+    //Code for the backpack to slide into view.
+    void Slide(float slideAmount)
+    {
+        Vector3 backpackPos = new Vector3(0, 0, 0);
+        if (transform.position.x >= -100)
+        { 
+            backpackPos = transform.position;
+            backpackPos.x = backpackPos.x - slideAmount * Time.deltaTime;
+            transform.position = backpackPos;
+            if (transform.position.x <= 10000)
+            {
+                Debug.Log("InventoryMover");
+            }
+        }
+        else
+        {
+            backpackPos.x = -100;
+            transform.position = backpackPos;
+            Debug.Log("InventoryStopper");
+        }
+        Debug.Log("Inventory");
+    }
+
+
 }
