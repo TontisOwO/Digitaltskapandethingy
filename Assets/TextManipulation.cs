@@ -12,30 +12,37 @@ public class TextManipulation : MonoBehaviour
     public bool mouseDown;
     public TextMeshProUGUI text;
     public TextMeshProUGUI touchText;
-    public Color alpha;
+    public Color colour;
+    public Color newColour;
+    public float fadeSpeed;
 
     // Update is called once per frame
     void Update()
     {
         if (mouseExit)
         {
-            StartCoroutine(FadeTextToZeroAlpha(1f, text));
+            FadeTextToZeroAlpha(1f, text);
         }
         if (mouseOver)
         {
-            alpha.a = 1;
-            text.color = alpha;
+            text.color = newColour;
         }
     }
 
-    public IEnumerator FadeTextToZeroAlpha(float t, TextMeshProUGUI i)
+    public void FadeTextToZeroAlpha(float t, TextMeshProUGUI i)
     {
-        i.color = new Color(i.color.r, i.color.g, i.color.b, alpha.a);
-        while (i.color.a > 0.0f)
+
+        if (mouseOver)
         {
-            i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (t * Time.deltaTime));
-            yield return null;
+            colour.a = 1.0f;
         }
-        mouseExit = false;
+        else
+        {
+            colour.a -= fadeSpeed * Time.deltaTime;
+        }
+
+        text.color = new Color(text.color.r, text.color.g, text.color.b, colour.a);
     }
 }
+
+

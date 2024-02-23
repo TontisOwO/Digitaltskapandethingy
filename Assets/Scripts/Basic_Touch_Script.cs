@@ -12,7 +12,7 @@ public class Basic_Touch_Script : MonoBehaviour
     public TextMeshProUGUI TextMesh;
     public TextManipulation textManipulation;
     public string splashText = "Beep Boop";
-    public string touchText = "Fuck off!";
+    public string touchText = "¨Boop!";
     void Start()
     {
         
@@ -20,19 +20,24 @@ public class Basic_Touch_Script : MonoBehaviour
 
     void OnMouseDown()
     {
-        TextMesh.text = splashText;
+        TextMesh.text = touchText;
         textManipulation.mouseDown = true;
+        textManipulation.mouseOver = false;
         textManipulation.mouseExit = false;
     }
 
     void OnMouseOver()
     {
-        TextMesh.text = splashText;
-        textManipulation.mouseOver = true;
+        if (textManipulation.mouseDown == false) 
+        { 
+            TextMesh.text = splashText; 
+            textManipulation.mouseOver = true;
+        }
         textManipulation.mouseExit = false;
     }
     void OnMouseExit() 
     {
+        textManipulation.mouseDown = false;
         textManipulation.mouseExit = true;
         textManipulation.mouseOver = false;
     }
