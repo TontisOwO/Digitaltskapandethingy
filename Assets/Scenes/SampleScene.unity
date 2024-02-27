@@ -214,7 +214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.06, y: -2.51}
+  m_AnchoredPosition: {x: 1.06, y: -2.5}
   m_SizeDelta: {x: 1.6, y: 2.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &279062339
@@ -343,7 +343,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 2.47}
+  m_Size: {x: 1.6, y: 2.5}
   m_EdgeRadius: 0
 --- !u!114 &279062344
 MonoBehaviour:
@@ -357,7 +357,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9baf15d1b55b844b30d5ee03aa45d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myBoxCollider: {fileID: 279062343}
   CameraScript: {fileID: 519420033}
+  ScreenMousePos: {x: 0, y: 0, z: 0}
+  worldMousePos: {x: 0, y: 0, z: 0}
+  wantedPosition: {x: 0, y: 0, z: 0}
+  movementSpeed: 5
+  yMovementSpeedDivideScale: 4
 --- !u!20 &519420031 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2610866265579041473, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
@@ -779,7 +785,9 @@ MonoBehaviour:
   mouseDown: 0
   text: {fileID: 1533353397}
   touchText: {fileID: 0}
-  alpha: {r: 1, g: 1, b: 1, a: 0}
+  colour: {r: 0, g: 0, b: 0, a: 0}
+  newColour: {r: 0, g: 0, b: 0, a: 0}
+  fadeSpeed: 0
 --- !u!1 &1729640814
 GameObject:
   m_ObjectHideFlags: 0
