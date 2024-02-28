@@ -15,7 +15,8 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        wantedPosition = transform.position;
+        worldMousePos = transform.position;
+        wantedPosition.z = -1f;
     }
     // Update is called once per frame
     void Update()
@@ -35,9 +36,9 @@ public class Movement : MonoBehaviour
                 worldMousePos.y = -1.40f;
             }
             //Bottom constraint
-            if (worldMousePos.y < -2.50f)
+            if (worldMousePos.y < -2.55f)
             {
-                worldMousePos.y = -2.50f;
+                worldMousePos.y = -2.55f;
             }
 
             wantedPosition = transform.position;
