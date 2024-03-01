@@ -35,6 +35,7 @@ public class Movement : MonoBehaviour
             worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
             worldMousePos.z = -1; //set the z value to -1
             worldMousePos.y += myBoxCollider.size.y * 0.5f;//line it up with the bottom of the character
+            
             //set max and min for position
             worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
             worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
