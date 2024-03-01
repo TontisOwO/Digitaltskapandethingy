@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditor.AssetImporters;
 using UnityEngine;
+
+// By the way I changed some code like the key not being in the inventory at start.
+// ask me if you encounter problems - Azure
 
 public class InventoryScript : MonoBehaviour
 {
