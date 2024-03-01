@@ -154,9 +154,17 @@ public class InventoryScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Escape))
         {
-            if (transform.position.x >= -100)
+            if (transform.localPosition.x >= -100.0f)
             {
-                Slide(30);
+                Slide(20);
+                Debug.Log(transform.gameObject.name);
+                Debug.Log(transform.localPosition);
+            }
+            else
+            {
+                Debug.Log(transform.gameObject.name);
+                Debug.Log(transform.localPosition);
+
             }
         }
         
@@ -169,19 +177,24 @@ public class InventoryScript : MonoBehaviour
     //Code for the backpack to slide into view.
     void Slide(float slideAmount)
     {
+        bool backpackState = false;
         Vector3 backpackPos = new Vector3(0, 0, 0);
-        if (transform.position.x >= -100)
+        if (backpackState == false)
         { 
             backpackPos = transform.position;
             backpackPos.x = backpackPos.x - slideAmount * Time.deltaTime;
-            transform.position = backpackPos;
-            if (transform.position.x <= 10000)
+;            transform.position = backpackPos;
+            if (gameObject.transform.position.x >= 200)
             {
+                gameObject.SetActive(true);
                 Debug.Log("InventoryMover");
+                backpackState = true;
             }
+            
         }
         else
         {
+            gameObject.SetActive(false);
             backpackPos.x = -100;
             transform.position = backpackPos;
             Debug.Log("InventoryStopper");

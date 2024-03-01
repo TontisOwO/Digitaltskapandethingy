@@ -9,10 +9,12 @@ public class Basic_Touch_Script : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public SavedData myData = null;
     public TextMeshProUGUI TextMesh;
     public TextManipulation textManipulation;
     public string splashText = "Beep Boop";
     public string touchText = "¨Boop!";
+    public bool pickUp = false;
     void Start()
     {
         
@@ -24,6 +26,12 @@ public class Basic_Touch_Script : MonoBehaviour
         textManipulation.mouseDown = true;
         textManipulation.mouseOver = false;
         textManipulation.mouseExit = false;
+        if (pickUp == true)
+        {
+            myData.KeyItem = true;
+            Destroy(gameObject);
+        }
+            
     }
 
     void OnMouseOver()
