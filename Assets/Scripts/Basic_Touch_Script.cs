@@ -12,12 +12,16 @@ public class Basic_Touch_Script : MonoBehaviour
     public SavedData myData = null;
     public TextMeshProUGUI TextMesh;
     public TextManipulation textManipulation;
+    
     public string splashText = "Beep Boop";
     public string touchText = "¨Boop!";
+
+    public bool requiredItem = false;
     public bool pickUp = false;
+    public bool itemCondition = false;
     void Start()
     {
-        
+        myData.KeyItem = false;
     }
 
     void OnMouseDown()
@@ -26,9 +30,17 @@ public class Basic_Touch_Script : MonoBehaviour
         textManipulation.mouseDown = true;
         textManipulation.mouseOver = false;
         textManipulation.mouseExit = false;
-        if (pickUp == true)
+        if (pickUp == true && itemCondition)
         {
             myData.KeyItem = true;
+            Destroy(gameObject);
+        }
+        if (itemCondition != myData.KeyItem)
+        {
+            itemCondition = true;
+        }
+        if (itemCondition && requiredItem ||  pickUp == true)
+        {
             Destroy(gameObject);
         }
             
