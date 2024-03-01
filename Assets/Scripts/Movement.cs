@@ -12,10 +12,15 @@ public class Movement : MonoBehaviour
     public Vector3 wantedPosition;
     public float movementSpeed = 5.0f;
     public float yMovementSpeedDivideScale = 4.0f;
+    public float maxPosY = -1.40f;
+    public float minPosY = -2.55f;
+    public float maxPosX = 11.20f;
+    public float minPosX = -9.0f;
 
     void Start()
     {
         worldMousePos = transform.position;
+        wantedPosition = transform.position;
         wantedPosition.z = -1f;
     }
     // Update is called once per frame
@@ -30,16 +35,9 @@ public class Movement : MonoBehaviour
             worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
             worldMousePos.z = -1; //set the z value to -1
             worldMousePos.y += myBoxCollider.size.y * 0.5f;//line it up with the bottom of the character
-            //Top constraint
-            if (worldMousePos.y > -1.40f)
-            {
-                worldMousePos.y = -1.40f;
-            }
-            //Bottom constraint
-            if (worldMousePos.y < -2.55f)
-            {
-                worldMousePos.y = -2.55f;
-            }
+            //set max and min for position
+            worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
+            worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
 
             wantedPosition = transform.position;
         }
