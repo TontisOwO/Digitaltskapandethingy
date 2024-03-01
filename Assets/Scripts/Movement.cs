@@ -36,12 +36,13 @@ public class Movement : MonoBehaviour
             worldMousePos.z = -1; //set the z value to -1
             worldMousePos.y += myBoxCollider.size.y * 0.5f;//line it up with the bottom of the character
             
-            //set max and min for position
+            //Set max and min for position
             worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
             worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
 
             wantedPosition = transform.position;
         }
+        //The Slide^TM
         wantedPosition.x = Mathf.MoveTowards(wantedPosition.x, worldMousePos.x, movementSpeed * Time.deltaTime);
         wantedPosition.y = Mathf.MoveTowards(wantedPosition.y, worldMousePos.y, (movementSpeed * Time.deltaTime)/yMovementSpeedDivideScale);
         transform.position = wantedPosition;
