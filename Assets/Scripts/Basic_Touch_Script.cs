@@ -9,30 +9,55 @@ public class Basic_Touch_Script : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public SavedData myData = null;
     public TextMeshProUGUI TextMesh;
     public TextManipulation textManipulation;
+    
     public string splashText = "Beep Boop";
-    public string touchText = "Fuck off!";
+    public string touchText = "¨Boop!";
+
+    public bool requiredItem = false;
+    public bool pickUp = false;
+    public bool itemCondition = false;
     void Start()
     {
-        
+        myData.KeyItem = false;
     }
 
     void OnMouseDown()
     {
-        TextMesh.text = splashText;
+        TextMesh.text = touchText;
         textManipulation.mouseDown = true;
+        textManipulation.mouseOver = false;
         textManipulation.mouseExit = false;
+        if (pickUp == true && itemCondition)
+        {
+            myData.KeyItem = true;
+            Destroy(gameObject);
+        }
+        if (itemCondition != myData.KeyItem)
+        {
+            itemCondition = true;
+        }
+        if (itemCondition && requiredItem ||  pickUp == true)
+        {
+            Destroy(gameObject);
+        }
+            
     }
 
     void OnMouseOver()
     {
-        TextMesh.text = splashText;
-        textManipulation.mouseOver = true;
+        if (textManipulation.mouseDown == false) 
+        { 
+            TextMesh.text = splashText; 
+            textManipulation.mouseOver = true;
+        }
         textManipulation.mouseExit = false;
     }
     void OnMouseExit() 
     {
+        textManipulation.mouseDown = false;
         textManipulation.mouseExit = true;
         textManipulation.mouseOver = false;
     }
