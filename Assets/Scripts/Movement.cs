@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 
 public class Movement : MonoBehaviour
@@ -27,7 +30,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
-        { 
+        {
             //Get the position of the mouse
             ScreenMousePos = Input.mousePosition;
 
@@ -41,12 +44,25 @@ public class Movement : MonoBehaviour
             worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
             worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
 
-            wantedPosition = transform.position;
         }
         //The Slide^TM
         wantedPosition.x = Mathf.MoveTowards(wantedPosition.x, worldMousePos.x, movementSpeed * Time.deltaTime);
         wantedPosition.y = Mathf.MoveTowards(wantedPosition.y, worldMousePos.y, (movementSpeed * Time.deltaTime)/yMovementSpeedDivideScale);
         transform.position = wantedPosition;
         CameraScript.cameraPos = wantedPosition;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Block") == true)
+        {
+            worldMousePos = wantedPosition;
+        }
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Block") == true)
+        {
+            worldMousePos.x = wantedPosition.x * 0.99f;
+        }
     }
 }
