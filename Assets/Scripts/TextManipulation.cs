@@ -25,6 +25,7 @@ public class TextManipulation : MonoBehaviour
         }
         if (mouseOver)
         {
+            text.color = newColour;
             colour = newColour;
         }
     }

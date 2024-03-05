@@ -234,6 +234,7 @@ MonoBehaviour:
   textManipulation: {fileID: 1533353400}
   splashText: It's me
   touchText: Fuck off!
+  correctItemInInventory: No Item
   requiredItem: 0
   pickUp: 0
   itemCondition: 0
@@ -436,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -773,8 +774,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 143}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -256.43, y: 191.31}
+  m_SizeDelta: {x: 287.13, y: 67.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533353400
 MonoBehaviour:
@@ -807,7 +808,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Name
-      value: Object Preset
+      value: 'Door '
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: myData
@@ -837,6 +838,14 @@ PrefabInstance:
       propertyPath: textManipulation
       value: 
       objectReference: {fileID: 1533353400}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: noItemInInventory
+      value: Unlocked
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: correctItemInInventory
+      value: Unlocked
+      objectReference: {fileID: 0}
     - target: {fileID: 6581619266829242984, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1133,7 +1142,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Name
-      value: Crubr_Scuffed
+      value: Key_Scuffed
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: myData
@@ -1149,7 +1158,11 @@ PrefabInstance:
       objectReference: {fileID: 1533353397}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: touchText
-      value: Key :)
+      value: Boop
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: splashText
+      value: Convinient
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: itemCondition
@@ -1159,6 +1172,10 @@ PrefabInstance:
       propertyPath: textManipulation
       value: 
       objectReference: {fileID: 1533353400}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: correctItemInInventory
+      value: Key :)
+      objectReference: {fileID: 0}
     - target: {fileID: 6581619266829242984, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Sprite
       value: 

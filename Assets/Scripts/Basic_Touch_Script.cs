@@ -15,6 +15,7 @@ public class Basic_Touch_Script : MonoBehaviour
     
     public string splashText = "Beep Boop";
     public string touchText = "¨Boop!";
+    public string correctItemInInventory = "Right Item";
 
     public bool requiredItem = false;
     public bool pickUp = false;
@@ -26,24 +27,35 @@ public class Basic_Touch_Script : MonoBehaviour
 
     void OnMouseDown()
     {
-        TextMesh.text = touchText;
-        textManipulation.mouseDown = true;
-        textManipulation.mouseOver = false;
-        textManipulation.mouseExit = false;
-        if (pickUp == true && itemCondition)
+        
+        if (pickUp && itemCondition == true)
         {
             myData.KeyItem = true;
             Destroy(gameObject);
+            TextMesh.text = correctItemInInventory;
+            textManipulation.mouseDown = true;
+            textManipulation.mouseOver = false;
+            textManipulation.mouseExit = false;
         }
         if (itemCondition != myData.KeyItem)
         {
             itemCondition = true;
         }
-        if (itemCondition && requiredItem ||  pickUp == true)
+        if (itemCondition && requiredItem || pickUp == true)
         {
             Destroy(gameObject);
+            TextMesh.text = correctItemInInventory;
+            textManipulation.mouseDown = true;
+            textManipulation.mouseOver = false;
+            textManipulation.mouseExit = false;
         }
-            
+        else
+        {
+            TextMesh.text = touchText;
+            textManipulation.mouseDown = true;
+            textManipulation.mouseOver = false;
+            textManipulation.mouseExit = false;
+        }
     }
 
     void OnMouseOver()
