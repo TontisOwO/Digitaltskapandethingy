@@ -1152,6 +1152,10 @@ PrefabInstance:
       value: Key :)
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: splashText
+      value: Convinient
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: itemCondition
       value: 1
       objectReference: {fileID: 0}
