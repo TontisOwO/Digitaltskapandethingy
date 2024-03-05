@@ -234,6 +234,7 @@ MonoBehaviour:
   textManipulation: {fileID: 1533353400}
   splashText: It's me
   touchText: Fuck off!
+  correctItemInInventory: No Item
   requiredItem: 0
   pickUp: 0
   itemCondition: 0
@@ -807,7 +808,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Name
-      value: Object Preset
+      value: 'Door '
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: myData
@@ -837,6 +838,14 @@ PrefabInstance:
       propertyPath: textManipulation
       value: 
       objectReference: {fileID: 1533353400}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: noItemInInventory
+      value: Unlocked
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: correctItemInInventory
+      value: Unlocked
+      objectReference: {fileID: 0}
     - target: {fileID: 6581619266829242984, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1133,7 +1142,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Name
-      value: Crubr_Scuffed
+      value: Key_Scuffed
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: myData
@@ -1149,7 +1158,7 @@ PrefabInstance:
       objectReference: {fileID: 1533353397}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: touchText
-      value: Key :)
+      value: Boop
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: splashText
@@ -1163,6 +1172,10 @@ PrefabInstance:
       propertyPath: textManipulation
       value: 
       objectReference: {fileID: 1533353400}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: correctItemInInventory
+      value: Key :)
+      objectReference: {fileID: 0}
     - target: {fileID: 6581619266829242984, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Sprite
       value: 
