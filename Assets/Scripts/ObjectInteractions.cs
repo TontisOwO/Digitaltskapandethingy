@@ -10,27 +10,18 @@ public class ObjectInteractions : MonoBehaviour
 {
     //Reference to playerdata and inventory
     public SavedData myData = null;
-    public InventoryScript myInv = null;
     //Reference to the item being used
-    private bool ItemUsed;
-    public bool ItemDestroyed = false;
+    public bool ItemDestroyed;
     //The item being interacted with
     public GameObject ItemInteracted = null;
     //What should happen upon interaction
-    public bool ObstacleRemoval = false;
-    public bool ItemChange = false;
-    public bool FloorEnd = false;
+    public int EventUponInt;
     //Item being used
-    public bool IsKeyItem = false;
-    public bool IsAxeItem = false;
-    public bool IsMatchItem = false;
-    public bool IsCrubrItem = false;
+    public int UsedItem;
+    bool ItUs;
     //Reference to ItemChange event
-    private bool NewItem;
-    public bool NewItemKey = false;
-    public bool NewItemAxe = false;
-    public bool NewItemMatch = false;
-    public bool NewItemCrubr = false;
+    public int NewItem;
+    bool NwIt;
     //The scene that should be loaded
     public string SceneName = "Adonai's Work Place";
 
@@ -42,85 +33,104 @@ public class ObjectInteractions : MonoBehaviour
     private void Update()
     {
         //Check what item is being used
-        if (IsKeyItem == true)
+        switch(UsedItem)
         {
-            ItemUsed = myData.KeyItem;
-            myData.KeyItem = ItemUsed;
-        }
-        else
-        if (IsAxeItem == true)
-        {
-            ItemUsed = myData.AxeItem;
-            myData.AxeItem = ItemUsed;
-        }
-        else
-        if (IsMatchItem == true)
-        {
-            ItemUsed = myData.MatchItem;
-            myData.MatchItem = ItemUsed;
-        }
-        else
-        if (IsCrubrItem == true)
-        {
-            ItemUsed = myData.CrubrItem;
-            myData.CrubrItem = ItemUsed;
+            case 0:
+                {
+                    ItUs = true;
+                    break;
+                }
+            case 1:
+                {
+                    ItUs = myData.KeyItem;
+                    if (myData.KeyItem == true)
+                    {
+                        ItUs = true;
+                    }
+                    break;
+                }
+            case 2:
+                {
+                    ItUs = myData.AxeItem;
+                    if (myData.AxeItem == true)
+                    {
+                        ItUs = true;
+                    }
+                    break;
+                }
+            case 3:
+                {
+                    ItUs = myData.MatchItem;
+                    if (myData.MatchItem == true)
+                    {
+                        ItUs = true;
+                    }
+                    break;
+                }
+            case 4:
+                {
+                    ItUs = myData.CrubrItem;
+                    if (myData.CrubrItem == true)
+                    {
+                        ItUs = true;
+                    }
+                    break;
+                }
         }
 
         //Check what new item should be added
-        if (NewItemKey == true)
+        switch(NewItem)
         {
-            NewItem = myData.KeyItem;
-            myData.KeyItem = NewItem;
-        }
-        else
-        if (NewItemAxe == true)
-        {
-            NewItem = myData.AxeItem;
-            myData.AxeItem = NewItem;
-        }
-        else
-        if (NewItemMatch == true)
-        {
-            NewItem = myData.MatchItem;
-            myData.MatchItem = NewItem;
-        }
-        else
-        if (NewItemCrubr == true)
-        {
-            NewItem = myData.CrubrItem;
-            myData.CrubrItem = NewItem;
+            case 1:
+                {
+                    myData.KeyItem = NwIt;
+                    NwIt = myData.KeyItem;
+                    break;
+                }
+            case 2:
+                {
+                    myData.AxeItem = NwIt;
+                    NwIt = myData.AxeItem;
+                    break;
+                }
+            case 3:
+                {
+                    myData.MatchItem = NwIt;
+                    NwIt = myData.MatchItem;
+                    break;
+                }
+            case 4:
+                {
+                    myData.CrubrItem = NwIt;
+                    NwIt = myData.CrubrItem;
+                    break;
+                }
         }
     }
 
     public void ButtonPressed()
     {
-        //Does the player have the required item?
-        if (ItemUsed == true)
+        if(ItUs == true)
         {
-            if (ObstacleRemoval == true)
+            switch(EventUponInt)
             {
-                GameObject.Destroy(ItemInteracted);
-            }
-            else
-            if (ItemChange == true)
-            {
-                if (myInv.ItemCount < myInv.MaxItems)
-                {
-                    GameObject.Destroy(ItemInteracted);
-                    NewItem = true;
-                }
-                else
-                //Do not allow item pick up if the player's inventory is full
-                if (myInv.ItemCount >= myInv.MaxItems)
-                {
-                    NewItem = false;
-                    ItemDestroyed = false;
-                }
-            }
-            else
-            if (FloorEnd == true)
-            {
-                SceneManager.LoadScene(SceneName);
+                case 1:
+                    {
+                        GameObject.Destroy(ItemInteracted);
+                        break;
+                    }   
+                case 2:
+                    {
+                        GameObject.Destroy(ItemInteracted);
+                        ItUs = false;
+                        NwIt = true;
+                        break;
+                    }
+                case 3:
+                    {
+                        SceneManager.LoadScene(SceneName);
+                        break;
+                    }
             }
         }
     }
@@ -129,25 +139,7 @@ public class ObjectInteractions : MonoBehaviour
     {
         if (ItemDestroyed == true)
         {
-            if (ItemUsed == IsKeyItem)
-            {
-                myData.KeyItem = false;
-            }
-
-            if (ItemUsed == IsAxeItem)
-            {
-                myData.AxeItem = false;
-            }
-
-            if (ItemUsed == IsMatchItem)
-            {
-                myData.MatchItem = false;
-            }
-
-            if (ItemUsed == IsCrubrItem)
-            {
-                myData.CrubrItem = false;
-            }
+            ItUs = false;
         }
     }
 }

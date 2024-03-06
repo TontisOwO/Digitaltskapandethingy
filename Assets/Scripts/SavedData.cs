@@ -12,15 +12,15 @@ public class SavedData : ScriptableObject
     private int MinFloor = 1;
 
     //Sample Item
-    public bool SampleItem = false;
+    public bool SampleItem;
     //Key Item
-    public bool KeyItem = false;
+    public bool KeyItem;
     //Axe Item
-    public bool AxeItem = false;
+    public bool AxeItem;
     //Match Item
-    public bool MatchItem = false;
+    public bool MatchItem;
     //Crubr Item
-    public bool CrubrItem = false;
+    public bool CrubrItem;
 
     public void Update()
     {
