@@ -638,9 +638,11 @@ MonoBehaviour:
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   ItemDestroyed: 0
   ItemInteracted: {fileID: 167403589}
-  EventUponInt: 2
-  UsedItem: 1
-  NewItem: 2
+  EventUponInt: 1
+  ItUs: 1
+  UsedItem: 2
+  NewItem: 3
+  NwIt: 0
   SceneName: Adonai's Work Place
 --- !u!1 &656341683
 GameObject:

@@ -15,6 +15,6 @@ MonoBehaviour:
   CurrentFloor: 1
   SampleItem: 0
   KeyItem: 1
-  AxeItem: 1
-  MatchItem: 1
-  CrubrItem: 1
+  AxeItem: 0
+  MatchItem: 0
+  CrubrItem: 0
