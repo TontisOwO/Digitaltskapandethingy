@@ -1,10 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
-
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -19,6 +17,8 @@ public class Movement : MonoBehaviour
     public float minPosY = -2.55f;
     public float maxPosX = 11.20f;
     public float minPosX = -9.0f;
+    public float collisionPrevention = -2.4f;
+    
 
     void Start()
     {
@@ -44,7 +44,20 @@ public class Movement : MonoBehaviour
             worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
             worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
 
+            if (worldMousePos.x >= 1.06f && worldMousePos.x <= 9.51f)
+            {
+                worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention);
+            }
+            if (worldMousePos.x >= -9.98 && worldMousePos.x <= -1.65f)
+            {
+                worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention);
+            }
+            if (worldMousePos.x >= 12.07)
+            {
+                worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention - 0.48f);
+            }
         }
+        
         //The Slide^TM
         wantedPosition.x = Mathf.MoveTowards(wantedPosition.x, worldMousePos.x, movementSpeed * Time.deltaTime);
         wantedPosition.y = Mathf.MoveTowards(wantedPosition.y, worldMousePos.y, (movementSpeed * Time.deltaTime)/yMovementSpeedDivideScale);

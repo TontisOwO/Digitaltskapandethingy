@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6043284597220200487, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
       propertyPath: m_Name
-      value: Main Camera (1)
+      value: Main Camera
       objectReference: {fileID: 0}
     - target: {fileID: 7726863428919687741, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
       propertyPath: maxPos
@@ -774,9 +774,10 @@ MonoBehaviour:
   movementSpeed: 5
   yMovementSpeedDivideScale: 4
   maxPosY: -1.91
-  minPosY: -3.96
+  minPosY: -4.06
   maxPosX: 16.34
   minPosX: -14.15
+  collisionPrevention: -2.4
 --- !u!212 &1719397217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -838,7 +839,7 @@ Transform:
   m_GameObject: {fileID: 1719397215}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.87, y: -3.96, z: -1}
+  m_LocalPosition: {x: 14.18, y: -2.88, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
