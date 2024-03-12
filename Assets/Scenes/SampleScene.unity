@@ -813,6 +813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Door '
       objectReference: {fileID: 0}
+    - target: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: m_TagString
+      value: Block
+      objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: myData
       value: 

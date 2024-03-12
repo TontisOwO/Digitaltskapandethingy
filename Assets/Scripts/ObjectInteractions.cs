@@ -5,32 +5,33 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+public enum ItemUseCases
+{
+    UseDestroy = 0, 
+    UseDestroyAndGetNew = 1,
+    LoadScene = 2,
+    Total,
+
+}
 
 public class ObjectInteractions : MonoBehaviour
 {
     //Reference to playerdata and inventory
     public SavedData myData = null;
-    public InventoryScript myInv = null;
     //Reference to the item being used
-    private bool ItemUsed;
-    public bool ItemDestroyed = false;
+
+    public bool ItemDestroyed;
     //The item being interacted with
     public GameObject ItemInteracted = null;
     //What should happen upon interaction
-    public bool ObstacleRemoval = false;
-    public bool ItemChange = false;
-    public bool FloorEnd = false;
+    public int EventUponInt;
     //Item being used
-    public bool IsKeyItem = false;
-    public bool IsAxeItem = false;
-    public bool IsMatchItem = false;
-    public bool IsCrubrItem = false;
+    public bool ItUs = true;
+    public int UsedItem;
+
     //Reference to ItemChange event
-    private bool NewItem;
-    public bool NewItemKey = false;
-    public bool NewItemAxe = false;
-    public bool NewItemMatch = false;
-    public bool NewItemCrubr = false;
+    public int NewItem;
+    public bool NwIt = true;
     //The scene that should be loaded
     public string SceneName = "Adonai's Work Place";
 
@@ -41,113 +42,123 @@ public class ObjectInteractions : MonoBehaviour
 
     private void Update()
     {
-        //Check what item is being used
-        if (IsKeyItem == true)
-        {
-            ItemUsed = myData.KeyItem;
-            myData.KeyItem = ItemUsed;
-        }
-        else
-        if (IsAxeItem == true)
-        {
-            ItemUsed = myData.AxeItem;
-            myData.AxeItem = ItemUsed;
-        }
-        else
-        if (IsMatchItem == true)
-        {
-            ItemUsed = myData.MatchItem;
-            myData.MatchItem = ItemUsed;
-        }
-        else
-        if (IsCrubrItem == true)
-        {
-            ItemUsed = myData.CrubrItem;
-            myData.CrubrItem = ItemUsed;
-        }
 
-        //Check what new item should be added
-        if (NewItemKey == true)
-        {
-            NewItem = myData.KeyItem;
-            myData.KeyItem = NewItem;
-        }
-        else
-        if (NewItemAxe == true)
-        {
-            NewItem = myData.AxeItem;
-            myData.AxeItem = NewItem;
-        }
-        else
-        if (NewItemMatch == true)
-        {
-            NewItem = myData.MatchItem;
-            myData.MatchItem = NewItem;
-        }
-        else
-        if (NewItemCrubr == true)
-        {
-            NewItem = myData.CrubrItem;
-            myData.CrubrItem = NewItem;
-        }
     }
 
     public void ButtonPressed()
     {
-        //Does the player have the required item?
-        if (ItemUsed == true)
+        if(ItUs == true)
         {
-            if (ObstacleRemoval == true)
+            switch((ItemUseCases)EventUponInt)
             {
-                GameObject.Destroy(ItemInteracted);
-            }
-            else
-            if (ItemChange == true)
-            {
-                if (myInv.ItemCount < myInv.MaxItems)
-                {
-                    GameObject.Destroy(ItemInteracted);
-                    NewItem = true;
-                }
-                else
-                //Do not allow item pick up if the player's inventory is full
-                if (myInv.ItemCount >= myInv.MaxItems)
-                {
-                    NewItem = false;
-                    ItemDestroyed = false;
-                }
-            }
-            else
-            if (FloorEnd == true)
-            {
-                SceneManager.LoadScene(SceneName);
+                //Destroy obstacle
+                case ItemUseCases.UseDestroy:
+                    {
+                        UseItemMethod();
+                        GameObject.Destroy(ItemInteracted);
+                        break;
+                    }
+                //Get new item
+                case ItemUseCases.UseDestroyAndGetNew:
+                    {
+                        UseItemMethod();
+                        GameObject.Destroy(ItemInteracted);
+                        NwIt = true;
+                        break;
+                    }
+                //Load scene
+                case ItemUseCases.LoadScene:
+                    {
+                        UseItemMethod();
+                        SceneManager.LoadScene(SceneName);
+                        break;
+                    }
             }
         }
     }
 
+    private void UseItemMethod()
+    {
+        //What item is being used
+        switch (UsedItem)
+        {
+            case 0:
+                {
+                    ItUs = true;
+                    break;
+                }
+            case 1:
+                {
+                    ItUs = false;
+                    myData.KeyItem = ItUs;
+                    break;
+                }
+            case 2:
+                {
+                    ItUs = false;
+                    myData.AxeItem = ItUs;
+                    break;
+                }
+            case 3:
+                {
+                    ItUs = false;
+                    myData.MatchItem = ItUs;
+                    break;
+                }
+            case 4:
+                {
+                    ItUs = false;
+                    myData.CrubrItem = ItUs;
+                    break;
+                }
+        }
+        //What is the new item
+        switch (NewItem)
+        {
+            case 0:
+                {
+                    NwIt = false;
+                    break;
+                }
+            case 1:
+                {
+                    myData.KeyItem = NwIt;
+                    NwIt = myData.KeyItem;
+                    break;
+                }
+            case 2:
+                {
+                    myData.AxeItem = NwIt;
+                    NwIt = myData.AxeItem;
+                    break;
+                }
+            case 3:
+                {
+                    myData.MatchItem = NwIt;
+                    NwIt = myData.MatchItem;
+                    break;
+                }
+            case 4:
+                {
+                    myData.CrubrItem = NwIt;
+                    NwIt = myData.CrubrItem;
+                    break;
+                }
+        }
+
+        if (NwIt == true)
+        {
+            ItUs = false;
+        }
+    }
+
+    //Destroy old item
     public void ItemDestruction()
     {
         if (ItemDestroyed == true)
         {
-            if (ItemUsed == IsKeyItem)
-            {
-                myData.KeyItem = false;
-            }
-
-            if (ItemUsed == IsAxeItem)
-            {
-                myData.AxeItem = false;
-            }
-
-            if (ItemUsed == IsMatchItem)
-            {
-                myData.MatchItem = false;
-            }
-
-            if (ItemUsed == IsCrubrItem)
-            {
-                myData.CrubrItem = false;
-            }
+            UseItemMethod();
+            ItUs = false;
         }
     }
 }

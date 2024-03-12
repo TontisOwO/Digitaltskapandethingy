@@ -23,7 +23,7 @@ public class Basic_Touch_Script : MonoBehaviour
     public bool itemCondition = false;
     void Start()
     {
-        myData.KeyItem = false;
+
     }
 
     void OnMouseDown()
