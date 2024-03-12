@@ -19,6 +19,7 @@ public class Basic_Touch_Script : MonoBehaviour
 
     public bool requiredItem = false;
     public bool pickUp = false;
+    public bool pickDown = false;
     public bool itemCondition = false;
     void Start()
     {
@@ -28,6 +29,8 @@ public class Basic_Touch_Script : MonoBehaviour
     void OnMouseDown()
     {
         
+
+
         if (pickUp && itemCondition == true)
         {
             myData.KeyItem = true;

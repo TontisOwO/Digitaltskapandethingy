@@ -105,14 +105,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myData: {fileID: 0}
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   TextMesh: {fileID: 0}
   textManipulation: {fileID: 0}
+  movementScript: {fileID: 0}
   splashText: Crubr
   touchText: "\xA8Boop!"
+  correctItemInInventory: Right Item
   requiredItem: 0
   pickUp: 0
   itemCondition: 0
+  comparisonPos: {x: 0, y: 0}
+  keyPos: {x: 0, y: 0, z: 0}
 --- !u!223 &7332474006488783488
 Canvas:
   m_ObjectHideFlags: 0
