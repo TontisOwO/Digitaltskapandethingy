@@ -232,12 +232,15 @@ MonoBehaviour:
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   TextMesh: {fileID: 1533353397}
   textManipulation: {fileID: 1533353400}
+  movementScript: {fileID: 0}
   splashText: It's me
   touchText: Fuck off!
   correctItemInInventory: No Item
   requiredItem: 0
   pickUp: 0
   itemCondition: 0
+  comparisonPos: {x: 0, y: 0}
+  keyPos: {x: 0, y: 0, z: 0}
 --- !u!114 &279062340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,6 +842,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: movementScript
+      value: 
+      objectReference: {fileID: 279062344}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: textManipulation
       value: 
       objectReference: {fileID: 1533353400}
@@ -1172,6 +1179,10 @@ PrefabInstance:
       propertyPath: itemCondition
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: movementScript
+      value: 
+      objectReference: {fileID: 279062344}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: textManipulation
       value: 
