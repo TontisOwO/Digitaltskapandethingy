@@ -38,25 +38,15 @@ public class Movement : MonoBehaviour
             //Convert the screen position of the mouse to the world position
             worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
 
-            worldMousePos.z = -1; //set the z value to -1
-            worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);//line it up with the bottom of the character
+            //set the z value to -1
+            worldMousePos.z = -1;
+
+            //line y up with the bottom of the character
+            worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);
             
             //Set max and min for position
             worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
             worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
-
-            //if (worldMousePos.x >= 1.06f && worldMousePos.x <= 9.51f)
-            //{
-            //    worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention);
-            //}
-            //if (worldMousePos.x >= -9.98 && worldMousePos.x <= -1.65f)
-            //{
-            //    worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention);
-            //}
-            //if (worldMousePos.x >= 12.07)
-            //{
-            //    worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention - 0.48f);
-            //}
         }   
         
         //The Slide^TM
@@ -78,14 +68,23 @@ public class Movement : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
+        BoxCollider2D boxCollider = (BoxCollider2D)collision.collider;
         if (collision.gameObject.tag.Equals("Block") == true)
         {
-            worldMousePos.x = wantedPos.x * 0.99f;
+            if (transform.position.x > collision.transform.position.x)
+            {
+                worldMousePos.x = wantedPos.x + movementSpeed * Time.deltaTime;
+            }
+            else
+            {
+                worldMousePos.x = wantedPos.x - movementSpeed * Time.deltaTime;
+            }
+
         }
         else if (collision.gameObject.tag.Equals("Background") == true)
         {
-            BoxCollider2D boxCollider = (BoxCollider2D)collision.collider;
-            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f) + (myBoxCollider.size.y * 0.5f) - myBoxCollider.offset.y -0.1f;
+            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f)
+                + (myBoxCollider.size.y * 0.5f) - myBoxCollider.offset.y -0.1f;
         }
 
     }

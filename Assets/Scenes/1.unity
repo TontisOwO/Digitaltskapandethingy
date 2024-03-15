@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91a6a0480a54ec47a17cf8322c5c107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraScript: {fileID: 1807936136}
+  Movement: {fileID: 1719397216}
   paralaxedPos: {x: 0, y: 0, z: 0}
 --- !u!1 &738772640
 GameObject:
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91a6a0480a54ec47a17cf8322c5c107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraScript: {fileID: 1807936136}
+  Movement: {fileID: 1719397216}
   paralaxedPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1326347629
 GameObject:
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 1326347631}
   - component: {fileID: 1326347630}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Bedcollision
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -847,7 +847,7 @@ MonoBehaviour:
   CameraScript: {fileID: 1807936136}
   ScreenMousePos: {x: 0, y: 0, z: 0}
   worldMousePos: {x: 0, y: 0, z: 0}
-  wantedPosition: {x: 0, y: 0, z: 0}
+  wantedPos: {x: 0, y: 0, z: 0}
   movementSpeed: 5
   yMovementSpeedDivideScale: 4
   maxPosY: -1.91
