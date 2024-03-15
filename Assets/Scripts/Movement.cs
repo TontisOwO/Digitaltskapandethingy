@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     public CameraScript CameraScript;
     public Vector3 ScreenMousePos;
     public Vector3 worldMousePos;
-    public Vector3 wantedPosition;
+    public Vector3 wantedPos;
     public float movementSpeed = 5.0f;
     public float yMovementSpeedDivideScale = 4.0f;
     public float maxPosY = -1.40f;
@@ -24,8 +24,8 @@ public class Movement : MonoBehaviour
     void Start()
     {
         worldMousePos = transform.position;
-        wantedPosition = transform.position;
-        wantedPosition.z = -1f;
+        wantedPos = transform.position;
+        wantedPos.z = -1f;
     }
     // Update is called once per frame
     void Update()
@@ -60,16 +60,16 @@ public class Movement : MonoBehaviour
         }   
         
         //The Slide^TM
-        wantedPosition.x = Mathf.MoveTowards(wantedPosition.x, worldMousePos.x, movementSpeed * Time.deltaTime);
-        wantedPosition.y = Mathf.MoveTowards(wantedPosition.y, worldMousePos.y, (movementSpeed * Time.deltaTime)/yMovementSpeedDivideScale);
-        transform.position = wantedPosition;
-        CameraScript.cameraPos = wantedPosition;
+        wantedPos.x = Mathf.MoveTowards(wantedPos.x, worldMousePos.x, movementSpeed * Time.deltaTime);
+        wantedPos.y = Mathf.MoveTowards(wantedPos.y, worldMousePos.y, (movementSpeed * Time.deltaTime)/yMovementSpeedDivideScale);
+        transform.position = wantedPos;
+        CameraScript.cameraPos = wantedPos;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("Block") == true)
         {
-            worldMousePos = wantedPosition;
+            worldMousePos = wantedPos;
         }
         else
         {
@@ -80,7 +80,7 @@ public class Movement : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Block") == true)
         {
-            worldMousePos.x = wantedPosition.x * 0.99f;
+            worldMousePos.x = wantedPos.x * 0.99f;
         }
         else if (collision.gameObject.tag.Equals("Background") == true)
         {
