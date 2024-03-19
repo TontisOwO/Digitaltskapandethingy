@@ -12,8 +12,9 @@ public class Movement : MonoBehaviour
     public Vector3 ScreenMousePos;
     public Vector3 worldMousePos;
     public Vector3 wantedPos;
-    public float movementSpeed = 5.0f;
-    public float yMovementSpeedDivideScale = 4.0f;
+    public float xMovementSpeed = 5.0f;
+    public float yMovementSpeed = 4.0f;
+    public float movementSpeedOrigin;
     public float maxPosY = -1.40f;
     public float minPosY = -2.55f;
     public float maxPosX = 11.20f;
@@ -23,6 +24,8 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        movementSpeedOrigin = xMovementSpeed;
+        yMovementSpeed = xMovementSpeed / 4;
         worldMousePos = transform.position;
         wantedPos = transform.position;
         wantedPos.z = -1f;
@@ -50,8 +53,8 @@ public class Movement : MonoBehaviour
         }   
         
         //The Slide^TM
-        wantedPos.x = Mathf.MoveTowards(wantedPos.x, worldMousePos.x, movementSpeed * Time.deltaTime);
-        wantedPos.y = Mathf.MoveTowards(wantedPos.y, worldMousePos.y, (movementSpeed * Time.deltaTime)/yMovementSpeedDivideScale);
+        wantedPos.x = Mathf.MoveTowards(wantedPos.x, worldMousePos.x, xMovementSpeed * Time.deltaTime);
+        wantedPos.y = Mathf.MoveTowards(wantedPos.y, worldMousePos.y, yMovementSpeed * Time.deltaTime);
         transform.position = wantedPos;
         CameraScript.cameraPos = wantedPos;
     }
@@ -73,19 +76,24 @@ public class Movement : MonoBehaviour
         {
             if (transform.position.x > collision.transform.position.x)
             {
-                worldMousePos.x = wantedPos.x + movementSpeed * Time.deltaTime;
+                worldMousePos.x = wantedPos.x + xMovementSpeed * Time.deltaTime;
             }
             else
             {
-                worldMousePos.x = wantedPos.x - movementSpeed * Time.deltaTime;
+                worldMousePos.x = wantedPos.x - xMovementSpeed * Time.deltaTime;
             }
 
         }
         else if (collision.gameObject.tag.Equals("Background") == true)
         {
-            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f)
-                + (myBoxCollider.size.y * 0.5f) - myBoxCollider.offset.y -0.1f;
+            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f) 
+                 - boxCollider.edgeRadius + (myBoxCollider.size.y * 0.5f) 
+                 - myBoxCollider.offset.y - 0.1f;
+            xMovementSpeed = 0;
         }
-
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        xMovementSpeed = movementSpeedOrigin;
     }
 }
