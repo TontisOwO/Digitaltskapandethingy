@@ -150,4 +150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d773bdfbd56974da8f41c8ecfa00d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraPos: {x: 0, y: 0, z: 0}
+  cameraPos: {x: 0, y: 0, z: 0}
+  minPos: -5
+  maxPos: 5
