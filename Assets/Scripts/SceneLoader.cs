@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public SavedData playerData = null;
-    public string floor1 = "SampleScene";
-    public string SceneName = "SampleScene";
-    public string SecondaryScene = "Adonai's Work Place";
+    public SavedData PlayerData = null;
+    public string floor1 = "Totorial";
+    public string sceneName;
+    public string secondaryScene;
 
     // Start is called before the first frame update
     void Start()
@@ -24,27 +24,27 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(SceneName);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void AltLoadScene()
     {
-        SceneManager.LoadScene(SecondaryScene);
+        SceneManager.LoadScene(secondaryScene);
     }
 
     public void ContinueGame()
     {
-        SceneManager.LoadScene(playerData.CurrentFloor);
+        SceneManager.LoadScene(PlayerData.CurrentFloor);
     }
 
     public void EraseData()
     {
-        playerData.AxeItem = false;
-        playerData.CrubrItem = false;
-        playerData.MatchItem = false;
-        playerData.KeyItem = false;
-        playerData.SampleItem = false;
-        playerData.CurrentFloor = 1;
+        PlayerData.AxeItem = false;
+        PlayerData.CrubrItem = false;
+        PlayerData.MatchItem = false;
+        PlayerData.KeyItem = false;
+        PlayerData.SampleItem = false;
+        PlayerData.CurrentFloor = 1;
         SceneManager.LoadScene(floor1);
     }
 }

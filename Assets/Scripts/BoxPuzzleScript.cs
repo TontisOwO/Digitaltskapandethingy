@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BoxPuzzleScript : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class BoxPuzzleScript : MonoBehaviour
     public int KeySpawn;
     public float Xvalue = 0;
     public float Yvalue = 0;
+    public int CurrentFloor;
 
     void Start()
     {
         KeySpawn = Random.Range(MinValue, MaxValue); 
+        CurrentFloor = mydata.CurrentFloor;
     }
 
     void Update()
@@ -24,7 +27,11 @@ public class BoxPuzzleScript : MonoBehaviour
         KeyPos.x = Xvalue;
         KeyPos.y = Yvalue;
         Key.transform.position = KeyPos;
-       
+
+        if (mydata.KeyItem == true)
+        {
+            SceneManager.LoadScene(CurrentFloor);
+        }
     }
 
     private void KeyLocation()
@@ -33,141 +40,141 @@ public class BoxPuzzleScript : MonoBehaviour
         {
             case 0:
                 {
-                    Xvalue = -8;
-                    Yvalue = -3;
+                    Xvalue = 480;
+                    Yvalue = 95;
                     break;
                 }
 
             case 1:
                 {
-                    Xvalue = -8;
-                    Yvalue = -2;
+                    Xvalue = 65;
+                    Yvalue = 95;
                     break;
                 }
 
             case 2:
                 {
-                    Xvalue = -6;
-                    Yvalue = -2;
+                    Xvalue = 95;
+                    Yvalue = 140;
                     break;
                 }
 
             case 3:
                 {
-                    Xvalue = -6;
-                    Yvalue = 0;
+                    Xvalue = 285;
+                    Yvalue = 40;
                     break;
                 }
 
             case 4:
                 {
-                    Xvalue = -6;
-                    Yvalue = -3;
+                    Xvalue = 505;
+                    Yvalue = 140;
                     break;
                 }
 
             case 5:
                 {
-                    Xvalue = 4;
-                    Yvalue = -1;
+                    Xvalue = 285;
+                    Yvalue = 85;
                     break;
                 }
 
             case 6:
                 {
-                    Xvalue = 5;
-                    Yvalue = 0;
+                    Xvalue = 215;
+                    Yvalue = 260;
                     break;
                 }
 
             case 7:
                 {
-                    Xvalue = 6;
-                    Yvalue = 0;
+                    Xvalue = 310;
+                    Yvalue = 130;
                     break;
                 }
 
             case 8:
                 {
-                    Xvalue = 6;
-                    Yvalue = 2;
+                    Xvalue = 530;
+                    Yvalue = 100;
                     break;
                 }
 
             case 9:
                 {
-                    Xvalue = 6;
-                    Yvalue = -1;
+                    Xvalue = 65;
+                    Yvalue = 50;
                     break;
                 }
 
             case 10:
                 {
-                    Xvalue = -3;
-                    Yvalue = 0;
+                    Xvalue = 185;
+                    Yvalue = 220;
                     break;
                 }
 
             case 11:
                 {
-                    Xvalue = -3;
-                    Yvalue = 1;
+                    Xvalue = 475;
+                    Yvalue = 50;
                     break;
                 }
 
             case 12:
                 {
-                    Xvalue = -1;
-                    Yvalue = 1;
+                    Xvalue = 235;
+                    Yvalue = 225;
                     break;
                 }
 
             case 13:
                 {
-                    Xvalue = -2;
-                    Yvalue = 3;
+                    Xvalue = 235;
+                    Yvalue = 180;
                     break;
                 }
 
             case 14:
                 {
-                    Xvalue = -1;
-                    Yvalue = 0;
+                    Xvalue = 120;
+                    Yvalue = 55;
                     break;
                 }
 
             case 15:
                 {
-                    Xvalue = 0;
-                    Yvalue = -4;
+                    Xvalue = 115;
+                    Yvalue = 100;
                     break;
                 }
 
             case 16:
                 {
-                    Xvalue = 0;
-                    Yvalue = -2;
+                    Xvalue = 335;
+                    Yvalue = 85;
                     break;
                 }
 
             case 17:
                 {
-                    Xvalue = 2;
-                    Yvalue = -2;
+                    Xvalue = 540;
+                    Yvalue = 50;
                     break;
                 }
 
             case 18:
                 {
-                    Xvalue = 1;
-                    Yvalue = 0;
+                    Xvalue = 340;
+                    Yvalue = 40;
                     break;
                 }
 
             case 19:
                 {
-                    Xvalue = 2;
-                    Yvalue = -3;
+                    Xvalue = 185;
+                    Yvalue = 175;
                     break;
                 }
         }
