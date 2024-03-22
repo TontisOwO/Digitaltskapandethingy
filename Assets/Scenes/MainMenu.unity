@@ -1382,10 +1382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9052ffaebd632954580d8d3b6ade206f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: Totorial
-  SceneName: SampleScene
-  SecondaryScene: Adonai's Work Place
+  sceneName: 
+  secondaryScene: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

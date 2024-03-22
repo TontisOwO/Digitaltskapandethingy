@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/1.unity
-    guid: bbb7fef421a415b49bc62b784aad6332
+    path: Assets/Scenes/MainMenu.unity
+    guid: 258f4603233447f4a9e294fb5612f0be
   - enabled: 1
     path: Assets/Scenes/Totorial.unity
     guid: ccf91bfabb667c74a8e03519c8c923ae
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 258f4603233447f4a9e294fb5612f0be
+    path: Assets/Scenes/1 Puzzle.unity
+    guid: 927f834f99e394e4d9a166490fdd2e98
+  - enabled: 1
+    path: Assets/Scenes/1.unity
+    guid: bbb7fef421a415b49bc62b784aad6332
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
@@ -21,15 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Adonai's Work Place.unity
     guid: 8643ab565a105c741bbae026c2823d2c
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 258f4603233447f4a9e294fb5612f0be
-  - enabled: 1
-    path: Assets/Scenes/Totorial.unity
-    guid: ccf91bfabb667c74a8e03519c8c923ae
-  - enabled: 1
     path: Assets/Scenes/Clipboard.unity
     guid: 3744c741d1a6b444d989d964f8896df9
-  - enabled: 1
-    path: Assets/Scenes/Totorial Puzzle.unity
-    guid: 927f834f99e394e4d9a166490fdd2e98
   m_configObjects: {}

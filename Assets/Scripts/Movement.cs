@@ -84,9 +84,10 @@ public class Movement : MonoBehaviour
         }
         else if (collision.gameObject.tag.Equals("Background") == true)
         {
-            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f) 
-                 - boxCollider.edgeRadius + (myBoxCollider.size.y * 0.5f) 
+            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f)
+                 - boxCollider.edgeRadius + (myBoxCollider.size.y * 0.5f)
                  - myBoxCollider.offset.y - 0.1f;
+            //worldMousePos.y = ;
             xMovementSpeed = 0;
         }
     }
