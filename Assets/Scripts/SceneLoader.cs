@@ -22,9 +22,9 @@ public class SceneLoader : MonoBehaviour
         
     }
 
-    public void LoadScene()
+    public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(SceneName);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void AltLoadScene()

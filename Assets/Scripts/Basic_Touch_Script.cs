@@ -12,7 +12,9 @@ public class Basic_Touch_Script : MonoBehaviour
     public SavedData myData = null;
     public TextMeshProUGUI TextMesh;
     public TextManipulation textManipulation;
-    
+    public SceneLoader sceneLoader;
+
+    public string scene = "1";
     public string splashText = "Beep Boop";
     public string touchText = "¨Boop!";
     public string correctItemInInventory = "Right Item";
@@ -21,6 +23,7 @@ public class Basic_Touch_Script : MonoBehaviour
     public bool pickUp = false;
     public bool pickDown = false;
     public bool itemCondition = false;
+    public bool switchScene = false;
     void Start()
     {
 
@@ -33,12 +36,19 @@ public class Basic_Touch_Script : MonoBehaviour
 
         if (pickUp && itemCondition == true)
         {
-            myData.KeyItem = true;
-            Destroy(gameObject);
             TextMesh.text = correctItemInInventory;
             textManipulation.mouseDown = true;
             textManipulation.mouseOver = false;
             textManipulation.mouseExit = false;
+            if (switchScene)
+            {
+                sceneLoader.LoadScene(scene);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+            
         }
         if (itemCondition != myData.KeyItem)
         {
