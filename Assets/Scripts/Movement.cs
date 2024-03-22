@@ -19,8 +19,6 @@ public class Movement : MonoBehaviour
     public float minPosY = -2.55f;
     public float maxPosX = 11.20f;
     public float minPosX = -9.0f;
-    public float collisionPrevention = -2.4f;
-    
 
     void Start()
     {

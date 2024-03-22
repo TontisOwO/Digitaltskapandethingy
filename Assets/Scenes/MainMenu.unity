@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
-  floor1: SampleScene
+  floor1: Totorial
   SceneName: SampleScene
   SecondaryScene: Adonai's Work Place
 --- !u!1660057539 &9223372036854775807
