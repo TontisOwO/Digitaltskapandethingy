@@ -11,9 +11,10 @@ public class Movement : MonoBehaviour
     public CameraScript CameraScript;
     public Vector3 ScreenMousePos;
     public Vector3 worldMousePos;
-    public Vector3 wantedPosition;
-    public float movementSpeed = 5.0f;
-    public float yMovementSpeedDivideScale = 4.0f;
+    public Vector3 wantedPos;
+    public float xMovementSpeed = 5.0f;
+    public float yMovementSpeed = 4.0f;
+    public float movementSpeedOrigin;
     public float maxPosY = -1.40f;
     public float minPosY = -2.55f;
     public float maxPosX = 11.20f;
@@ -23,9 +24,11 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        movementSpeedOrigin = xMovementSpeed;
+        yMovementSpeed = xMovementSpeed / 4;
         worldMousePos = transform.position;
-        wantedPosition = transform.position;
-        wantedPosition.z = -1f;
+        wantedPos = transform.position;
+        wantedPos.z = -1f;
     }
     // Update is called once per frame
     void Update()
@@ -38,38 +41,28 @@ public class Movement : MonoBehaviour
             //Convert the screen position of the mouse to the world position
             worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
 
-            worldMousePos.z = -1; //set the z value to -1
-            worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);//line it up with the bottom of the character
+            //set the z value to -1
+            worldMousePos.z = -1;
+
+            //line y up with the bottom of the character
+            worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);
             
             //Set max and min for position
             worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
             worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
-
-            //if (worldMousePos.x >= 1.06f && worldMousePos.x <= 9.51f)
-            //{
-            //    worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention);
-            //}
-            //if (worldMousePos.x >= -9.98 && worldMousePos.x <= -1.65f)
-            //{
-            //    worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention);
-            //}
-            //if (worldMousePos.x >= 12.07)
-            //{
-            //    worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, collisionPrevention - 0.48f);
-            //}
         }   
         
         //The Slide^TM
-        wantedPosition.x = Mathf.MoveTowards(wantedPosition.x, worldMousePos.x, movementSpeed * Time.deltaTime);
-        wantedPosition.y = Mathf.MoveTowards(wantedPosition.y, worldMousePos.y, (movementSpeed * Time.deltaTime)/yMovementSpeedDivideScale);
-        transform.position = wantedPosition;
-        CameraScript.cameraPos = wantedPosition;
+        wantedPos.x = Mathf.MoveTowards(wantedPos.x, worldMousePos.x, xMovementSpeed * Time.deltaTime);
+        wantedPos.y = Mathf.MoveTowards(wantedPos.y, worldMousePos.y, yMovementSpeed * Time.deltaTime);
+        transform.position = wantedPos;
+        CameraScript.cameraPos = wantedPos;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("Block") == true)
         {
-            worldMousePos = wantedPosition;
+            worldMousePos = wantedPos;
         }
         else
         {
@@ -78,15 +71,29 @@ public class Movement : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
+        BoxCollider2D boxCollider = (BoxCollider2D)collision.collider;
         if (collision.gameObject.tag.Equals("Block") == true)
         {
-            worldMousePos.x = wantedPosition.x * 0.99f;
+            if (transform.position.x > collision.transform.position.x)
+            {
+                worldMousePos.x = wantedPos.x + xMovementSpeed * Time.deltaTime;
+            }
+            else
+            {
+                worldMousePos.x = wantedPos.x - xMovementSpeed * Time.deltaTime;
+            }
+
         }
         else if (collision.gameObject.tag.Equals("Background") == true)
         {
-            BoxCollider2D boxCollider = (BoxCollider2D)collision.collider;
-            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f) + (myBoxCollider.size.y * 0.5f) - myBoxCollider.offset.y -0.1f;
+            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f) 
+                 - boxCollider.edgeRadius + (myBoxCollider.size.y * 0.5f) 
+                 - myBoxCollider.offset.y - 0.1f;
+            xMovementSpeed = 0;
         }
-
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        xMovementSpeed = movementSpeedOrigin;
     }
 }
