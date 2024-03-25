@@ -69,7 +69,6 @@ public class Movement : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-        BoxCollider2D boxCollider = (BoxCollider2D)collision.collider;
         if (collision.gameObject.tag.Equals("Block") == true)
         {
             if (transform.position.x > collision.transform.position.x)
@@ -84,9 +83,7 @@ public class Movement : MonoBehaviour
         }
         else if (collision.gameObject.tag.Equals("Background") == true)
         {
-            worldMousePos.y = boxCollider.offset.y - (boxCollider.size.y * 0.5f) 
-                 - boxCollider.edgeRadius + (myBoxCollider.size.y * 0.5f) 
-                 - myBoxCollider.offset.y - 0.1f;
+            worldMousePos.y = transform.position.y - yMovementSpeed*Time.deltaTime;
             xMovementSpeed = 0;
         }
     }
