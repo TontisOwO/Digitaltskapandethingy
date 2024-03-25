@@ -44,7 +44,7 @@ public class Basic_Touch_Script : MonoBehaviour
             {
                 sceneLoader.LoadScene(scene);
             }
-            else
+            if (requiredItem)
             {
                 Destroy(gameObject);
             }
