@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class FirstPuzzle : MonoBehaviour
 {
-    public Basic_Touch_Script touchScript;
     public Rigidbody2D rigidBody;
-    public BoxCollider2D box;
+    public bool condition;
+    public bool firstPlank;
+    public bool secondPlankCheck;
+    public FirstPuzzle secondPlank;
+    public Basic_Touch_Script door;
 
+    public float spikesCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +21,21 @@ public class FirstPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (spikesCount >= 2)
+        {
+            if (condition == true)
+            {
+                rigidBody.gravityScale = 1;
+                if (firstPlank == true)
+                {
+                    secondPlank.condition = true;
+                }
+                if (secondPlankCheck == true)
+                {
+                    door.itemCondition = true;
+                }
+            }
+
+        }
     }
 }

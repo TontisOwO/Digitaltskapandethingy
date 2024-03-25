@@ -316,6 +316,7 @@ GameObject:
   - component: {fileID: 401995495}
   - component: {fileID: 401995494}
   - component: {fileID: 401995493}
+  - component: {fileID: 401995498}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -339,15 +340,15 @@ MonoBehaviour:
   TextMesh: {fileID: 1837765284}
   textManipulation: {fileID: 1837765283}
   sceneLoader: {fileID: 1451265508}
-  scene: 1
+  scene: 1 Puzzle
   splashText: The exit
   touchText: It's barred
   correctItemInInventory: Not anymore
   requiredItem: 0
-  pickUp: 0
+  pickUp: 1
   pickDown: 0
-  itemCondition: 0
-  switchScene: 0
+  itemCondition: 1
+  switchScene: 1
 --- !u!114 &401995494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,6 +457,23 @@ RectTransform:
   m_AnchoredPosition: {x: 18.004147, y: -1.7627108}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.57503814, y: 0.5}
+--- !u!114 &401995498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401995492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6861ff6107f51142b67d54299fe9b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneLoader: {fileID: 1451265508}
+  rigidbody2: {fileID: 0}
+  scene: 1 Puzzle
+  doingTwoDifferentThingsWithSameCode: 1
+  spikes: 0
 --- !u!1001 &444907785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -467,6 +485,10 @@ PrefabInstance:
     - target: {fileID: 6631358768015722233, guid: f7eb976f1fc6d584da8d569f7d6d1c1c, type: 3}
       propertyPath: m_Name
       value: Inventory Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631358768015722233, guid: f7eb976f1fc6d584da8d569f7d6d1c1c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7287930578998735322, guid: f7eb976f1fc6d584da8d569f7d6d1c1c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1462,6 +1484,10 @@ PrefabInstance:
     - target: {fileID: 6255979255150886990, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_Name
       value: Backpack_Scuffed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255979255150886990, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6380771209302728692, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_SortingOrder
