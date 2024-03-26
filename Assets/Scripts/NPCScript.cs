@@ -13,6 +13,9 @@ public class NPCScript : MonoBehaviour
     public float yMoveSpeed;
     public GameObject MainCharacter;
     public Vector3 scale;
+    public float rightTurnAroundTime;
+    public float leftTurnAroundTime;
+    public bool facingRight;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,18 @@ public class NPCScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        rightTurnAroundTime = rightTurnAroundTime - Time.deltaTime;
+        leftTurnAroundTime = leftTurnAroundTime - Time.deltaTime;
+        if (rightTurnAroundTime < 0 && facingRight)
+        {
+            scale.x = 0.6f;
+            leftTurnAroundTime = 0.2f;
+        }
+        else if (leftTurnAroundTime < 0 && !facingRight)
+        {
+            scale.x = -0.6f;
+            rightTurnAroundTime = 0.2f;
+        }
         if (currentPos != wantedPos)
         {
             currentPos.x = Mathf.MoveTowards(currentPos.x, wantedPos.x, xMoveSpeed * Time.deltaTime);
@@ -38,19 +53,21 @@ public class NPCScript : MonoBehaviour
         }
         if (wantedPos.x < currentPos.x)
         {
+            facingRight = false;
             scale.x = -0.6f;
         }
         else if (wantedPos.x > currentPos.x)
         {
+            facingRight = true;
             scale.x = 0.6f;
         }
-        else if (MainCharacter.transform.position.x < currentPos.x)
+        else if (MainCharacter.transform.position.x > currentPos.x)
         {
-            scale.x = -0.6f;
+            facingRight = true;
         }
         else
         {
-            scale.x = 0.6f;
+            facingRight = false;
         }
         transform.localScale = scale;
     }
