@@ -18,3 +18,5 @@ MonoBehaviour:
   AxeItem: 0
   MatchItem: 0
   CrubrItem: 0
+  NPCPos: {x: 0, y: 0, z: 0}
+  CharPos: {x: 0, y: 0, z: 0}
