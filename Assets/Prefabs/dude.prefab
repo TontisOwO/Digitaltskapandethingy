@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5120509814178086540}
   - component: {fileID: 7320601981411908323}
   - component: {fileID: 9079983655009885268}
+  - component: {fileID: 8112194794637391830}
   m_Layer: 0
   m_Name: dude
   m_TagString: Untagged
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 43f807af39da54b4cb03a13753054455, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -109,6 +110,8 @@ MonoBehaviour:
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   TextMesh: {fileID: 0}
   textManipulation: {fileID: 0}
+  sceneLoader: {fileID: 0}
+  scene: 1
   splashText: It's me
   touchText: Fuck off!
   correctItemInInventory: No Item
@@ -116,6 +119,7 @@ MonoBehaviour:
   pickUp: 0
   pickDown: 0
   itemCondition: 0
+  switchScene: 0
 --- !u!61 &2932794132175571166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -248,8 +252,52 @@ MonoBehaviour:
   xMovementSpeed: 5
   yMovementSpeed: 4
   movementSpeedOrigin: 0
-  maxPosY: -1.4
-  minPosY: -2.55
-  maxPosX: 11.2
-  minPosX: -9
-  collisionPrevention: -2.4
+  maxPosY: -2.28
+  minPosY: -4
+  maxPosX: 8.2
+  minPosX: -8.1
+--- !u!61 &8112194794637391830
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7661166283653514916}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 2.47}
+    newSize: {x: 1.6, y: 2.47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6, y: 2.47}
+  m_EdgeRadius: 0

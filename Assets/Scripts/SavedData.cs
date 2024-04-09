@@ -22,6 +22,9 @@ public class SavedData : ScriptableObject
     //Crubr Item
     public bool CrubrItem;
 
+    public Vector3 NPCPos;
+    public Vector3 CharPos;
+
     public void Update()
     {
         if (CurrentFloor <= MinFloor)
