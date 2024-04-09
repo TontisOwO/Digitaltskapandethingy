@@ -471,8 +471,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 1451265508}
   rigidbody2: {fileID: 0}
+  thisObject: {fileID: 0}
+  firstPuzzleScript: {fileID: 0}
   scene: 1 Puzzle
   doingTwoDifferentThingsWithSameCode: 1
+  doDelete: 0
   spikes: 0
 --- !u!1001 &444907785
 PrefabInstance:
@@ -2418,6 +2421,42 @@ PrefabInstance:
     - target: {fileID: 411263066971687179, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_Name
       value: Text (TMP)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406444447745696532, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406444447745696532, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406444447745696532, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743422510907667665, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: colour.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743422510907667665, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: colour.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743422510907667665, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: colour.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743422510907667665, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: newColour.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743422510907667665, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: newColour.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743422510907667665, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
+      propertyPath: newColour.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1743422510907667665, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: touch_Script

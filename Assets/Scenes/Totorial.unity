@@ -2674,10 +2674,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 11.184841, y: 1.3228929}
-      - {x: 9.398507, y: 0.6273111}
-      - {x: 9.394666, y: -2.9747496}
-      - {x: 11.14394, y: -4.6958604}
+    - - {x: -0.9068055, y: 0.6058836}
+      - {x: 0.83657646, y: 1.3232315}
+      - {x: 0.8538227, y: -4.66183}
+      - {x: -0.9186802, y: -3.0298686}
   m_UseDelaunayMesh: 0
 --- !u!224 &1595160252
 RectTransform:
@@ -2692,12 +2692,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.919538, y: -0.49107033}
+  m_AnchoredPosition: {x: 8.369059, y: -0.49107027}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.60288596, y: 0.5}
 --- !u!114 &1595160253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2988,11 +2988,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 348606211958569668, guid: 1b9f040d2017e174c8fd09143884d497, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.12
+      value: -3.55
       objectReference: {fileID: 0}
     - target: {fileID: 348606211958569668, guid: 1b9f040d2017e174c8fd09143884d497, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.26
+      value: -3.19
       objectReference: {fileID: 0}
     - target: {fileID: 348606211958569668, guid: 1b9f040d2017e174c8fd09143884d497, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
