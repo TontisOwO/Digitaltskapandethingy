@@ -86,6 +86,8 @@ public class Movement : MonoBehaviour
             worldMousePos.y = transform.position.y - yMovementSpeed*Time.deltaTime;
             xMovementSpeed = 0;
         }
+        Debug.Log("yay");
+
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
