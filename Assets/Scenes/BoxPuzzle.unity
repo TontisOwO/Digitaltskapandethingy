@@ -131,6 +131,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -231,6 +243,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -335,6 +359,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -425,6 +461,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -520,6 +568,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3668428559818204658, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -720,6 +780,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -803,6 +875,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -893,6 +977,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -976,6 +1072,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1253,6 +1361,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1347,6 +1467,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1455,6 +1587,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1545,6 +1689,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1691,6 +1847,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1843,6 +2011,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1933,6 +2113,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2108,6 +2300,9 @@ MonoBehaviour:
   Xvalue: 0
   Yvalue: 0
   CurrentFloor: 0
+  victim: {fileID: 0}
+  KILL: 0
+  coolDown: 0
 --- !u!114 &1791324173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,6 +2410,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2310,6 +2517,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2388,6 +2607,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2488,6 +2719,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1573022163}
     m_Modifications:
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791324172}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Annihilate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107684384361097201, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxPuzzleScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4794729591826273167, guid: 9c1736a92147e3947850f94f3b4ce285, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

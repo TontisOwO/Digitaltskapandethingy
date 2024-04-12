@@ -14,13 +14,20 @@ public class BoxPuzzleScript : MonoBehaviour
     public float Yvalue = 0;
     public int CurrentFloor;
 
+    //Boxdestroyer9000
+    public GameObject victim;
+    public bool KILL = false;
+    int boxObliterationStage = 3;
+    public float coolDown;
+    float lastAnnihilation;
+
     void Start()
     {
         KeySpawn = Random.Range(MinValue, MaxValue); 
         CurrentFloor = mydata.CurrentFloor;
     }
 
-    void Update()
+    public void Update()
     {
         KeyLocation();
         Vector3 KeyPos = Key.GetComponent<Rigidbody2D>().position;
@@ -32,7 +39,19 @@ public class BoxPuzzleScript : MonoBehaviour
         {
             SceneManager.LoadScene(CurrentFloor);
         }
+
+        if (KILL == true)
+        {
+            boxObliterationStage -= 1;
+            KILL = false;
+            if (boxObliterationStage <= 0)
+            {
+                GameObject.Destroy(gameObject);
+            }
+        }
     }
+
+
 
     private void KeyLocation()
     {
@@ -177,6 +196,19 @@ public class BoxPuzzleScript : MonoBehaviour
                     Yvalue = 175;
                     break;
                 }
+        }
+    }
+
+    public void Annihilate()
+    {
+        if (KILL == false)
+        {
+            if (Time.time - lastAnnihilation < coolDown)
+            {
+                return;
+            }
+            lastAnnihilation = Time.time;
+            KILL = true;
         }
     }
 }
