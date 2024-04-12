@@ -23,7 +23,7 @@ public class BoxDestroyer9000 : MonoBehaviour
             KILL = false;
             if (boxObliterationStage <= 0)
             {
-                GameObject.Destroy(victim);
+                GameObject.Destroy(gameObject);
             }
         }
     }
