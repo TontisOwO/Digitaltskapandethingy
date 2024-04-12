@@ -32,12 +32,12 @@ public class NPCScript : MonoBehaviour
         leftTurnAroundTime = leftTurnAroundTime - Time.deltaTime;
         if (rightTurnAroundTime < 0 && facingRight)
         {
-            scale.x = 0.6f;
+            scale.x = 0.85f;
             leftTurnAroundTime = 0.2f;
         }
         else if (leftTurnAroundTime < 0 && !facingRight)
         {
-            scale.x = -0.6f;
+            scale.x = -0.85f;
             rightTurnAroundTime = 0.2f;
         }
         if (currentPos != wantedPos)
@@ -54,12 +54,12 @@ public class NPCScript : MonoBehaviour
         if (wantedPos.x < currentPos.x)
         {
             facingRight = false;
-            scale.x = -0.6f;
+            scale.x = -0.85f;
         }
         else if (wantedPos.x > currentPos.x)
         {
             facingRight = true;
-            scale.x = 0.6f;
+            scale.x = 0.85f;
         }
         else if (MainCharacter.transform.position.x > currentPos.x)
         {
