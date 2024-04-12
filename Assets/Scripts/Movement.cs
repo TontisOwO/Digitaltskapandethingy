@@ -19,6 +19,8 @@ public class Movement : MonoBehaviour
     public float minPosY = -2.55f;
     public float maxPosX = 11.20f;
     public float minPosX = -9.0f;
+    public Vector3 facingRight;
+    public Vector3 facingLeft;
 
     void Start()
     {
@@ -27,6 +29,9 @@ public class Movement : MonoBehaviour
         worldMousePos = transform.position;
         wantedPos = transform.position;
         wantedPos.z = -1f;
+        facingRight = transform.localScale;
+        facingLeft = transform.localScale;
+        facingLeft.x = -transform.localScale.x;
     }
     // Update is called once per frame
     void Update()
@@ -55,6 +60,14 @@ public class Movement : MonoBehaviour
         wantedPos.y = Mathf.MoveTowards(wantedPos.y, worldMousePos.y, yMovementSpeed * Time.deltaTime);
         transform.position = wantedPos;
         CameraScript.cameraPos = wantedPos;
+        if (wantedPos.x < worldMousePos.x)
+        {
+            transform.localScale = facingRight;
+        }
+        if (wantedPos.x > worldMousePos.x)
+        {
+            transform.localScale = facingLeft;
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -86,8 +99,6 @@ public class Movement : MonoBehaviour
             worldMousePos.y = transform.position.y - yMovementSpeed*Time.deltaTime;
             xMovementSpeed = 0;
         }
-        Debug.Log("yay");
-
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
