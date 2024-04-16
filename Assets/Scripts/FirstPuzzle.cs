@@ -25,7 +25,7 @@ public class FirstPuzzle : MonoBehaviour
         {
             if (condition == true)
             {
-                rigidBody.gravityScale = 1;
+                rigidBody.gravityScale = 1.5f;
                 if (firstPlank == true)
                 {
                     secondPlank.condition = true;
