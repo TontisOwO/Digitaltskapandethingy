@@ -475,7 +475,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1985221646}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -696,7 +696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6380771209302728692, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_SortingOrder
-      value: 100
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1793,6 +1793,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7455018159731156693, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7455018159731156693, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707653082026587972, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0153be0ec49748f48a5c99d771168451, type: 3}
+    - target: {fileID: 8707653082026587972, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2079,8 +2095,8 @@ Canvas:
   m_GameObject: {fileID: 1902777661}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1985221646}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2123,6 +2139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d773bdfbd56974da8f41c8ecfa00d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!20 &1985221646 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2610866265579041473, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+  m_PrefabInstance: {fileID: 1780875457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2109046621
 GameObject:
   m_ObjectHideFlags: 0
