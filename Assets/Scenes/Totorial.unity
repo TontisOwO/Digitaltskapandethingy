@@ -594,6 +594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Backpack_Scuffed
       objectReference: {fileID: 0}
+    - target: {fileID: 6255979255150886990, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
+      propertyPath: m_TagString
+      value: GUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1336,6 +1340,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9baf15d1b55b844b30d5ee03aa45d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1253500136 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5548336490023853559, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+  m_PrefabInstance: {fileID: 1836389116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1350743669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1970,6 +1979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: myAnimator
+      value: 
+      objectReference: {fileID: 1253500136}
     - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: CameraScript
       value: 

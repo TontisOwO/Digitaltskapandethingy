@@ -9,9 +9,11 @@ public class Movement : MonoBehaviour
 {
     public BoxCollider2D myBoxCollider;
     public CameraScript CameraScript;
+    public Animator myAnimator;
     public Vector3 ScreenMousePos;
     public Vector3 worldMousePos;
     public Vector3 wantedPos;
+    public Ray ScreenWorldRay;
     public float xMovementSpeed = 5.0f;
     public float yMovementSpeed = 4.0f;
     public float movementSpeedOrigin;
@@ -21,7 +23,6 @@ public class Movement : MonoBehaviour
     public float minPosX = -9.0f;
     public Vector3 facingRight;
     public Vector3 facingLeft;
-
     void Start()
     {
         movementSpeedOrigin = xMovementSpeed;
@@ -29,6 +30,7 @@ public class Movement : MonoBehaviour
         worldMousePos = transform.position;
         wantedPos = transform.position;
         wantedPos.z = -1f;
+        worldMousePos.z = -1f;
         facingRight = transform.localScale;
         facingLeft = transform.localScale;
         facingLeft.x = -transform.localScale.x;
@@ -41,22 +43,26 @@ public class Movement : MonoBehaviour
             //Get the position of the mouse
             ScreenMousePos = Input.mousePosition;
             //Debug.Log(ScreenMousePos);
+            RaycastHit hit;
+            ScreenWorldRay = Camera.main.ScreenPointToRay(ScreenMousePos);
             //not on backpack
-            if (!(ScreenMousePos.x > 527.33f && ScreenMousePos.y > 276.67f 
-                && ScreenMousePos.x < 587.33f && ScreenMousePos.y < 326))
+            if (!Physics.Raycast(ScreenWorldRay, out hit))
             {
-                //Convert the screen position of the mouse to the world position
-                worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
+                if(hit.collider == null /*|| hit.collider.tag != "GUI"*/)
+                {
+                    //Convert the screen position of the mouse to the world position
+                    worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
 
-                //set the z value to -1
-                worldMousePos.z = -1;
+                    //set the z value to -1
+                    worldMousePos.z = -1;
 
-                //line y up with the bottom of the character
-                worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);
+                    //line y up with the bottom of the character
+                    worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);
 
-                //Set max and min for position
-                worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
-                worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
+                    //Set max and min for position
+                    worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
+                    worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
+                }
             }
             
         }   
@@ -66,6 +72,14 @@ public class Movement : MonoBehaviour
         wantedPos.y = Mathf.MoveTowards(wantedPos.y, worldMousePos.y, yMovementSpeed * Time.deltaTime);
         transform.position = wantedPos;
         CameraScript.cameraPos = wantedPos;
+        if (wantedPos != worldMousePos)
+        {
+            myAnimator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            myAnimator.SetBool("IsWalking", false);
+        }
         if (wantedPos.x < worldMousePos.x)
         {
             transform.localScale = facingRight;
@@ -74,6 +88,7 @@ public class Movement : MonoBehaviour
         {
             transform.localScale = facingLeft;
         }
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
