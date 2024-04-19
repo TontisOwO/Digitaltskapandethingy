@@ -40,9 +40,9 @@ public class Movement : MonoBehaviour
         {
             //Get the position of the mouse
             ScreenMousePos = Input.mousePosition;
-            Debug.Log(ScreenMousePos);
+            //Debug.Log(ScreenMousePos);
             //not on backpack
-            if (!(ScreenMousePos.x > 531.33f && ScreenMousePos.y > 279.33f 
+            if (!(ScreenMousePos.x > 527.33f && ScreenMousePos.y > 276.67f 
                 && ScreenMousePos.x < 587.33f && ScreenMousePos.y < 326))
             {
                 //Convert the screen position of the mouse to the world position

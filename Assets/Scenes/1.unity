@@ -805,6 +805,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &662819178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631358768015722233, guid: f7eb976f1fc6d584da8d569f7d6d1c1c, type: 3}
+  m_PrefabInstance: {fileID: 444907785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &675061378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,17 +1258,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 247363432}
     m_Modifications:
     - target: {fileID: 3258300058909440378, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 1828726710}
-    - target: {fileID: 3258300058909440378, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: inventoryPos
       value: 
-      objectReference: {fileID: 1781756160}
-    - target: {fileID: 3258300058909440378, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
-      propertyPath: backpackPos.y
-      value: -1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 662819178}
     - target: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1326,11 +1323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -40
+      value: -72.51999
       objectReference: {fileID: 0}
     - target: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -33.552002
+      value: -57.22
       objectReference: {fileID: 0}
     - target: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1347,14 +1344,6 @@ PrefabInstance:
     - target: {fileID: 6255979255150886990, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_Name
       value: Backpack_Scuffed
-      objectReference: {fileID: 0}
-    - target: {fileID: 6255979255150886990, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6380771209302728692, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2144,11 +2133,6 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
   m_PrefabInstance: {fileID: 848764375}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1781756160 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6631358768015722233, guid: f7eb976f1fc6d584da8d569f7d6d1c1c, type: 3}
-  m_PrefabInstance: {fileID: 444907785}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1781756161 stripped
 Transform:
