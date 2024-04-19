@@ -10,7 +10,9 @@ public class SavedData : ScriptableObject
     public int CurrentFloor = 1;
     private int MaxFloor = 4;
     private int MinFloor = 0;
-    public float GameVolume;
+    public float MusicVolume;
+    public float SFXVolume;
+    public bool inMenu;
 
     //Sample Item
     public bool SampleItem;

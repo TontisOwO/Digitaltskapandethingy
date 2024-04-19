@@ -7,8 +7,6 @@ public class SceneLoader : MonoBehaviour
 {
     public SavedData PlayerData = null;
     public string floor1 = "Totorial";
-    public string sceneName;
-    public string secondaryScene;
     string menu = "Settings";
 
     // Start is called before the first frame update
@@ -22,7 +20,16 @@ public class SceneLoader : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SceneManager.LoadScene(menu);
+            if (PlayerData.inMenu == true )
+            {
+                SceneManager.LoadScene(PlayerData.CurrentFloor);
+                PlayerData.inMenu = false;
+            }
+            if (PlayerData.inMenu == false )
+            {
+                SceneManager.LoadScene(menu);
+                PlayerData.inMenu = true;
+            }
         }
     }
 
@@ -31,9 +38,9 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    public void AltLoadScene()
+    public void AltLoadScene(string sceneName)
     {
-        SceneManager.LoadScene(secondaryScene);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void ContinueGame()
