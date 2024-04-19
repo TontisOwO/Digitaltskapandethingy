@@ -40,19 +40,25 @@ public class Movement : MonoBehaviour
         {
             //Get the position of the mouse
             ScreenMousePos = Input.mousePosition;
+            Debug.Log(ScreenMousePos);
+            //not on backpack
+            if (!(ScreenMousePos.x > 531.33f && ScreenMousePos.y > 279.33f 
+                && ScreenMousePos.x < 587.33f && ScreenMousePos.y < 326))
+            {
+                //Convert the screen position of the mouse to the world position
+                worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
 
-            //Convert the screen position of the mouse to the world position
-            worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
+                //set the z value to -1
+                worldMousePos.z = -1;
 
-            //set the z value to -1
-            worldMousePos.z = -1;
+                //line y up with the bottom of the character
+                worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);
 
-            //line y up with the bottom of the character
-            worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);
+                //Set max and min for position
+                worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
+                worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
+            }
             
-            //Set max and min for position
-            worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
-            worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
         }   
         
         //The Slide^TM
