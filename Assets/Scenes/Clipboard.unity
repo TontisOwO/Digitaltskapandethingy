@@ -574,6 +574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 7455018159731156693, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.59
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -599,10 +603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9052ffaebd632954580d8d3b6ade206f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  PlayerData: {fileID: 0}
   floor1: SampleScene
-  SceneName: SampleScene
-  SecondaryScene: Adonai's Work Place
+  sceneName: 
+  secondaryScene: 
 --- !u!1 &1867021315
 GameObject:
   m_ObjectHideFlags: 0
