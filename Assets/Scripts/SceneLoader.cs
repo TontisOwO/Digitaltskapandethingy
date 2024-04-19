@@ -9,6 +9,7 @@ public class SceneLoader : MonoBehaviour
     public string floor1 = "Totorial";
     public string sceneName;
     public string secondaryScene;
+    string menu = "Settings";
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,10 @@ public class SceneLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SceneManager.LoadScene(menu);
+        }
     }
 
     public void LoadScene(string sceneName)
