@@ -9,7 +9,8 @@ public class SavedData : ScriptableObject
     private ObjectInteractions ItemUsage;
     public int CurrentFloor = 1;
     private int MaxFloor = 4;
-    private int MinFloor = 1;
+    private int MinFloor = 0;
+    public float GameVolume;
 
     //Sample Item
     public bool SampleItem;
