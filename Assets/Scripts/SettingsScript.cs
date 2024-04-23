@@ -6,21 +6,31 @@ using UnityEngine.UI;
 public class SettingsScript : MonoBehaviour
 {
     public SavedData myData;
-    public Slider soundSlider;
+    public Slider musicSlider;
+    public Slider SFXSlider;
 
     private void Start()
     {
-        soundSlider.value = myData.GameVolume;
+        musicSlider.value = myData.MusicVolume;
+        SFXSlider.value = myData.SFXVolume;
     }
-    public void MaxVolume(int Volume)
+    public void MaxMusicVolume(int Volume)
     {
-        myData.GameVolume = Volume;
-        soundSlider.value = Volume;
-        soundSlider.maxValue = Volume;
+        myData.MusicVolume = Volume;
+        musicSlider.value = Volume;
+        musicSlider.maxValue = Volume;
+    }
+
+    public void MaxSFXVolume(int Volume)
+    {
+        myData.SFXVolume = Volume;
+        SFXSlider.maxValue = Volume;
+        SFXSlider.value = Volume;
     }
 
     void Update()
     {
-        myData.GameVolume = soundSlider.value;
+        myData.MusicVolume = musicSlider.value;
+        myData.SFXVolume = SFXSlider.value;
     }
 }
