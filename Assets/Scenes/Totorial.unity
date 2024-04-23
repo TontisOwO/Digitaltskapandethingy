@@ -590,9 +590,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4684526150459108864, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6255979255150886990, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_Name
       value: Backpack_Scuffed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255979255150886990, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6255979255150886990, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_TagString
@@ -958,6 +966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589945100}
   - component: {fileID: 589945099}
+  - component: {fileID: 589945101}
   m_Layer: 0
   m_Name: Digitaltskapande_tutoriallevel_done_room 1
   m_TagString: Untagged
@@ -1032,6 +1041,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &589945101
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589945098}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8}
+  m_EdgeRadius: 0
 --- !u!1 &608197465
 GameObject:
   m_ObjectHideFlags: 0
