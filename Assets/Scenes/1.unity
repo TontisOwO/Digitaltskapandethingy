@@ -418,7 +418,7 @@ MonoBehaviour:
   TextMesh: {fileID: 1837765284}
   textManipulation: {fileID: 1837765283}
   sceneLoader: {fileID: 1451265508}
-  scene: 1 Puzzle
+  scene: Puzzle1
   splashText: The exit
   touchText: It's barred
   correctItemInInventory: Not anymore
@@ -1991,8 +1991,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: Totorial
-  sceneName: 
-  secondaryScene: 
 --- !u!114 &1611715729 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
