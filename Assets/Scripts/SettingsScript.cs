@@ -1,36 +1,69 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
+using TMPro;
 
 public class SettingsScript : MonoBehaviour
 {
     public SavedData myData;
-    public Slider musicSlider;
-    public Slider SFXSlider;
+    public Slider Slider;
+    public TMP_Text text;
+    public int whatSetting;
+    float currentValue;
+   
 
     private void Start()
     {
-        musicSlider.value = myData.MusicVolume;
-        SFXSlider.value = myData.SFXVolume;
-    }
-    public void MaxMusicVolume(int Volume)
-    {
-        myData.MusicVolume = Volume;
-        musicSlider.value = Volume;
-        musicSlider.maxValue = Volume;
+        Slider.minValue = 10;
+        if (whatSetting == 0)
+        {
+            Slider.value = myData.MusicVolume;
+        }
+        if (whatSetting == 1)
+        {
+            Slider.value = myData.SFXVolume;
+        }
     }
 
-    public void MaxSFXVolume(int Volume)
+    public void NoiseSetting(int Volume)
     {
-        myData.SFXVolume = Volume;
-        SFXSlider.maxValue = Volume;
-        SFXSlider.value = Volume;
+        switch(whatSetting)
+        {
+            case 0:
+                {
+                    myData.MusicVolume = Volume;
+                    Slider.value = Volume;
+                    Slider.maxValue = Volume;
+                    break;
+                }
+
+            case 1:
+                {
+                    myData.SFXVolume = Volume;
+                    Slider.value = Volume;
+                    Slider.maxValue = Volume;
+                    break;
+                }
+        }
     }
 
     void Update()
     {
-        myData.MusicVolume = musicSlider.value;
-        myData.SFXVolume = SFXSlider.value;
+        currentValue = Slider.value - 10;
+        if ( Slider.value < 10)
+        {
+            Slider.value = 10;
+        }
+        if (whatSetting == 0)
+        {
+            myData.MusicVolume = Slider.value;
+        }
+        if (whatSetting == 1)
+        {
+            myData.SFXVolume = Slider.value;
+        }
+        text.text = currentValue.ToString();
     }
 }

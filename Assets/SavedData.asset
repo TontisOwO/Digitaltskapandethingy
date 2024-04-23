@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: SavedData
   m_EditorClassIdentifier: 
   CurrentFloor: 1
+  MusicVolume: 110
+  SFXVolume: 10
+  inMenu: 1
   SampleItem: 0
   KeyItem: 0
   AxeItem: 0
