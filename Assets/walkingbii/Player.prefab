@@ -336,10 +336,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myBoxCollider: {fileID: 5427006116173081404}
   CameraScript: {fileID: 0}
+  myAnimator: {fileID: 5548336490023853559}
   ScreenMousePos: {x: 0, y: 0, z: 0}
   worldMousePos: {x: 0, y: 0, z: 0}
   wantedPos: {x: 0, y: 0, z: 0}
-  xMovementSpeed: 5
+  ScreenWorldPoint: {x: 0, y: 0}
+  xMovementSpeed: 4
   yMovementSpeed: 4
   movementSpeedOrigin: 0
   maxPosY: -3.74

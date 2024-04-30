@@ -422,7 +422,7 @@ MonoBehaviour:
   splashText: The exit
   touchText: It's barred
   correctItemInInventory: Not anymore
-  requiredItem: 0
+  requiredItem: 1
   pickUp: 1
   pickDown: 0
   itemCondition: 1
@@ -2087,6 +2087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3883123586708536742, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: maxPosX
       value: 18
@@ -2107,6 +2111,10 @@ PrefabInstance:
       propertyPath: CameraScript
       value: 
       objectReference: {fileID: 1807936136}
+    - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: xMovementSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4286812708400170993, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: npc
       value: 

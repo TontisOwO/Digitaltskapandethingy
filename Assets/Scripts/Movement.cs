@@ -43,10 +43,12 @@ public class Movement : MonoBehaviour
             //Get the position of the mouse
             ScreenMousePos = Input.mousePosition;
 
-            //not on backpack
+            //Check what was clicked
             Vector2 clickPos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
             Collider2D hitCollider = Physics2D.OverlapPoint(clickPos);
-            if (hitCollider != null && hitCollider.CompareTag("GUI"))
+            if (hitCollider != null && 
+                //Things that we exclude movement from
+                (hitCollider.CompareTag("GUI") || hitCollider.CompareTag("Player")))
             {
                 
             }
