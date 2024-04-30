@@ -8,10 +8,12 @@ public class AudioManager : MonoBehaviour
 {
     public SavedData myData;
 
+    //decide what source plays what SFX
     [Header("------- Audio Source -------")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
 
+    //list of our audio clips
     [Header("------- Audio Clip -------")]
     public AudioClip background;
     public AudioClip click;
@@ -23,6 +25,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        //check if title music should be player or if background music should be played
         if (SceneManager.loadedSceneCount == 0)
         {
             musicSource.clip = titlemusic;
@@ -37,9 +40,11 @@ public class AudioManager : MonoBehaviour
 
     public void Update()
     {
+        //link volume to data
         musicSource.volume = myData.SFXVolume / 100;
         SFXSource.volume = myData.SFXVolume / 100;
 
+        //play click sound
         if ( Input.GetMouseButtonDown(0))
         {
             SFXSource.clip = click;
@@ -47,6 +52,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    //reference for other scripts
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
