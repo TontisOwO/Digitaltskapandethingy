@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4055e72e2c701140849ca9c292b8e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myData: {fileID: 0}
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   musicSource: {fileID: 3828043067097451568}
   SFXSource: {fileID: 7774499591992703583}
   background: {fileID: 8300000, guid: e5a1b06c185b10f4bb42ff0cd75b36b0, type: 3}

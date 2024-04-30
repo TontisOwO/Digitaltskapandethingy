@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     public SavedData myData;
 
+    [Header("------- Audio Source -------")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
 
