@@ -12,6 +12,12 @@ public class Inventory : MonoBehaviour
     public SpriteRenderer sprite;
     public Sprite openBackpack;
     public Sprite closedBackpack;
+    public AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +52,7 @@ public class Inventory : MonoBehaviour
             inventoryPos.transform.position = backpackPos;
             stop = true;
             sprite.sprite = openBackpack;
+            audioManager.PlaySFX(audioManager.unzip);
         }
         if (!go && !stop)
         {
@@ -53,6 +60,7 @@ public class Inventory : MonoBehaviour
             inventoryPos.transform.position = backpackPos;
             stop = true;
             sprite.sprite = closedBackpack;
+            audioManager.PlaySFX(audioManager.zip);
         }
     }
 }
