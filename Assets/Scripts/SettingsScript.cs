@@ -13,7 +13,7 @@ public class SettingsScript : MonoBehaviour
     public int whatSetting;
     float currentValue;
    
-
+    //link data with settings.
     private void Start()
     {
         Slider.minValue = 10;
@@ -27,6 +27,7 @@ public class SettingsScript : MonoBehaviour
         }
     }
 
+    //settings for SFX and music.
     public void NoiseSetting(int Volume)
     {
         switch(whatSetting)
@@ -51,6 +52,7 @@ public class SettingsScript : MonoBehaviour
 
     void Update()
     {
+        //prevent slider from becoming too small
         currentValue = Slider.value - 10;
         if ( Slider.value < 10)
         {
@@ -64,6 +66,7 @@ public class SettingsScript : MonoBehaviour
         {
             myData.SFXVolume = Slider.value;
         }
+        //display current volume
         text.text = currentValue.ToString();
     }
 }

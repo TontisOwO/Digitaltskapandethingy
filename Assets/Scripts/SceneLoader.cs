@@ -18,6 +18,7 @@ public class SceneLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //open settings
         if (Input.GetKeyDown(KeyCode.M))
         {
             if (PlayerData.inMenu == true )
@@ -33,21 +34,25 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    //first scene
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
 
+    //second scene
     public void AltLoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
 
+    //load game in main menu
     public void ContinueGame()
     {
         SceneManager.LoadScene(PlayerData.CurrentFloor);
     }
 
+    //new game in main menu
     public void EraseData()
     {
         PlayerData.AxeItem = false;
