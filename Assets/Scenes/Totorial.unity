@@ -434,14 +434,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3953918102339617726, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
-      propertyPath: xMoveSpeed
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3953918102339617726, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
-      propertyPath: wantedPos.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3953918102339617726, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: MainCharacter
       value: 
       objectReference: {fileID: 1253500129}
