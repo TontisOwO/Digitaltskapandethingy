@@ -113,6 +113,7 @@ MonoBehaviour:
   sprite: {fileID: 6380771209302728692}
   openBackpack: {fileID: 21300000, guid: 64792823f6a78f44ea213ff9641e2fdf, type: 3}
   closedBackpack: {fileID: 21300000, guid: bf2225ac3049d80429398da04295cb3f, type: 3}
+  audioManager: {fileID: 0}
 --- !u!223 &5628738220202843603
 Canvas:
   m_ObjectHideFlags: 0
