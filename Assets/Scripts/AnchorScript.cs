@@ -14,6 +14,6 @@ public class AnchorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform .position = Anchor;
+        transform.position = Anchor;
     }
 }
