@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
     public float minPosX = -9.0f;
     public Vector3 facingRight;
     public Vector3 facingLeft;
+    public bool dialog = false;
     void Start()
     {
         movementSpeedOrigin = xMovementSpeed;
@@ -40,31 +41,37 @@ public class Movement : MonoBehaviour
         {
             //Get the position of the mouse
             ScreenMousePos = Input.mousePosition;
-
-            //Check what was clicked
-            Vector2 clickPos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
-            Collider2D hitCollider = Physics2D.OverlapPoint(clickPos);
-            if (hitCollider != null && 
-                //Things that we exclude movement from
-                (hitCollider.CompareTag("GUI") || hitCollider.CompareTag("Player")))
+            
+            //Are you in a dialog?
+            if (dialog == false)
             {
-                
+                //Check what was clicked
+                Vector2 clickPos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
+                Collider2D hitCollider = Physics2D.OverlapPoint(clickPos);
+                if (hitCollider != null &&
+
+                    //Things that we exclude movement from
+                    (hitCollider.CompareTag("GUI") || hitCollider.CompareTag("Player")))
+                {
+
+                }
+                else
+                {
+                    //Convert the screen position of the mouse to the world position
+                    worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
+
+                    //set the z value to -1
+                    worldMousePos.z = -1;
+
+                    //line y up with the bottom of the character
+                    worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);
+
+                    //Set max and min for position
+                    worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
+                    worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
+                }
             }
-            else
-            {
-                //Convert the screen position of the mouse to the world position
-                worldMousePos = Camera.main.ScreenToWorldPoint(ScreenMousePos);
-
-                //set the z value to -1
-                worldMousePos.z = -1;
-
-                //line y up with the bottom of the character
-                worldMousePos.y += -myBoxCollider.offset.y + (myBoxCollider.size.y * 0.5f);
-
-                //Set max and min for position
-                worldMousePos.x = Mathf.Clamp(worldMousePos.x, minPosX, maxPosX);
-                worldMousePos.y = Mathf.Clamp(worldMousePos.y, minPosY, maxPosY);
-            }
+            
         }   
         
         //The Slide^TM
