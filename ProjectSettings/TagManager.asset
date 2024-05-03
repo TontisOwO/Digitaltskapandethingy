@@ -8,6 +8,11 @@ TagManager:
   - Background
   - GUI
   - Audio
+  - Goal1
+  - Goal2
+  - Goal3
+  - Goal4
+  - Goal5
   layers:
   - Default
   - TransparentFX
