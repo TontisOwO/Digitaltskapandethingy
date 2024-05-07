@@ -9,8 +9,10 @@ using UnityEngine.UIElements;
 public class GlassScript : MonoBehaviour
 {
     public bool inPlace = false;
-    public string Goal;
+    //Tag to prevent colliding with everything
+    public string objectText;
     public Vector3 mousePos;
+    public float whatGoal;
     private void Start()
     {
     }
@@ -35,12 +37,22 @@ public class GlassScript : MonoBehaviour
 
     
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag.Equals(Goal) == true)
+        GoalScript goalComp = collision.gameObject.GetComponent<GoalScript>();
+
+        if (goalComp != null)
         {
-            Debug.Log("hihihi");
-            inPlace = true;
+            if (goalComp.gameObject.tag.Equals(objectText) == true)
+            {
+                Debug.Log("hihihi");
+                inPlace = true;
+            }
+            if (goalComp.gameObject.tag.Equals(objectText) == false)
+            {
+                Debug.Log("hohoho");
+                inPlace = false;
+            }
         }
     }
 
