@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: 8c8b5817e112adb44828c528a8a9407d, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8c8b5817e112adb44828c528a8a9407d, type: 3}
       propertyPath: m_LocalPosition.x

@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: 8c8b5817e112adb44828c528a8a9407d, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8c8b5817e112adb44828c528a8a9407d, type: 3}
       propertyPath: m_LocalScale.x
@@ -350,6 +350,7 @@ MonoBehaviour:
   minPosX: -8.09
   facingRight: {x: 0, y: 0, z: 0}
   facingLeft: {x: 0, y: 0, z: 0}
+  dialog: 0
 --- !u!61 &5427006116173081404
 BoxCollider2D:
   m_ObjectHideFlags: 0

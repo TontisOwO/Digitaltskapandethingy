@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 552588521}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_typewriter_paperdown
-  m_TagString: Untagged
+  m_TagString: GUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,6 +1030,7 @@ MonoBehaviour:
   spriteSelect:
   - {fileID: 21300000, guid: 857b161ce494d214ba8665f3b5dabf6f, type: 3}
   - {fileID: 21300000, guid: 920caadccaa57db458048165cbe3983b, type: 3}
+  - {fileID: 21300000, guid: f44822b4b26d3884fb7b17982e1e0e23, type: 3}
   spriteRenderer: {fileID: 552588518}
   currentSprite: 0
 --- !u!60 &552588521
@@ -2077,6 +2078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9052ffaebd632954580d8d3b6ade206f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPos: {fileID: 0}
   PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: Totorial
 --- !u!114 &1436273537 stripped
@@ -2714,6 +2716,7 @@ GameObject:
   - component: {fileID: 1916220116}
   - component: {fileID: 1916220118}
   - component: {fileID: 1916220119}
+  - component: {fileID: 1916220120}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_codelock
   m_TagString: Untagged
@@ -2857,6 +2860,31 @@ PolygonCollider2D:
       - {x: 14.2125, y: -1.1249999}
       - {x: 14.137499, y: -1.05}
   m_UseDelaunayMesh: 0
+--- !u!114 &1916220120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916220115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  TextMesh: {fileID: 2081661218}
+  textManipulation: {fileID: 2081661216}
+  sceneLoader: {fileID: 1410737108}
+  scene: Codelock
+  splashText: A code lock
+  touchText: What's the code
+  correctItemInInventory: What's the code
+  requiredItem: 0
+  pickUp: 1
+  pickDown: 0
+  itemCondition: 1
+  switchScene: 1
 --- !u!1 &2006508703
 GameObject:
   m_ObjectHideFlags: 0
