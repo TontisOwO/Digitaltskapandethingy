@@ -9,6 +9,8 @@ public class SceneLoader : MonoBehaviour
     public string floor1 = "Totorial";
     string menu = "Settings";
 
+    public Movement Player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,18 @@ public class SceneLoader : MonoBehaviour
     public void ContinueGame()
     {
         SceneManager.LoadScene(PlayerData.CurrentFloor);
+    }
+
+    public void EnterPuzzleScene(string sceneName)
+    {
+        PlayerData.CharPos = Player.wantedPos;
+        SceneManager.LoadScene(sceneName);
+    }
+    public void ExitPuzzleScene(string sceneName)
+    {
+        PlayerData.exitedPuzzleScene = true;
+        SceneManager.LoadScene(sceneName);
+
     }
 
     //new game in main menu

@@ -22,6 +22,7 @@ public class Movement : MonoBehaviour
     public Vector3 facingRight;
     public Vector3 facingLeft;
     public bool dialog = false;
+    public SavedData playerData;
     void Start()
     {
         movementSpeedOrigin = xMovementSpeed;
@@ -33,6 +34,12 @@ public class Movement : MonoBehaviour
         facingRight = transform.localScale;
         facingLeft = transform.localScale;
         facingLeft.x = -transform.localScale.x;
+        if (playerData.exitedPuzzleScene)
+        {
+            worldMousePos = playerData.CharPos;
+            wantedPos = playerData.CharPos;
+            playerData.exitedPuzzleScene = false;
+        }
     }
     // Update is called once per frame
     void Update()

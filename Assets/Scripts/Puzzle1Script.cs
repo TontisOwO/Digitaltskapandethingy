@@ -11,7 +11,7 @@ public class Puzzle1Script : MonoBehaviour
     public FirstPuzzle firstPuzzleScript;
     public AudioManager audioManager;
 
-    public string scene = "1 Puzzle";
+    public string scene = "Puzzle1";
 
     public bool doingTwoDifferentThingsWithSameCode;
     public bool doDelete;

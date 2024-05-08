@@ -1439,6 +1439,10 @@ PrefabInstance:
       value: -5.4
       objectReference: {fileID: 0}
     - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+    - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: CameraScript
       value: 
       objectReference: {fileID: 1436273537}
@@ -2078,9 +2082,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9052ffaebd632954580d8d3b6ade206f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 0}
   PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: Totorial
+  Player: {fileID: 966060696}
 --- !u!114 &1436273537 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7726863428919687741, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
@@ -2885,6 +2889,7 @@ MonoBehaviour:
   pickDown: 0
   itemCondition: 1
   switchScene: 1
+  puzzleEntry: 1
 --- !u!1 &2006508703
 GameObject:
   m_ObjectHideFlags: 0

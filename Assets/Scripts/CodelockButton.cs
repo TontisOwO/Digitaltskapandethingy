@@ -22,10 +22,14 @@ public class CodelockButton : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        number1.ButtonPress(buttonNumber);
-        number2.ButtonPress(buttonNumber);
-        number3.ButtonPress(buttonNumber);
-        number4.ButtonPress(buttonNumber);
-        
+        if (number1.pressNumberAmount < 4)
+        {
+            number1.ButtonPress(buttonNumber);
+            number2.ButtonPress(buttonNumber);
+            number3.ButtonPress(buttonNumber);
+            number4.ButtonPress(buttonNumber);
+
+        }
+
     }
 }

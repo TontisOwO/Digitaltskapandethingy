@@ -41,12 +41,12 @@ public class CodelockNumber : MonoBehaviour
             otherNumber3.pressedNumber == otherNumber3.correctNumber &&
             pressTime <= 0f)
         {
-            sceneLoader.LoadScene(2.ToString());
+            sceneLoader.ExitPuzzleScene(2.ToString());
         }
     }
     public void ButtonPress(int num)
     {
-        pressTime = 1f;
+        pressTime = 0.5f;
         if (pressNumberAmount == numberPos) 
         {
             pressedNumber = num;

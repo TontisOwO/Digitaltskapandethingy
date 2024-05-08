@@ -27,7 +27,7 @@ public class SavedData : ScriptableObject
 
     public Vector3 NPCPos; //CurrentPos
     public Vector3 CharPos; //WantedPos
-
+    public bool exitedPuzzleScene = false;
     public void Update()
     {
         if (CurrentFloor <= MinFloor)
