@@ -10,12 +10,17 @@ public class FirstPuzzle : MonoBehaviour
     public bool secondPlankCheck;
     public FirstPuzzle secondPlank;
     public Basic_Touch_Script door;
+    public AudioManager audioManager;
 
     public float spikesCount;
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -26,6 +31,7 @@ public class FirstPuzzle : MonoBehaviour
             if (condition == true)
             {
                 rigidBody.gravityScale = 1.5f;
+                audioManager.PlaySFX(audioManager.planks);
                 if (firstPlank == true)
                 {
                     secondPlank.condition = true;

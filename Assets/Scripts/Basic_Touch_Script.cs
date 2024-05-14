@@ -24,6 +24,9 @@ public class Basic_Touch_Script : MonoBehaviour
     public bool pickDown = false;
     public bool itemCondition = false;
     public bool switchScene = false;
+    //Anton's addition
+    public bool puzzleEntry = false;
+    public bool puzzleExit = false;
     void Start()
     {
 
@@ -42,7 +45,18 @@ public class Basic_Touch_Script : MonoBehaviour
             textManipulation.mouseExit = false;
             if (switchScene)
             {
-                sceneLoader.LoadScene(scene);
+                if (puzzleEntry)
+                {
+                    sceneLoader.EnterPuzzleScene(scene);
+                }
+                else if (puzzleExit)
+                {
+                    sceneLoader.ExitPuzzleScene(scene);
+                }
+                else
+                {
+                    sceneLoader.LoadScene(scene);
+                }
             }
             if (requiredItem)
             {

@@ -994,9 +994,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myAnimator: {fileID: 4826724083798021469}
-  wantedPos: {x: 0, y: -5, z: 0}
+  wantedPos: {x: 2, y: -5, z: 0}
   currentPos: {x: 0, y: 0, z: 0}
-  xMoveSpeed: 0
+  xMoveSpeed: 1.25
   yMoveSpeed: 0
   MainCharacter: {fileID: 0}
   scale: {x: 0, y: 0, z: 0}

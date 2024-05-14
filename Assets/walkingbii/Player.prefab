@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: 8c8b5817e112adb44828c528a8a9407d, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8c8b5817e112adb44828c528a8a9407d, type: 3}
       propertyPath: m_LocalScale.x
@@ -336,10 +336,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myBoxCollider: {fileID: 5427006116173081404}
   CameraScript: {fileID: 0}
+  myAnimator: {fileID: 5548336490023853559}
   ScreenMousePos: {x: 0, y: 0, z: 0}
   worldMousePos: {x: 0, y: 0, z: 0}
   wantedPos: {x: 0, y: 0, z: 0}
-  xMovementSpeed: 5
+  ScreenWorldPoint: {x: 0, y: 0}
+  xMovementSpeed: 4
   yMovementSpeed: 4
   movementSpeedOrigin: 0
   maxPosY: -3.74
@@ -348,6 +350,7 @@ MonoBehaviour:
   minPosX: -8.09
   facingRight: {x: 0, y: 0, z: 0}
   facingLeft: {x: 0, y: 0, z: 0}
+  dialog: 0
 --- !u!61 &5427006116173081404
 BoxCollider2D:
   m_ObjectHideFlags: 0

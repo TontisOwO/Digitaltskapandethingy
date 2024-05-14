@@ -13,10 +13,15 @@ MonoBehaviour:
   m_Name: SavedData
   m_EditorClassIdentifier: 
   CurrentFloor: 1
+  MusicVolume: 110
+  SFXVolume: 10
+  inMenu: 1
   SampleItem: 0
   KeyItem: 0
   AxeItem: 0
   MatchItem: 0
   CrubrItem: 0
   NPCPos: {x: 0, y: 0, z: 0}
-  CharPos: {x: 0, y: 0, z: 0}
+  CharPos: {x: 12.500437, y: -3.858326, z: -1}
+  exitedPuzzleScene: 0
+  codelockpuzzle: 0

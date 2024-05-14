@@ -9,14 +9,19 @@ public class Puzzle1Script : MonoBehaviour
     public Rigidbody2D rigidbody2;
     public GameObject thisObject;
     public FirstPuzzle firstPuzzleScript;
+    public AudioManager audioManager;
 
-    public string scene = "1 Puzzle";
+    public string scene = "Puzzle1";
 
     public bool doingTwoDifferentThingsWithSameCode;
     public bool doDelete;
 
     public float spikes;
-    
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void OnMouseDown()
     {
@@ -29,6 +34,7 @@ public class Puzzle1Script : MonoBehaviour
         if (spikes > 1)
         {
             rigidbody2.gravityScale = 1;
+            audioManager.PlaySFX(audioManager.nails);
         }
         Debug.Log("Click3");
         if (doDelete == true)
@@ -36,6 +42,7 @@ public class Puzzle1Script : MonoBehaviour
             Debug.Log("Deleting");
             Destroy(thisObject);
             firstPuzzleScript.spikesCount = firstPuzzleScript.spikesCount + 1;
+            audioManager.PlaySFX(audioManager.nails);
         }
         Debug.Log("LastClick");
     }
