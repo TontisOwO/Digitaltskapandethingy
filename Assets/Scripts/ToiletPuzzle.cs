@@ -12,10 +12,9 @@ public class ToiletPuzzle : MonoBehaviour
     public GoalScript Piece4;
     public GoalScript Piece5;
     public GameObject Key;
-    public float count;
-    float currentCount;
-    public float maxCount = 5;
-    public float minCount = 0;
+    public int count;
+    public int maxCount = 5;
+    public int minCount = 0;
     public bool Test = false;
     // Start is called before the first frame update
     void Start()
@@ -26,44 +25,45 @@ public class ToiletPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (count < 0)
+        if (count <= minCount)
         {
-            count = 0;
+            count = minCount;
         }
-        if (count > 5)
+        if (count >= maxCount)
         {
-            count = 5;
+            count = maxCount;
         }
         //Check if pieces are in place
         if (Piece1.GlassInPlace == true)
         {
             count += 1;
-            return;
+            Piece1.whatGlass = 10;
         }
         if (Piece2.GlassInPlace == true)
         {
             count += 1;
-            return;
+            Piece2.whatGlass = 10;
         }
         if (Piece3.GlassInPlace == true)
         {
             count += 1;
-            return;
+            Piece3.whatGlass = 10;
         }
         if (Piece4.GlassInPlace == true)
         {
             count += 1;
-            return;
+            Piece4.whatGlass = 10;
         }
         if (Piece5.GlassInPlace == true)
         {
             count += 1;
-            return;
+            Piece5.whatGlass = 10;
         }
 
-        if (count >= 5)
+        if (count == 5)
         {
             GameObject.Instantiate(Key, this.transform.position, Key.transform.rotation);
+            count = 0;
         }
     }
 }
