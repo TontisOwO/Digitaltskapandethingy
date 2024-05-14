@@ -19,12 +19,18 @@ public class GoalScript : MonoBehaviour
             {
                 GlassInPlace = true;
             }
-            else if (GlassScript.inPlace == false)
+            if (GlassScript.inPlace == false)
             { 
                 GlassInPlace = false; 
             }
         }
-
+        else
+        {
+            if (correctPiece == false)
+            {
+                GlassInPlace=false;
+            }
+        }
 
     }
 
@@ -96,6 +102,12 @@ public class GoalScript : MonoBehaviour
                     }
                     break;
                 }
+            case 10:
+                {
+                    correctPiece = false;
+                    break;
+                }
+
         }
     }
 }
