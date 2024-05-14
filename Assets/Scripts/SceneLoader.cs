@@ -63,7 +63,6 @@ public class SceneLoader : MonoBehaviour
     {
         PlayerData.exitedPuzzleScene = true;
         SceneManager.LoadScene(sceneName);
-
     }
 
     //new game in main menu

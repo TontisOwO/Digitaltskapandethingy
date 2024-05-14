@@ -12,6 +12,7 @@ public class ToiletPuzzle : MonoBehaviour
     public GoalScript Piece4;
     public GoalScript Piece5;
     public GameObject Key;
+    public GameObject Canvas;
     public int count;
     public int maxCount = 5;
     public int minCount = 0;
@@ -62,8 +63,9 @@ public class ToiletPuzzle : MonoBehaviour
 
         if (count == 5)
         {
-            GameObject.Instantiate(Key, this.transform.position, Key.transform.rotation);
+            GameObject.Instantiate(Key, this.transform.position, Key.transform.rotation, Canvas.transform);
             count = 0;
+            Key.transform.SetParent(Canvas.transform, false);
         }
     }
 }
