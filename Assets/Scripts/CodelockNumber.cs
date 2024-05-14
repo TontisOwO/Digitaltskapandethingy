@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CodelockNumber : MonoBehaviour
@@ -16,6 +15,7 @@ public class CodelockNumber : MonoBehaviour
     public CodelockNumber otherNumber3;
     public float pressTime;
     public SceneLoader sceneLoader;
+    public SavedData savedData;
     void Start()
     {
         
@@ -42,6 +42,7 @@ public class CodelockNumber : MonoBehaviour
             pressTime <= 0f)
         {
             sceneLoader.ExitPuzzleScene(2.ToString());
+            savedData.codelockpuzzle = true;
         }
     }
     public void ButtonPress(int num)

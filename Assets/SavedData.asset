@@ -22,5 +22,6 @@ MonoBehaviour:
   MatchItem: 0
   CrubrItem: 0
   NPCPos: {x: 0, y: 0, z: 0}
-  CharPos: {x: 5.32286, y: -5.267857, z: -1}
+  CharPos: {x: 12.500437, y: -3.858326, z: -1}
   exitedPuzzleScene: 0
+  codelockpuzzle: 0

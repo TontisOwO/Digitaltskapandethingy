@@ -34,12 +34,7 @@ public class Movement : MonoBehaviour
         facingRight = transform.localScale;
         facingLeft = transform.localScale;
         facingLeft.x = -transform.localScale.x;
-        if (playerData.exitedPuzzleScene)
-        {
-            worldMousePos = playerData.CharPos;
-            wantedPos = playerData.CharPos;
-            playerData.exitedPuzzleScene = false;
-        }
+        
     }
     // Update is called once per frame
     void Update()

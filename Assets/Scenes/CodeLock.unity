@@ -241,6 +241,7 @@ MonoBehaviour:
   otherNumber3: {fileID: 1540695712}
   pressTime: 0
   sceneLoader: {fileID: 1368978215}
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1001 &121912824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1180,6 +1181,7 @@ MonoBehaviour:
   otherNumber3: {fileID: 1540695712}
   pressTime: 0
   sceneLoader: {fileID: 1368978215}
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1001 &1063259739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1856,6 +1858,7 @@ MonoBehaviour:
   otherNumber3: {fileID: 1540695712}
   pressTime: 0
   sceneLoader: {fileID: 1368978215}
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1 &1505474254
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,6 +2189,7 @@ MonoBehaviour:
   otherNumber3: {fileID: 1057716198}
   pressTime: 0
   sceneLoader: {fileID: 1368978215}
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1 &1721137524
 GameObject:
   m_ObjectHideFlags: 0
