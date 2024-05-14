@@ -1446,6 +1446,10 @@ PrefabInstance:
       propertyPath: CameraScript
       value: 
       objectReference: {fileID: 1436273537}
+    - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: exitCodelock
+      value: 
+      objectReference: {fileID: 1277074783}
     - target: {fileID: 4286812708400170993, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: npc
       value: 
@@ -1912,9 +1916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ce7aeaeac35f74a8e720913fcf55ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   door: {fileID: 1277074778}
-  player: {fileID: 966060696}
 --- !u!1001 &1285974179
 PrefabInstance:
   m_ObjectHideFlags: 0
