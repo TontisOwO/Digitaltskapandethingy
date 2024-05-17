@@ -87,7 +87,7 @@ public class DialogSwapper : MonoBehaviour
 
     void Start()
     {
-        
+        movement.dialog = dialogBool;
 
         if (savedData.dialogSpokenT == true && floorIsT)
         {

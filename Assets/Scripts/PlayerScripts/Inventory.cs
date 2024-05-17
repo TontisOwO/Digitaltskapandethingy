@@ -5,13 +5,26 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public Vector3 backpackPos;
+
     public GameObject inventoryPos;
+
     public bool go = false;
     public bool stop = false;
+    public bool hammer;
+    public bool secondFloorKey;
+    public bool thirdFloorKey;
+
+    public GameObject hammerIcon;
+    public GameObject key2Icon;
+    public GameObject key3Icon;
+
     public Camera cam;
+
     public SpriteRenderer sprite;
+
     public Sprite openBackpack;
     public Sprite closedBackpack;
+
     public AudioManager audioManager;
 
     private void Awake()
@@ -62,5 +75,22 @@ public class Inventory : MonoBehaviour
             sprite.sprite = closedBackpack;
             audioManager.PlaySFX(audioManager.zip);
         }
+
+        if (hammer)
+        {
+            hammerIcon.gameObject.SetActive(true);
+        }
+
+        if (key2Icon)
+        {
+            key2Icon.gameObject.SetActive(true);
+        }
+
+        if (key3Icon)
+        {
+            key3Icon.gameObject.SetActive(true);
+        }
+
     }
+
 }
