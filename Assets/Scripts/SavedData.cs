@@ -7,12 +7,19 @@ using UnityEngine;
 public class SavedData : ScriptableObject
 {
     private ObjectInteractions ItemUsage;
+    
     public int CurrentFloor = 1;
     private int MaxFloor = 4;
     private int MinFloor = 0;
+    
     public float MusicVolume;
     public float SFXVolume;
+    
     public bool inMenu;
+    public bool dialogSpokenT = false;
+    public bool dialogSpokenF1 = false;
+    public bool dialogSpokenF2 = false;
+    public bool dialogSpokenF3 = false;
 
     //Sample Item
     public bool SampleItem;
