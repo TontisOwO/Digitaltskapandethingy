@@ -43,7 +43,6 @@ public class NPCScript : MonoBehaviour
         {
             currentPos.x = Mathf.MoveTowards(currentPos.x, wantedPos.x, xMoveSpeed * Time.deltaTime);
             currentPos.y = Mathf.MoveTowards(currentPos.y, wantedPos.y, yMoveSpeed * Time.deltaTime);
-            transform.position = currentPos;
             myAnimator.SetBool("isMoving", true);
         }
         else
@@ -69,5 +68,7 @@ public class NPCScript : MonoBehaviour
             facingRight = false;
         }
         transform.localScale = scale;
+        transform.position = currentPos;
+
     }
 }

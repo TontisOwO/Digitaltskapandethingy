@@ -16,16 +16,16 @@ MonoBehaviour:
   MusicVolume: 110
   SFXVolume: 10
   inMenu: 1
-  dialogSpokenT: 0
+  dialogSpokenT: 1
   dialogSpokenF1: 0
   dialogSpokenF2: 0
   dialogSpokenF3: 0
   SampleItem: 0
-  KeyItem: 0
+  KeyItem: 1
   AxeItem: 0
   MatchItem: 0
   CrubrItem: 0
-  NPCPos: {x: 0, y: 0, z: 0}
-  CharPos: {x: -3.0334642, y: -4.018128, z: -1}
+  NPCPos: {x: 0, y: 10, z: 0}
+  CharPos: {x: 11.926748, y: -4.082535, z: -1}
   exitedPuzzleScene: 0
   codelockpuzzle: 0
