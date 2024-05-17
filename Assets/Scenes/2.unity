@@ -170,9 +170,10 @@ GameObject:
   - component: {fileID: 156782094}
   - component: {fileID: 156782096}
   - component: {fileID: 156782097}
+  - component: {fileID: 156782098}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_drawing
-  m_TagString: Untagged
+  m_TagString: GUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -331,6 +332,33 @@ PolygonCollider2D:
       - {x: -5.5125, y: -4.1812496}
       - {x: -5.7562494, y: -3.8249998}
   m_UseDelaunayMesh: 0
+--- !u!114 &156782098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156782093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  TextMesh: {fileID: 2081661218}
+  textManipulation: {fileID: 2081661216}
+  sceneLoader: {fileID: 1410737108}
+  scene: 1
+  splashText: Huh, a drawing
+  touchText: So cute!
+  correctItemInInventory: Right Item
+  requiredItem: 0
+  pickUp: 0
+  pickDown: 0
+  itemCondition: 0
+  switchScene: 0
+  puzzleEntry: 0
+  puzzleExit: 0
 --- !u!1 &174174688
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,9 +371,10 @@ GameObject:
   - component: {fileID: 174174689}
   - component: {fileID: 174174691}
   - component: {fileID: 174174692}
+  - component: {fileID: 174174693}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_minichest
-  m_TagString: Untagged
+  m_TagString: GUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,6 +517,33 @@ PolygonCollider2D:
       - {x: -15.149999, y: -1.6125}
       - {x: -15.187499, y: -1.4812499}
   m_UseDelaunayMesh: 0
+--- !u!114 &174174693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174174688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  TextMesh: {fileID: 2081661218}
+  textManipulation: {fileID: 2081661216}
+  sceneLoader: {fileID: 1410737108}
+  scene: 1
+  splashText: A small chest
+  touchText: There's no key for it
+  correctItemInInventory: Right Item
+  requiredItem: 0
+  pickUp: 0
+  pickDown: 0
+  itemCondition: 0
+  switchScene: 0
+  puzzleEntry: 0
+  puzzleExit: 0
 --- !u!1 &238092407
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +997,7 @@ GameObject:
   - component: {fileID: 552588518}
   - component: {fileID: 552588520}
   - component: {fileID: 552588521}
+  - component: {fileID: 552588522}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_typewriter_paperdown
   m_TagString: GUI
@@ -1088,6 +1145,33 @@ PolygonCollider2D:
       - {x: 1.5937499, y: -2.7749999}
       - {x: 1.4812499, y: -2.56875}
   m_UseDelaunayMesh: 0
+--- !u!114 &552588522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552588517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  TextMesh: {fileID: 2081661218}
+  textManipulation: {fileID: 2081661216}
+  sceneLoader: {fileID: 1410737108}
+  scene: 1
+  splashText: A typewriter
+  touchText: There's some numbers on the paper
+  correctItemInInventory: Right Item
+  requiredItem: 0
+  pickUp: 0
+  pickDown: 0
+  itemCondition: 0
+  switchScene: 0
+  puzzleEntry: 0
+  puzzleExit: 0
 --- !u!1 &618716573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,9 +1184,10 @@ GameObject:
   - component: {fileID: 618716574}
   - component: {fileID: 618716576}
   - component: {fileID: 618716577}
+  - component: {fileID: 618716578}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_barrel
-  m_TagString: Untagged
+  m_TagString: GUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1254,6 +1339,33 @@ PolygonCollider2D:
       - {x: 16.818748, y: -2.9062498}
       - {x: 16.762499, y: -2.7187498}
   m_UseDelaunayMesh: 0
+--- !u!114 &618716578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618716573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  TextMesh: {fileID: 2081661218}
+  textManipulation: {fileID: 2081661216}
+  sceneLoader: {fileID: 1410737108}
+  scene: 1
+  splashText: It's a barrel
+  touchText: Just a barrel
+  correctItemInInventory: Right Item
+  requiredItem: 0
+  pickUp: 0
+  pickDown: 0
+  itemCondition: 0
+  switchScene: 0
+  puzzleEntry: 0
+  puzzleExit: 0
 --- !u!1 &775463883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,6 +1535,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1277074778}
+    - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: maxPosX
       value: 18
       objectReference: {fileID: 0}
@@ -1449,7 +1565,7 @@ PrefabInstance:
     - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: exitCodelock
       value: 
-      objectReference: {fileID: 1277074783}
+      objectReference: {fileID: 0}
     - target: {fileID: 4286812708400170993, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: npc
       value: 
@@ -1719,7 +1835,6 @@ GameObject:
   - component: {fileID: 1277074778}
   - component: {fileID: 1277074782}
   - component: {fileID: 1277074781}
-  - component: {fileID: 1277074783}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1904,19 +2019,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.91, y: 2.7}
   m_EdgeRadius: 0
---- !u!114 &1277074783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277074777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ce7aeaeac35f74a8e720913fcf55ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  door: {fileID: 1277074778}
 --- !u!1001 &1285974179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3118,9 +3220,10 @@ GameObject:
   - component: {fileID: 2006508704}
   - component: {fileID: 2006508706}
   - component: {fileID: 2006508707}
+  - component: {fileID: 2006508708}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_book
-  m_TagString: Untagged
+  m_TagString: GUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3263,6 +3366,33 @@ PolygonCollider2D:
       - {x: -13.631249, y: -2.4187498}
       - {x: -13.631249, y: -2.2124999}
   m_UseDelaunayMesh: 0
+--- !u!114 &2006508708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006508703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  TextMesh: {fileID: 2081661218}
+  textManipulation: {fileID: 2081661216}
+  sceneLoader: {fileID: 1410737108}
+  scene: 1
+  splashText: Book
+  touchText: I can't read
+  correctItemInInventory: Right Item
+  requiredItem: 0
+  pickUp: 0
+  pickDown: 0
+  itemCondition: 0
+  switchScene: 0
+  puzzleEntry: 0
+  puzzleExit: 0
 --- !u!1001 &2081661215
 PrefabInstance:
   m_ObjectHideFlags: 0

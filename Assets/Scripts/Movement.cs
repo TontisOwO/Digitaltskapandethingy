@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
     public Vector3 facingLeft;
     public bool dialog = false;
     public SavedData playerData;
-    public ExitCodelockScript exitCodelock;
+    public Basic_Touch_Script door;
     void Start()
     {
         movementSpeedOrigin = xMovementSpeed;
@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
             wantedPos = playerData.CharPos;
             if (playerData.codelockpuzzle == true)
             {
-                exitCodelock.door.pickUp = true;
+                door.pickUp = true;
                 playerData.codelockpuzzle = false;
 
             }
