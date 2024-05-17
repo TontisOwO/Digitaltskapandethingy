@@ -25,6 +25,8 @@ public class SavedData : ScriptableObject
     public bool SampleItem;
     //Key Item
     public bool KeyItem;
+    //Color Key Item
+    public bool colorKey;
     //Axe Item
     public bool AxeItem;
     //Match Item

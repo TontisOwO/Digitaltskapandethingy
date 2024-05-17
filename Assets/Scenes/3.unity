@@ -316,11 +316,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -40
+      value: -72.51999
       objectReference: {fileID: 0}
     - target: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -33.552002
+      value: -57.22
       objectReference: {fileID: 0}
     - target: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -376,11 +376,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5856649106366590658, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9708376
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5856649106366590658, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.03273
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5856649106366590658, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1126,7 +1126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: Totorial
-  Player: {fileID: 0}
+  Player: {fileID: 1841422366}
+  NPC: {fileID: 753082631}
 --- !u!1 &1114274621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6796270561531941366, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
@@ -1295,11 +1296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -256.43
+      value: -255
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 191.31
+      value: 190.1
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1701,6 +1702,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: NPC
+      value: 
+      objectReference: {fileID: 753082631}
+    - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: maxPosX
       value: 18.21
       objectReference: {fileID: 0}
@@ -1753,6 +1758,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+--- !u!114 &1841422366 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+  m_PrefabInstance: {fileID: 1841422365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444080736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9baf15d1b55b844b30d5ee03aa45d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1868094428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,7 +1817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
