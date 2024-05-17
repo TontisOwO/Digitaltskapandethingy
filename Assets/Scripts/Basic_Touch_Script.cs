@@ -9,7 +9,8 @@ public class Basic_Touch_Script : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public SavedData myData = null;
+    public SavedData myData;
+    public Inventory inventory;
     public TextMeshProUGUI TextMesh;
     public TextManipulation textManipulation;
     public SceneLoader sceneLoader;
@@ -24,6 +25,11 @@ public class Basic_Touch_Script : MonoBehaviour
     public bool pickDown = false;
     public bool itemCondition = false;
     public bool switchScene = false;
+
+    public bool isHammer;
+    public bool isKey2;
+    public bool isKey3;
+
     //Anton's addition
     public bool puzzleEntry = false;
     public bool puzzleExit = false;
@@ -60,7 +66,24 @@ public class Basic_Touch_Script : MonoBehaviour
             }
             if (requiredItem)
             {
+                if (isHammer)
+                {
+                    inventory.hammer = true;
+                    Debug.Log("HAMMER TIME");
+                }
+
+                if (isKey2)
+                {
+                    inventory.secondFloorKey = true;
+                }
+
+                if (isKey3)
+                {
+                    inventory.thirdFloorKey = true;
+                }
+
                 Destroy(gameObject);
+                Debug.Log("destroyed");
             }
             
         }
@@ -71,6 +94,7 @@ public class Basic_Touch_Script : MonoBehaviour
         if (itemCondition && requiredItem || pickUp == true)
         {
             Destroy(gameObject);
+            Debug.Log("destroyed2");
             TextMesh.text = correctItemInInventory;
             textManipulation.mouseDown = true;
             textManipulation.mouseOver = false;
