@@ -396,7 +396,7 @@ MonoBehaviour:
   pickDown: 0
   itemCondition: 1
   switchScene: 1
-  puzzleEntry: 0
+  puzzleEntry: 1
   puzzleExit: 0
 --- !u!114 &401995494
 MonoBehaviour:
@@ -2074,7 +2074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: Totorial
-  Player: {fileID: 0}
+  Player: {fileID: 1611715729}
 --- !u!114 &1611715729 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}

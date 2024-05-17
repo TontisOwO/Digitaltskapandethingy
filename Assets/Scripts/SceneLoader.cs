@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour
     string menu = "Settings";
 
     public Movement Player;
-
+    public NPCScript NPC;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +57,7 @@ public class SceneLoader : MonoBehaviour
     public void EnterPuzzleScene(string sceneName)
     {
         PlayerData.CharPos = Player.wantedPos;
+        PlayerData.NPCPos = NPC.currentPos;
         SceneManager.LoadScene(sceneName);
     }
     public void ExitPuzzleScene(string sceneName)

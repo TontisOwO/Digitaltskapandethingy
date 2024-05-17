@@ -44,6 +44,10 @@ public class CodelockNumber : MonoBehaviour
             sceneLoader.ExitPuzzleScene(2.ToString());
             savedData.codelockpuzzle = true;
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            sceneLoader.ExitPuzzleScene(2.ToString());
+        }
     }
     public void ButtonPress(int num)
     {
@@ -55,4 +59,5 @@ public class CodelockNumber : MonoBehaviour
         pressNumberAmount = pressNumberAmount + 1;
         
     }
+    
 }
