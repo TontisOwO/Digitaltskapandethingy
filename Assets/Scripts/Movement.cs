@@ -24,6 +24,7 @@ public class Movement : MonoBehaviour
     public bool dialog = false;
     public SavedData playerData;
     public Basic_Touch_Script door;
+    public NPCScript NPC;
     void Start()
     {
         movementSpeedOrigin = xMovementSpeed;
@@ -39,6 +40,7 @@ public class Movement : MonoBehaviour
         {
             worldMousePos = playerData.CharPos;
             wantedPos = playerData.CharPos;
+            NPC.currentPos = playerData.NPCPos;
             if (playerData.codelockpuzzle == true)
             {
                 door.pickUp = true;
