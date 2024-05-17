@@ -7,6 +7,7 @@ public class SelectChange : MonoBehaviour
     public List<Sprite> spriteSelect;
     public SpriteRenderer spriteRenderer;
     public int currentSprite;
+    
     // Start is called before the first frame update
     void Start()
     {

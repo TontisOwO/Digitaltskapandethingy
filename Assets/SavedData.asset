@@ -21,11 +21,11 @@ MonoBehaviour:
   dialogSpokenF2: 0
   dialogSpokenF3: 0
   SampleItem: 0
-  KeyItem: 1
+  KeyItem: 0
   AxeItem: 0
   MatchItem: 0
   CrubrItem: 0
   NPCPos: {x: 0, y: 10, z: 0}
-  CharPos: {x: 11.926748, y: -4.082535, z: -1}
+  CharPos: {x: 15.038307, y: -4.8958073, z: -1}
   exitedPuzzleScene: 0
   codelockpuzzle: 0

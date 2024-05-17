@@ -1678,6 +1678,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 32871729}
     - target: {fileID: 3070624199391675011, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: touchText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070624199391675011, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: splashText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070624199391675011, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: sceneLoader
       value: 
       objectReference: {fileID: 1022536778}

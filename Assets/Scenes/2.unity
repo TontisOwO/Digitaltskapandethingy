@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 156782096}
   - component: {fileID: 156782097}
   - component: {fileID: 156782098}
+  - component: {fileID: 156782099}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_drawing
   m_TagString: GUI
@@ -349,9 +350,9 @@ MonoBehaviour:
   textManipulation: {fileID: 2081661216}
   sceneLoader: {fileID: 1410737108}
   scene: 1
-  splashText: Huh, a drawing
-  touchText: So cute!
-  correctItemInInventory: Right Item
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
   requiredItem: 0
   pickUp: 0
   pickDown: 0
@@ -359,6 +360,22 @@ MonoBehaviour:
   switchScene: 0
   puzzleEntry: 0
   puzzleExit: 0
+--- !u!114 &156782099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156782093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e15cc34c32e8448b4523a5a7c48d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemValue: 6
+  itemValue2: 0
+  ThinkBubble: {fileID: 279659486}
+  specialcase: 0
 --- !u!1 &174174688
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +389,7 @@ GameObject:
   - component: {fileID: 174174691}
   - component: {fileID: 174174692}
   - component: {fileID: 174174693}
+  - component: {fileID: 174174694}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_minichest
   m_TagString: GUI
@@ -534,9 +552,9 @@ MonoBehaviour:
   textManipulation: {fileID: 2081661216}
   sceneLoader: {fileID: 1410737108}
   scene: 1
-  splashText: A small chest
-  touchText: There's no key for it
-  correctItemInInventory: Right Item
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
   requiredItem: 0
   pickUp: 0
   pickDown: 0
@@ -544,6 +562,22 @@ MonoBehaviour:
   switchScene: 0
   puzzleEntry: 0
   puzzleExit: 0
+--- !u!114 &174174694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174174688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e15cc34c32e8448b4523a5a7c48d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemValue: 4
+  itemValue2: 0
+  ThinkBubble: {fileID: 279659486}
+  specialcase: 0
 --- !u!1 &238092407
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +670,22 @@ Transform:
   - {fileID: 552588519}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &279659484 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+  m_PrefabInstance: {fileID: 7960121362075888551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &279659486 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+  m_PrefabInstance: {fileID: 7960121362075888551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5064806cca6a548a038bc064536c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &287696149
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,6 +1048,7 @@ GameObject:
   - component: {fileID: 552588520}
   - component: {fileID: 552588521}
   - component: {fileID: 552588522}
+  - component: {fileID: 552588523}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_typewriter_paperdown
   m_TagString: GUI
@@ -1162,9 +1213,9 @@ MonoBehaviour:
   textManipulation: {fileID: 2081661216}
   sceneLoader: {fileID: 1410737108}
   scene: 1
-  splashText: A typewriter
-  touchText: There's some numbers on the paper
-  correctItemInInventory: Right Item
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
   requiredItem: 0
   pickUp: 0
   pickDown: 0
@@ -1172,6 +1223,22 @@ MonoBehaviour:
   switchScene: 0
   puzzleEntry: 0
   puzzleExit: 0
+--- !u!114 &552588523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552588517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e15cc34c32e8448b4523a5a7c48d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemValue: 0
+  itemValue2: 1
+  ThinkBubble: {fileID: 279659486}
+  specialcase: 1
 --- !u!1 &618716573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1252,7 @@ GameObject:
   - component: {fileID: 618716576}
   - component: {fileID: 618716577}
   - component: {fileID: 618716578}
+  - component: {fileID: 618716579}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_barrel
   m_TagString: GUI
@@ -1356,9 +1424,9 @@ MonoBehaviour:
   textManipulation: {fileID: 2081661216}
   sceneLoader: {fileID: 1410737108}
   scene: 1
-  splashText: It's a barrel
-  touchText: Just a barrel
-  correctItemInInventory: Right Item
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
   requiredItem: 0
   pickUp: 0
   pickDown: 0
@@ -1366,6 +1434,22 @@ MonoBehaviour:
   switchScene: 0
   puzzleEntry: 0
   puzzleExit: 0
+--- !u!114 &618716579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618716573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e15cc34c32e8448b4523a5a7c48d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemValue: 2
+  itemValue2: 0
+  ThinkBubble: {fileID: 279659486}
+  specialcase: 0
 --- !u!1 &775463883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,6 +1595,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2081661218}
     - target: {fileID: 3070624199391675011, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: touchText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070624199391675011, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: splashText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070624199391675011, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: sceneLoader
       value: 
       objectReference: {fileID: 1410737108}
@@ -1652,6 +1744,7 @@ RectTransform:
   m_Children:
   - {fileID: 1497370808}
   - {fileID: 2081661217}
+  - {fileID: 279659484}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1863,9 +1956,9 @@ MonoBehaviour:
   textManipulation: {fileID: 2081661216}
   sceneLoader: {fileID: 1410737108}
   scene: Puzzle2
-  splashText: Toilet
-  touchText: It's locked
-  correctItemInInventory: Yippie
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
   requiredItem: 0
   pickUp: 0
   pickDown: 0
@@ -2421,6 +2514,11 @@ MonoBehaviour:
 --- !u!20 &1436273540 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2610866265579041473, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+  m_PrefabInstance: {fileID: 1734234577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1436273541 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3780276958898455091, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
   m_PrefabInstance: {fileID: 1734234577}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1497370807
@@ -2991,7 +3089,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3780276958898455091, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2005023239}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
 --- !u!1 &1916220115
@@ -3007,6 +3108,7 @@ GameObject:
   - component: {fileID: 1916220118}
   - component: {fileID: 1916220119}
   - component: {fileID: 1916220120}
+  - component: {fileID: 1916220121}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_codelock
   m_TagString: Untagged
@@ -3167,9 +3269,9 @@ MonoBehaviour:
   textManipulation: {fileID: 2081661216}
   sceneLoader: {fileID: 1410737108}
   scene: Codelock
-  splashText: A code lock
-  touchText: What's the code
-  correctItemInInventory: What's the code
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
   requiredItem: 0
   pickUp: 1
   pickDown: 0
@@ -3177,6 +3279,106 @@ MonoBehaviour:
   switchScene: 1
   puzzleEntry: 1
   puzzleExit: 0
+--- !u!114 &1916220121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916220115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e15cc34c32e8448b4523a5a7c48d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemValue: 7
+  itemValue2: 0
+  ThinkBubble: {fileID: 279659486}
+  specialcase: 0
+--- !u!1 &2005023238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2005023239}
+  - component: {fileID: 2005023240}
+  m_Layer: 0
+  m_Name: Boarder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2005023239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005023238}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1436273541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2005023240
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005023238}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 200
+  m_Sprite: {fileID: 21300000, guid: a13ca37a82ef06b4885048b294da37cc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2006508703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,6 +3392,7 @@ GameObject:
   - component: {fileID: 2006508706}
   - component: {fileID: 2006508707}
   - component: {fileID: 2006508708}
+  - component: {fileID: 2006508709}
   m_Layer: 0
   m_Name: Digitaltskapande_level2_book
   m_TagString: GUI
@@ -3352,9 +3555,9 @@ MonoBehaviour:
   textManipulation: {fileID: 2081661216}
   sceneLoader: {fileID: 1410737108}
   scene: 1
-  splashText: Book
-  touchText: I can't read
-  correctItemInInventory: Right Item
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
   requiredItem: 0
   pickUp: 0
   pickDown: 0
@@ -3362,6 +3565,22 @@ MonoBehaviour:
   switchScene: 0
   puzzleEntry: 0
   puzzleExit: 0
+--- !u!114 &2006508709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006508703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e15cc34c32e8448b4523a5a7c48d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemValue: 3
+  itemValue2: 0
+  ThinkBubble: {fileID: 279659486}
+  specialcase: 0
 --- !u!1001 &2081661215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3637,6 +3856,7 @@ GameObject:
   - component: {fileID: 2101047074}
   - component: {fileID: 2101047076}
   - component: {fileID: 2101047077}
+  - component: {fileID: 2101047078}
   m_Layer: 0
   m_Name: KeyDoor
   m_TagString: Untagged
@@ -3725,9 +3945,9 @@ MonoBehaviour:
   textManipulation: {fileID: 2081661216}
   sceneLoader: {fileID: 1410737108}
   scene: 3
-  splashText: A door
-  touchText: It's locked
-  correctItemInInventory: Success
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
   requiredItem: 0
   pickUp: 0
   pickDown: 0
@@ -3749,6 +3969,155 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   sceneLoader: {fileID: 1410737108}
+--- !u!114 &2101047078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101047073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e15cc34c32e8448b4523a5a7c48d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemValue: 5
+  itemValue2: 0
+  ThinkBubble: {fileID: 279659486}
+  specialcase: 0
+--- !u!1001 &7960121362075888551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1011414396}
+    m_Modifications:
+    - target: {fileID: 271773563904145520, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_Name
+      value: TextThing
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: f4ed509437d62944b9fcaded73a2a548, type: 3}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: cf123e199f905354582df14a414998e7, type: 3}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: e5552103881179a46a7fc095011580a6, type: 3}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: b2370bb49cdfddd43a47fd686bc23b70, type: 3}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 006777c9d14e4b54e9e99fbbe72f3661, type: 3}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: d3d566daaa15d0846a0b41566154f4d9, type: 3}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: f412feab2aa24344abd8300ae20e347b, type: 3}
+    - target: {fileID: 4917814267440479306, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: ThinkBubbles.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: e22f4417f70624b469ef4cd4ea3b70d8, type: 3}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -200.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011735284497873546, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd0031ef94dbc564c97f9037e8f7d917, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
