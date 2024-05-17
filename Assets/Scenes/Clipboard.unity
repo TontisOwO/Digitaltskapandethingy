@@ -157,6 +157,7 @@ MonoBehaviour:
   PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: Totorial
   Player: {fileID: 0}
+  NPC: {fileID: 0}
 --- !u!114 &449108065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,11 +886,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -235.79
+      value: -255
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 188.76
+      value: 190.1
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

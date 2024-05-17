@@ -212,7 +212,7 @@ PositionConstraint:
   serializedVersion: 2
   m_Weight: 1
   m_TranslationAtRest: {x: 153.47997, y: 103.84, z: 200}
-  m_TranslationOffset: {x: -138.33199, y: 312.2771, z: 3951.8677}
+  m_TranslationOffset: {x: -138.31792, y: 312.26706, z: 3951.6873}
   m_AffectTranslationX: 1
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 1
@@ -1197,18 +1197,6 @@ PrefabInstance:
       value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1238,11 +1226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -200
+      value: -255
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 188.76
+      value: 190.1
       objectReference: {fileID: 0}
     - target: {fileID: 6608773206453914718, guid: 524f9a5646bdffb4c8e84fa30392d702, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1675,12 +1663,36 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: TextMesh
+      value: 
+      objectReference: {fileID: 60399137}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: touchText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: splashText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: sceneLoader
+      value: 
+      objectReference: {fileID: 2112009581}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: switchScene
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: itemCondition
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: textManipulation
+      value: 
+      objectReference: {fileID: 60399136}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: correctItemInInventory
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8341487158576363659, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: m_Pivot.x
@@ -2172,8 +2184,8 @@ PositionConstraint:
   m_Enabled: 1
   serializedVersion: 2
   m_Weight: 1
-  m_TranslationAtRest: {x: -191.99997, y: -39, z: 200}
-  m_TranslationOffset: {x: -25.25029, y: 156.93086, z: 3951.8677}
+  m_TranslationAtRest: {x: -192, y: -39, z: 200}
+  m_TranslationOffset: {x: -25.258347, y: 156.92143, z: 3951.6873}
   m_AffectTranslationX: 1
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 1
@@ -2712,6 +2724,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
+      propertyPath: NPC
+      value: 
+      objectReference: {fileID: 517092228}
+    - target: {fileID: 3938580850637863582, guid: 9f8350a01be936d41a63634bae36ba88, type: 3}
       propertyPath: dialog
       value: 1
       objectReference: {fileID: 0}
@@ -2974,6 +2990,7 @@ MonoBehaviour:
   PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: 1
   Player: {fileID: 1253500132}
+  NPC: {fileID: 517092228}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
