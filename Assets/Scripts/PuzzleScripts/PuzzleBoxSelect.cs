@@ -10,6 +10,8 @@ public class PuzzleBoxSelect : MonoBehaviour
     public SpriteRenderer Numbers;
     public int ButtonPhase;
     public int NumberPhase;
+    public int NumberCorrect;
+    public bool hovering;
     void Start()
     {
         
@@ -22,6 +24,7 @@ public class PuzzleBoxSelect : MonoBehaviour
     }
     public void OnMouseOver()
     {
+        hovering = true;
         ButtonPhase = 0;
         if (Input.GetKey(KeyCode.Mouse0))
         {
@@ -29,8 +32,16 @@ public class PuzzleBoxSelect : MonoBehaviour
         }
         Buttons.sprite = Button[ButtonPhase];
     }
+    private void OnMouseExit()
+    {
+        hovering = false;
+    }
     public void OnMouseDown()
     {
-        
+        NumberPhase = NumberPhase + 1;
+        if (NumberPhase > 9)
+        {
+            NumberPhase = 0;
+        }
     }
 }

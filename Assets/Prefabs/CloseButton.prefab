@@ -119,6 +119,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 0}
   scene: 2
+  Specialbutton: 0
+  Startbutton: 0
+  NewGame: 0
+  enterpuzzle: 0
 --- !u!60 &5577442922655554610
 PolygonCollider2D:
   m_ObjectHideFlags: 0

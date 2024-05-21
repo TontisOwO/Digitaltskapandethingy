@@ -48,6 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/CodeLock.unity
     guid: bee6c7e192b3e6a46ae59b30246ee01e
   - enabled: 1
-    path: Assets/Scenes/Puzzle3.unity
-    guid: 143d91899c038034fbd6601e139f7193
+    path: Assets/Scenes/PuzzleBox.unity
+    guid: a069d8408973a714887d490e6ee7444f
   m_configObjects: {}
