@@ -19,14 +19,14 @@ MonoBehaviour:
   dialogSpokenT: 1
   dialogSpokenF1: 1
   dialogSpokenF2: 0
-  dialogSpokenF3: 0
+  dialogSpokenF3: 1
   SampleItem: 0
-  KeyItem: 0
+  KeyItem: 1
   colorKey: 0
   AxeItem: 0
   MatchItem: 0
   CrubrItem: 0
   NPCPos: {x: 0, y: 10, z: 0}
-  CharPos: {x: 15.038307, y: -4.8958073, z: -1}
+  CharPos: {x: 10.112116, y: -4.3838654, z: -1}
   exitedPuzzleScene: 0
   codelockpuzzle: 0
