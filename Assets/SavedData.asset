@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec681474c10cca34e805e71fc86dd51e, type: 3}
   m_Name: SavedData
   m_EditorClassIdentifier: 
-  CurrentFloor: 4
+  CurrentFloor: 1
   MusicVolume: 110
   SFXVolume: 10
   inMenu: 1
@@ -21,12 +21,12 @@ MonoBehaviour:
   dialogSpokenF2: 0
   dialogSpokenF3: 0
   SampleItem: 0
-  KeyItem: 0
+  KeyItem: 1
   colorKey: 0
   AxeItem: 0
   MatchItem: 0
   CrubrItem: 0
-  NPCPos: {x: 0, y: 10, z: 0}
-  CharPos: {x: 7.0453773, y: -4.699134, z: -1}
+  NPCPos: {x: 0, y: -4.5, z: 0}
+  CharPos: {x: 8.017218, y: -4.091516, z: -1}
   exitedPuzzleScene: 0
   codelockpuzzle: 0
