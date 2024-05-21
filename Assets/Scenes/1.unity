@@ -258,19 +258,19 @@ PrefabInstance:
     - target: {fileID: 8085581143408009080, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: sprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 033872316eb19bb47914e74df4a3c7e6, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8085581143408009080, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: sprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: f51b51ee32eebe3419f544884ad1f16e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8085581143408009080, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: sprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: f7189dc41d05f704a867d91bc72bec0f, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8085581143408009080, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: sprites.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: 235e092ed76e0a04c8eb47e41f32e634, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8085581143408009080, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: sprites.Array.data[4]
       value: 
@@ -1082,7 +1082,7 @@ PrefabInstance:
     - target: {fileID: 4312277099800019037, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: sprites.Array.data[4]
       value: 
-      objectReference: {fileID: 21300000, guid: fd9d332d0047c1943950d7f3fa1dd17b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4312277099800019037, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: swapper.Array.data[1]
       value: 1
