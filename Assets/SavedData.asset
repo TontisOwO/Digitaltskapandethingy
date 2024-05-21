@@ -19,7 +19,7 @@ MonoBehaviour:
   dialogSpokenT: 0
   dialogSpokenF1: 0
   dialogSpokenF2: 0
-  dialogSpokenF3: 0
+  dialogSpokenF3: 1
   SampleItem: 0
   KeyItem: 1
   colorKey: 0
