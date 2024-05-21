@@ -35,15 +35,15 @@ public class Basic_Touch_Script : MonoBehaviour
     public bool puzzleExit = false;
     void Start()
     {
-
+        Debug.Log("Start");
     }
 
     void OnMouseDown()
     {
-        
 
+        Debug.Log("Fun");
 
-        if (pickUp && itemCondition == true)
+        if (pickUp && itemCondition)
         {
             TextMesh.text = correctItemInInventory;
             textManipulation.mouseDown = true;
@@ -51,12 +51,14 @@ public class Basic_Touch_Script : MonoBehaviour
             textManipulation.mouseExit = false;
             if (switchScene)
             {
+                Debug.Log("Switch");
                 if (puzzleEntry)
                 {
                     sceneLoader.EnterPuzzleScene(scene);
                 }
                 else if (puzzleExit)
                 {
+                    Debug.Log("Bruh");
                     sceneLoader.ExitPuzzleScene(scene);
                 }
                 else
@@ -87,11 +89,8 @@ public class Basic_Touch_Script : MonoBehaviour
             }
             
         }
-        if (itemCondition != myData.KeyItem)
-        {
-            itemCondition = true;
-        }
-        if (itemCondition && requiredItem || pickUp == true)
+
+        if ((itemCondition && requiredItem || pickUp == true) && !switchScene)
         {
             Destroy(gameObject);
             Debug.Log("destroyed2");

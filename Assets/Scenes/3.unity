@@ -687,6 +687,7 @@ GameObject:
   - component: {fileID: 451857183}
   - component: {fileID: 451857182}
   - component: {fileID: 451857184}
+  - component: {fileID: 451857185}
   m_Layer: 0
   m_Name: Digitaltskapande_level3_done_tavla2
   m_TagString: Untagged
@@ -829,6 +830,37 @@ PolygonCollider2D:
       - {x: 12.937499, y: -1.36875}
       - {x: 12.937499, y: 0.29999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &451857185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451857180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  inventory: {fileID: 1196527679}
+  TextMesh: {fileID: 32871729}
+  textManipulation: {fileID: 32871728}
+  sceneLoader: {fileID: 1022536778}
+  scene: Painting 2 F3
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
+  requiredItem: 0
+  pickUp: 1
+  pickDown: 0
+  itemCondition: 1
+  switchScene: 1
+  isHammer: 0
+  isKey2: 0
+  isKey3: 0
+  puzzleEntry: 1
+  puzzleExit: 0
 --- !u!1 &480512113
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +873,7 @@ GameObject:
   - component: {fileID: 480512116}
   - component: {fileID: 480512115}
   - component: {fileID: 480512117}
+  - component: {fileID: 480512118}
   m_Layer: 0
   m_Name: Digitaltskapande_level3_done_tavla3
   m_TagString: Untagged
@@ -982,6 +1015,37 @@ PolygonCollider2D:
       - {x: 12.487499, y: 0.78749996}
       - {x: 12.487499, y: 2.1}
   m_UseDelaunayMesh: 0
+--- !u!114 &480512118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480512113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  inventory: {fileID: 1196527679}
+  TextMesh: {fileID: 32871729}
+  textManipulation: {fileID: 32871728}
+  sceneLoader: {fileID: 1022536778}
+  scene: Painting 1 F3
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
+  requiredItem: 0
+  pickUp: 1
+  pickDown: 0
+  itemCondition: 1
+  switchScene: 1
+  isHammer: 0
+  isKey2: 0
+  isKey3: 0
+  puzzleEntry: 1
+  puzzleExit: 0
 --- !u!1001 &515082802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2050,6 +2114,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3631759566713651271, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
   m_PrefabInstance: {fileID: 39356254}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1196527679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3258300058909440378, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
+  m_PrefabInstance: {fileID: 39356254}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3fc8e6b89134f47aacfc4e169e0a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1328323655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,6 +2700,7 @@ GameObject:
   - component: {fileID: 1625864773}
   - component: {fileID: 1625864772}
   - component: {fileID: 1625864774}
+  - component: {fileID: 1625864775}
   m_Layer: 0
   m_Name: Digitaltskapande_level3_done_tavla1
   m_TagString: Untagged
@@ -2770,6 +2846,37 @@ PolygonCollider2D:
       - {x: 10.424999, y: 2.45625}
       - {x: 10.406249, y: 2.45625}
   m_UseDelaunayMesh: 0
+--- !u!114 &1625864775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625864770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  inventory: {fileID: 1196527679}
+  TextMesh: {fileID: 32871729}
+  textManipulation: {fileID: 32871728}
+  sceneLoader: {fileID: 1022536778}
+  scene: Painting 0 F3
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
+  requiredItem: 0
+  pickUp: 1
+  pickDown: 0
+  itemCondition: 1
+  switchScene: 1
+  isHammer: 0
+  isKey2: 0
+  isKey3: 0
+  puzzleEntry: 1
+  puzzleExit: 0
 --- !u!224 &1682115255 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4721896436271175054, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
@@ -3191,7 +3298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796270561531941366, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7455018159731156693, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3236,6 +3343,7 @@ GameObject:
   - component: {fileID: 1955975860}
   - component: {fileID: 1955975859}
   - component: {fileID: 1955975861}
+  - component: {fileID: 1955975862}
   m_Layer: 0
   m_Name: Digitaltskapande_level3_done_tavla4
   m_TagString: Untagged
@@ -3379,6 +3487,37 @@ PolygonCollider2D:
       - {x: -6.9749994, y: 2.26875}
       - {x: -7.0312495, y: 2.2875}
   m_UseDelaunayMesh: 0
+--- !u!114 &1955975862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955975857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  inventory: {fileID: 1196527679}
+  TextMesh: {fileID: 32871729}
+  textManipulation: {fileID: 32871728}
+  sceneLoader: {fileID: 1022536778}
+  scene: Painting 3 F3
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
+  requiredItem: 0
+  pickUp: 1
+  pickDown: 0
+  itemCondition: 1
+  switchScene: 1
+  isHammer: 0
+  isKey2: 0
+  isKey3: 0
+  puzzleEntry: 1
+  puzzleExit: 0
 --- !u!4 &1957810713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5856649106366590658, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}

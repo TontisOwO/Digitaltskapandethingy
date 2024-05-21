@@ -16,9 +16,9 @@ MonoBehaviour:
   MusicVolume: 110
   SFXVolume: 10
   inMenu: 1
-  dialogSpokenT: 0
-  dialogSpokenF1: 0
-  dialogSpokenF2: 0
+  dialogSpokenT: 1
+  dialogSpokenF1: 1
+  dialogSpokenF2: 1
   dialogSpokenF3: 0
   SampleItem: 0
   KeyItem: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   AxeItem: 0
   MatchItem: 0
   CrubrItem: 0
-  NPCPos: {x: -4.020542, y: -4.5, z: 0}
-  CharPos: {x: 6.465812, y: -3.9950628, z: -1}
+  NPCPos: {x: 2, y: -5, z: 0}
+  CharPos: {x: -0.06453999, y: -4.789713, z: -1}
   exitedPuzzleScene: 0
   codelockpuzzle: 0
