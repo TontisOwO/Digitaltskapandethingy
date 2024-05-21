@@ -9,7 +9,9 @@ public class OfficeClickScript : MonoBehaviour
     public Vector3 mousePos;
     public GameObject Selecter;
     public OfficeZoomScript zoomScript;
+    public SceneLoader sceneLoader;
     public int whatObject;
+    public bool Box = false;
 
 
     // Start is called before the first frame update
@@ -28,6 +30,11 @@ public class OfficeClickScript : MonoBehaviour
     {
             if (Input.GetMouseButtonDown(0))
             {
+            if (Box == true)
+            {
+                sceneLoader.LoadScene("PuzzleBox");
+                return;
+            }
                 zoomScript.sprite = whatObject;
             }
             if (Input.GetMouseButtonUp(0))
