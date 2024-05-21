@@ -9,6 +9,7 @@ public class CloseButton : MonoBehaviour
     public bool Specialbutton;
     public bool Startbutton;
     public bool NewGame;
+    public bool enterpuzzle;
     private void OnMouseDown()
     {
         if (!Specialbutton)
@@ -22,6 +23,10 @@ public class CloseButton : MonoBehaviour
         else if (NewGame)
         {
             sceneLoader.EraseData();
+        }
+        else if (enterpuzzle)
+        {
+            sceneLoader.EnterPuzzleScene(scene);
         }
         else
         {
