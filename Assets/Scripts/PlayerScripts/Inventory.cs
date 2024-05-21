@@ -79,6 +79,7 @@ public class Inventory : MonoBehaviour
         if (hammer)
         {
             hammerIcon.gameObject.SetActive(true);
+            Debug.Log("Should be working"); 
         }
 
         if (key2Icon)
