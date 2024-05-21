@@ -26,7 +26,7 @@ MonoBehaviour:
   AxeItem: 0
   MatchItem: 0
   CrubrItem: 0
-  NPCPos: {x: 0, y: -4.5, z: 0}
-  CharPos: {x: 8.017218, y: -4.091516, z: -1}
+  NPCPos: {x: -4.020542, y: -4.5, z: 0}
+  CharPos: {x: 6.465812, y: -3.9950628, z: -1}
   exitedPuzzleScene: 0
   codelockpuzzle: 0
