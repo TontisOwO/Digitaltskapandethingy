@@ -6,8 +6,26 @@ public class CloseButton : MonoBehaviour
 {
     public SceneLoader sceneLoader;
     public string scene;
+    public bool Specialbutton;
+    public bool Startbutton;
+    public bool NewGame;
     private void OnMouseDown()
     {
-        sceneLoader.ExitPuzzleScene(scene);
+        if (!Specialbutton)
+        {
+            sceneLoader.ExitPuzzleScene(scene);
+        }
+        else if (Startbutton)
+        {
+            sceneLoader.ContinueGame();
+        }
+        else if (NewGame)
+        {
+            sceneLoader.EraseData();
+        }
+        else
+        {
+            sceneLoader.LoadScene(scene);
+        }
     }
 }
