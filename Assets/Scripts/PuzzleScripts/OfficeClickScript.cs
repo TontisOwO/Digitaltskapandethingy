@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class OfficeClickScript : MonoBehaviour
 {
@@ -24,6 +22,11 @@ public class OfficeClickScript : MonoBehaviour
     void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.GetMouseButtonUp(0))
+        {
+            zoomScript.sprite = 0;
+
+        }
     }
 
     void OnMouseOver()
@@ -36,10 +39,6 @@ public class OfficeClickScript : MonoBehaviour
                 return;
             }
                 zoomScript.sprite = whatObject;
-            }
-            if (Input.GetMouseButtonUp(0))
-            {
-            zoomScript.sprite = 0;
-            }
+            }       
     }
 }
