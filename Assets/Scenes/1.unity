@@ -301,15 +301,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.x
-      value: 18.896923
+      value: 18.892426
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.y
-      value: 266.37854
+      value: 266.32904
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.z
-      value: 3751.8677
+      value: 3750.8557
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
@@ -604,6 +604,7 @@ MonoBehaviour:
   isHammer: 0
   isKey2: 0
   isKey3: 0
+  isBuildingKey: 0
   puzzleEntry: 1
   puzzleExit: 0
 --- !u!114 &401995494
@@ -1113,7 +1114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationAtRest.x
-      value: -76.99997
+      value: -77
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationAtRest.y
@@ -1125,15 +1126,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.x
-      value: 10.543587
+      value: 10.519943
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.y
-      value: 137.56847
+      value: 137.53136
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.z
-      value: 3751.8677
+      value: 3750.8557
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
@@ -2453,7 +2454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3953918102339617726, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: wantedPos.y
-      value: -4
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 3953918102339617726, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: MainCharacter
