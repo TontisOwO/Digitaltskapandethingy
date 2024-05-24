@@ -10,8 +10,8 @@ public class AudioManager : MonoBehaviour
 
     //decide what source plays what SFX
     [Header("------- Audio Source -------")]
-    [SerializeField] public AudioSource musicSource;
-    [SerializeField] public AudioSource SFXSource;
+    public AudioSource musicSource;
+    public AudioSource SFXSource;
 
     //list of our audio clips
     [Header("------- Audio Clip -------")]

@@ -112,7 +112,7 @@ public class Movement : MonoBehaviour
         else
         {
             myAnimator.SetBool("IsWalking", false);
-            audioManager.PlaySFX(audioManager.walking);
+            audioManager.SFXSource.Stop();
         }
         if (wantedPos.x < worldMousePos.x)
         {

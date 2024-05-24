@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 0}
   TextMesh: {fileID: 2081661218}
@@ -552,6 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 0}
   TextMesh: {fileID: 2081661218}
@@ -1051,6 +1053,7 @@ GameObject:
   - component: {fileID: 387704361}
   - component: {fileID: 387704360}
   - component: {fileID: 387704359}
+  - component: {fileID: 387704362}
   m_Layer: 0
   m_Name: Digitaltskapande_tutoriallevel_done_light
   m_TagString: Untagged
@@ -1146,6 +1149,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &387704362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387704358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e97bc60a84d384b8c82d597f3e24f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
 --- !u!1 &399049166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 0}
   TextMesh: {fileID: 2081661218}
@@ -1664,6 +1681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 0}
   TextMesh: {fileID: 2081661218}
@@ -2438,6 +2456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 0}
   TextMesh: {fileID: 2081661218}
@@ -3778,6 +3797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 0}
   TextMesh: {fileID: 2081661218}
@@ -4069,6 +4089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 0}
   TextMesh: {fileID: 2081661218}
@@ -4464,6 +4485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 0}
   TextMesh: {fileID: 2081661218}
