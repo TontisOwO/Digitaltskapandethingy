@@ -25,6 +25,12 @@ public class Movement : MonoBehaviour
     public SavedData playerData;
     public Basic_Touch_Script door;
     public NPCScript NPC;
+    public AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Start()
     {
         movementSpeedOrigin = xMovementSpeed;
@@ -101,10 +107,12 @@ public class Movement : MonoBehaviour
         if (wantedPos != worldMousePos)
         {
             myAnimator.SetBool("IsWalking", true);
+            audioManager.PlaySFX(audioManager.walking);
         }
         else
         {
             myAnimator.SetBool("IsWalking", false);
+            audioManager.PlaySFX(audioManager.walking);
         }
         if (wantedPos.x < worldMousePos.x)
         {

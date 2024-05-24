@@ -2557,6 +2557,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5890231547293721260, guid: 9abb458b6d424a64d8def1cbd77f7fe0, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 8300000, guid: c01e82fae98aed748a05177fe679474d, type: 3}
+    - target: {fileID: 5890231547293721260, guid: 9abb458b6d424a64d8def1cbd77f7fe0, type: 3}
+      propertyPath: wind
+      value: 
+      objectReference: {fileID: 8300000, guid: 8619b898b6ede7745ab9c5b432a78dab, type: 3}
+    - target: {fileID: 5890231547293721260, guid: 9abb458b6d424a64d8def1cbd77f7fe0, type: 3}
+      propertyPath: walking
+      value: 
+      objectReference: {fileID: 8300000, guid: d1eae27805daa294cb381a852ef36d7c, type: 3}
+    - target: {fileID: 5890231547293721260, guid: 9abb458b6d424a64d8def1cbd77f7fe0, type: 3}
+      propertyPath: openLock
+      value: 
+      objectReference: {fileID: 8300000, guid: b490fddc8d718ea41b6bd047c76ceea2, type: 3}
+    - target: {fileID: 5890231547293721260, guid: 9abb458b6d424a64d8def1cbd77f7fe0, type: 3}
+      propertyPath: flickeringLights
+      value: 
+      objectReference: {fileID: 8300000, guid: 782ebd60ba4924c4a99954092fddabce, type: 3}
     - target: {fileID: 6009841639193053552, guid: 9abb458b6d424a64d8def1cbd77f7fe0, type: 3}
       propertyPath: m_Name
       value: AudioManager
