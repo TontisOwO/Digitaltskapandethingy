@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OfficeClickScript : MonoBehaviour
 {
+    public AudioManager audioManager;
     public Vector3 mousePos;
     public GameObject Selecter;
     public OfficeZoomScript zoomScript;
@@ -17,6 +18,10 @@ public class OfficeClickScript : MonoBehaviour
     {
         
     }
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,6 +31,22 @@ public class OfficeClickScript : MonoBehaviour
         {
             zoomScript.sprite = 0;
 
+        }
+        if (zoomScript.sprite == 1)
+        {
+            audioManager.PlaySFX(audioManager.paper);
+        }
+        if (zoomScript.sprite == 2)
+        {
+            audioManager.PlaySFX(audioManager.paperBin);
+        }
+        if (zoomScript.sprite == 3)
+        {
+            audioManager.PlaySFX(audioManager.clock);
+        }
+        if (zoomScript.sprite == 4)
+        {
+            audioManager.PlaySFX(audioManager.paper);
         }
     }
 

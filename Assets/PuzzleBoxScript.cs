@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PuzzleBoxScript : MonoBehaviour
 {
+    public AudioManager audioManager;
     public SpriteRenderer rend;
     public SavedData data;
     public List<Sprite> sprites;
@@ -19,6 +20,10 @@ public class PuzzleBoxScript : MonoBehaviour
     {
         
     }
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Update()
     {
@@ -30,6 +35,7 @@ public class PuzzleBoxScript : MonoBehaviour
             transform.localScale = size;
             position.x = -0.2f;
             position.y = 1.2f;
+            audioManager.PlaySFX(audioManager.openBox);
             transform.position = position;
             GameObject.Destroy(numbers);
             if (data.BuildingKey == false && CanSpawn == true)

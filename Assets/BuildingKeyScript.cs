@@ -7,6 +7,12 @@ public class BuildingKeyScript : MonoBehaviour
 {
     public Vector3 mousePos;
     public SavedData myData;
+    public AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +32,7 @@ public class BuildingKeyScript : MonoBehaviour
         {
             myData.BuildingKey = true;
             GameObject.Destroy(gameObject);
+            audioManager.PlaySFX(audioManager.keys);
         }
     }
 }

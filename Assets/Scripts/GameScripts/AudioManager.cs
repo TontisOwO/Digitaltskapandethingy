@@ -22,6 +22,18 @@ public class AudioManager : MonoBehaviour
     public AudioClip titlemusic;
     public AudioClip zip;
     public AudioClip unzip;
+    public AudioClip flickeringLights;
+    public AudioClip openBox;
+    public AudioClip openLock;
+    public AudioClip paper;
+    public AudioClip paperBin;
+    public AudioClip walking;
+    public AudioClip wind;
+    public AudioClip clock;
+    public AudioClip door;
+    public AudioClip glass;
+    public AudioClip keyDrop;
+    public AudioClip keys;
 
     private void Start()
     {
