@@ -16,9 +16,9 @@ MonoBehaviour:
   MusicVolume: 110
   SFXVolume: 10
   inMenu: 1
-  dialogSpokenT: 1
-  dialogSpokenF1: 1
-  dialogSpokenF2: 1
+  dialogSpokenT: 0
+  dialogSpokenF1: 0
+  dialogSpokenF2: 0
   dialogSpokenF3: 0
   SampleItem: 0
   KeyItem: 0
