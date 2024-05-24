@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 
 public class GlassMovement : MonoBehaviour
 {
+    public AudioManager audioManager;
     public Vector3 mousePos;
     public GameObject left;
     public GameObject right;
@@ -17,6 +18,10 @@ public class GlassMovement : MonoBehaviour
     void Start()
     {
 
+    }
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -49,5 +54,6 @@ public class GlassMovement : MonoBehaviour
     void OnMouseDrag()
     {
         transform.position = mousePos;
+        audioManager.PlaySFX(audioManager.glass);
     }
 }

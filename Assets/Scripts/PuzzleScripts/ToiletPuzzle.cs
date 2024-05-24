@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class ToiletPuzzle : MonoBehaviour
 {
+    public AudioManager AudioManager;
     public GoalScript Piece1;
     public GoalScript Piece2;
     public GoalScript Piece3;
@@ -21,6 +22,11 @@ public class ToiletPuzzle : MonoBehaviour
     void Start()
     {
         count = 0;
+    }
+
+    private void Awake()
+    {
+        AudioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -65,6 +71,7 @@ public class ToiletPuzzle : MonoBehaviour
         {
             GameObject.Instantiate(Key, this.transform.position, Key.transform.rotation, Canvas.transform);
             count = 0;
+            AudioManager.PlaySFX(AudioManager.keyDrop);
             Key.transform.SetParent(Canvas.transform, false);
         }
     }
