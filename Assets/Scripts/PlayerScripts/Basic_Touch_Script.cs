@@ -29,6 +29,7 @@ public class Basic_Touch_Script : MonoBehaviour
     public bool isHammer;
     public bool isKey2;
     public bool isKey3;
+    public bool isBuildingKey;
 
     //Anton's addition
     public bool puzzleEntry = false;
@@ -82,6 +83,11 @@ public class Basic_Touch_Script : MonoBehaviour
                 if (isKey3)
                 {
                     inventory.thirdFloorKey = true;
+                }
+
+                if (isBuildingKey)
+                {
+                    myData.BuildingKey = true;
                 }
 
                 Destroy(gameObject);

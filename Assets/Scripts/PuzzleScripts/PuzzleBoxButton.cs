@@ -34,7 +34,6 @@ public class PuzzleBoxButton : MonoBehaviour
             nr4.NumberPhase == nr4.NumberCorrect) 
         {
             savedData.OpenedBox = true;
-            sceneLoader.LoadScene(scene);
         }
     }
 }

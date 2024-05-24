@@ -111,6 +111,12 @@ public class ObjectInteractions : MonoBehaviour
                     myData.CrubrItem = ItUs;
                     break;
                 }
+                case 5:
+                {
+                    ItUs = false;
+                    myData.BuildingKey = ItUs;
+                    break;
+                }
         }
         //What is the new item
         switch (NewItem)
@@ -142,6 +148,12 @@ public class ObjectInteractions : MonoBehaviour
                 {
                     myData.CrubrItem = NwIt;
                     NwIt = myData.CrubrItem;
+                    break;
+                }
+                case 5:
+                {
+                    myData.BuildingKey = NwIt;
+                    NwIt = myData.BuildingKey;
                     break;
                 }
         }
