@@ -9,6 +9,7 @@ public class Basic_Touch_Script : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public AudioManager audioManager;
     public SavedData myData;
     public Inventory inventory;
     public TextMeshProUGUI TextMesh;
@@ -39,6 +40,11 @@ public class Basic_Touch_Script : MonoBehaviour
         Debug.Log("Start");
     }
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     void OnMouseDown()
     {
 
@@ -56,15 +62,18 @@ public class Basic_Touch_Script : MonoBehaviour
                 if (puzzleEntry)
                 {
                     sceneLoader.EnterPuzzleScene(scene);
+                    audioManager.PlaySFX(audioManager.door);
                 }
                 else if (puzzleExit)
                 {
                     Debug.Log("Bruh");
                     sceneLoader.ExitPuzzleScene(scene);
+                    audioManager.PlaySFX(audioManager.door);
                 }
                 else
                 {
                     sceneLoader.LoadScene(scene);
+                    audioManager.PlaySFX(audioManager.door);
                 }
             }
             if (requiredItem)

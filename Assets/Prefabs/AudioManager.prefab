@@ -184,6 +184,18 @@ MonoBehaviour:
   titlemusic: {fileID: 8300000, guid: 25040f2414607964d9459a2da1f58c59, type: 3}
   zip: {fileID: 8300000, guid: 4d3805757f15db3469826c6d9ab86960, type: 3}
   unzip: {fileID: 8300000, guid: 4bee4e3fb8d46dc4fadde469d549d63b, type: 3}
+  flickeringLights: {fileID: 8300000, guid: 782ebd60ba4924c4a99954092fddabce, type: 3}
+  openBox: {fileID: 8300000, guid: 8d5ac59e798d1a349b8beb4a33ff6e54, type: 3}
+  openLock: {fileID: 8300000, guid: b490fddc8d718ea41b6bd047c76ceea2, type: 3}
+  paper: {fileID: 8300000, guid: 52a8cb65cd4f7b84daedd26620bdbfbb, type: 3}
+  paperBin: {fileID: 8300000, guid: e78f55000996a93408b936ff477a1b07, type: 3}
+  walking: {fileID: 8300000, guid: d1eae27805daa294cb381a852ef36d7c, type: 3}
+  wind: {fileID: 8300000, guid: 8619b898b6ede7745ab9c5b432a78dab, type: 3}
+  clock: {fileID: 8300000, guid: 258bba6609fa16a44b863d5c2578521a, type: 3}
+  door: {fileID: 8300000, guid: c01e82fae98aed748a05177fe679474d, type: 3}
+  glass: {fileID: 8300000, guid: 0b3996b2f1c9bdd458d967a1d6d78435, type: 3}
+  keyDrop: {fileID: 8300000, guid: 9ed66fbd047d95e43b012a5f11bac79f, type: 3}
+  keys: {fileID: 8300000, guid: 5cc1d9ceaa2f50b4bb134a56dfd9fc9a, type: 3}
 --- !u!1 &7133444317488777674
 GameObject:
   m_ObjectHideFlags: 0
