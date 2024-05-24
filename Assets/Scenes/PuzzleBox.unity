@@ -318,7 +318,7 @@ MonoBehaviour:
   openbox: {fileID: 21300000, guid: 68343f568b14b514e853eaf1d4176a73, type: 3}
   sceneLoader: {fileID: 1353043228}
   scene: Puzzle3
-  savedData: {fileID: 0}
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1001 &706409105
 PrefabInstance:
   m_ObjectHideFlags: 0
