@@ -842,6 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 1196527679}
   TextMesh: {fileID: 32871729}
@@ -1028,6 +1029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 1196527679}
   TextMesh: {fileID: 32871729}
@@ -1567,15 +1569,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.x
-      value: 1.8861418
+      value: 1.8749514
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.y
-      value: 272.37698
+      value: 272.2371
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.z
-      value: 8340.002
+      value: 8337.484
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
@@ -1876,6 +1878,7 @@ GameObject:
   - component: {fileID: 984804535}
   - component: {fileID: 984804534}
   - component: {fileID: 984804536}
+  - component: {fileID: 984804537}
   m_Layer: 0
   m_Name: Digitaltskapande_level3_done_nyckeltavla
   m_TagString: Untagged
@@ -2021,6 +2024,39 @@ PolygonCollider2D:
       - {x: -12.487499, y: 0.24374999}
       - {x: -12.487499, y: 1.51875}
   m_UseDelaunayMesh: 0
+--- !u!114 &984804537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984804532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 78037917}
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  inventory: {fileID: 1196527679}
+  TextMesh: {fileID: 32871729}
+  textManipulation: {fileID: 32871728}
+  sceneLoader: {fileID: 1022536778}
+  scene: KeySortingPuzzle
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
+  requiredItem: 0
+  pickUp: 1
+  pickDown: 0
+  itemCondition: 1
+  switchScene: 1
+  isHammer: 0
+  isKey2: 0
+  isKey3: 0
+  isBuildingKey: 0
+  puzzleEntry: 1
+  puzzleExit: 0
 --- !u!1 &1022536774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,7 +2614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationAtRest.x
-      value: 83
+      value: 83.00003
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationAtRest.y
@@ -2590,15 +2626,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.x
-      value: -0.43079376
+      value: -0.37480927
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.y
-      value: 130.41928
+      value: 130.29338
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.z
-      value: 8340.002
+      value: 8337.484
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
@@ -2789,11 +2825,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 1022536778}
+  saveData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   scene: Puzzle3
   Specialbutton: 1
   Startbutton: 0
   NewGame: 0
   enterpuzzle: 1
+  floor3Door: 1
 --- !u!60 &1623482664
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3028,6 +3066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 1196527679}
   TextMesh: {fileID: 32871729}
@@ -3670,6 +3709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   inventory: {fileID: 1196527679}
   TextMesh: {fileID: 32871729}
