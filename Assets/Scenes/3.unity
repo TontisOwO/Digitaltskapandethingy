@@ -727,6 +727,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ee8435ac670474540a2deaf928145983, type: 3}
   spriteRenderer: {fileID: 451857183}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!212 &451857183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -915,6 +917,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9f76025ffd3875a488726ce061b4a749, type: 3}
   spriteRenderer: {fileID: 480512116}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!212 &480512116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1792,13 +1796,14 @@ GameObject:
   m_Component:
   - component: {fileID: 978872351}
   - component: {fileID: 978872350}
+  - component: {fileID: 978872352}
   m_Layer: 0
   m_Name: "Digitaltskapande_level3_done_nyckeltavla_r\xE4tt_ordning"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &978872350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1860,12 +1865,25 @@ Transform:
   m_GameObject: {fileID: 978872349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.317375, y: 3.7611823, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978872352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978872349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63bab5735c6ab3048a45282733850bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1 &984804532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1936,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fde977d1c0d6a0f48a9b9c6c1539b814, type: 3}
   spriteRenderer: {fileID: 984804535}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!212 &984804535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2142,6 +2162,195 @@ MonoBehaviour:
   floor1: Totorial
   Player: {fileID: 1841422366}
   NPC: {fileID: 753082631}
+--- !u!1 &1069447640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1069447643}
+  - component: {fileID: 1069447642}
+  - component: {fileID: 1069447647}
+  - component: {fileID: 1069447646}
+  - component: {fileID: 1069447645}
+  - component: {fileID: 1069447644}
+  m_Layer: 0
+  m_Name: Exit Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &1069447642
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069447640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -2.566843, y: 1.5408587}
+      - {x: -7.7980785, y: 1.5667214}
+      - {x: -7.7742896, y: -3.0925038}
+      - {x: -2.5617876, y: -3.0792983}
+  m_UseDelaunayMesh: 0
+--- !u!224 &1069447643
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069447640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8704998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.09, y: 0.09579635}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!50 &1069447644
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069447640}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1069447645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069447640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!223 &1069447646
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069447640}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1069447647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069447640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 78037917}
+  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  inventory: {fileID: 1196527679}
+  TextMesh: {fileID: 32871729}
+  textManipulation: {fileID: 32871728}
+  sceneLoader: {fileID: 1022536778}
+  scene: Credits
+  splashText: 
+  touchText: 
+  correctItemInInventory: 
+  requiredItem: 0
+  pickUp: 1
+  pickDown: 0
+  itemCondition: 1
+  switchScene: 1
+  isHammer: 0
+  isKey2: 0
+  isKey3: 0
+  isBuildingKey: 0
+  puzzleEntry: 1
+  puzzleExit: 0
 --- !u!1 &1114274621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6796270561531941366, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
@@ -2948,6 +3157,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f63344c9a43b3254eb9f4c00e35879bc, type: 3}
   spriteRenderer: {fileID: 1625864773}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!212 &1625864773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3593,6 +3804,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 32ab489b239d0e2478360eb59b792074, type: 3}
   spriteRenderer: {fileID: 1955975860}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!212 &1955975860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3755,3 +3968,4 @@ SceneRoots:
   - {fileID: 1623482665}
   - {fileID: 978872351}
   - {fileID: 1405897266}
+  - {fileID: 1069447643}
