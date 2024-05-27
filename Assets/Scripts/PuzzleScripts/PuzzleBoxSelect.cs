@@ -39,7 +39,7 @@ public class PuzzleBoxSelect : MonoBehaviour
     public void OnMouseDown()
     {
         NumberPhase = NumberPhase + 1;
-        if (NumberPhase > 9)
+        if (NumberPhase > 8)
         {
             NumberPhase = 0;
         }

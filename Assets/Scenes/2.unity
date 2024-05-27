@@ -263,6 +263,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b90d55def050f624495d05c78f6a05c9, type: 3}
   spriteRenderer: {fileID: 156782094}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!60 &156782097
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -382,6 +384,7 @@ MonoBehaviour:
   itemValue2: 0
   ThinkBubble: {fileID: 279659486}
   specialcase: 0
+  typewriter: 0
 --- !u!1 &174174688
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +490,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 303d4f2c016e3d24891a814eae8a6468, type: 3}
   spriteRenderer: {fileID: 174174689}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!60 &174174692
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -590,6 +595,7 @@ MonoBehaviour:
   itemValue2: 0
   ThinkBubble: {fileID: 279659486}
   specialcase: 0
+  typewriter: 0
 --- !u!1 &238092407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1398,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f44822b4b26d3884fb7b17982e1e0e23, type: 3}
   spriteRenderer: {fileID: 552588518}
   currentSprite: 0
+  typewriter: 1
+  typewriterClick: 0
 --- !u!60 &552588521
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1496,6 +1504,7 @@ MonoBehaviour:
   itemValue2: 1
   ThinkBubble: {fileID: 279659486}
   specialcase: 1
+  typewriter: 1
 --- !u!224 &614912069 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4721896436271175054, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
@@ -1606,6 +1615,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0ea767a2c9bf82a48a84888f2618b474, type: 3}
   spriteRenderer: {fileID: 618716574}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!60 &618716577
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1718,6 +1729,7 @@ MonoBehaviour:
   itemValue2: 0
   ThinkBubble: {fileID: 279659486}
   specialcase: 0
+  typewriter: 0
 --- !u!1 &775463883
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,6 +3605,10 @@ PrefabInstance:
       value: Main Camera
       objectReference: {fileID: 0}
     - target: {fileID: 6796270561531941366, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796270561531941366, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
       propertyPath: m_TagString
       value: GUI
       objectReference: {fileID: 0}
@@ -3733,6 +3749,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d476a323753643f4c95f4cf319881974, type: 3}
   spriteRenderer: {fileID: 1916220116}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!60 &1916220119
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3834,6 +3852,7 @@ MonoBehaviour:
   itemValue2: 0
   ThinkBubble: {fileID: 279659486}
   specialcase: 0
+  typewriter: 0
 --- !u!1 &2005023238
 GameObject:
   m_ObjectHideFlags: 0
@@ -4023,6 +4042,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 396bd1810672abd469d3cd2cb7479498, type: 3}
   spriteRenderer: {fileID: 2006508704}
   currentSprite: 0
+  typewriter: 0
+  typewriterClick: 0
 --- !u!60 &2006508707
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4126,6 +4147,7 @@ MonoBehaviour:
   itemValue2: 0
   ThinkBubble: {fileID: 279659486}
   specialcase: 0
+  typewriter: 0
 --- !u!1001 &2081661215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4536,6 +4558,7 @@ MonoBehaviour:
   itemValue2: 0
   ThinkBubble: {fileID: 279659486}
   specialcase: 0
+  typewriter: 0
 --- !u!1001 &4385970527007567437
 PrefabInstance:
   m_ObjectHideFlags: 0

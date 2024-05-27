@@ -81,6 +81,7 @@ public class Basic_Touch_Script : MonoBehaviour
                 if (isHammer)
                 {
                     inventory.hammer = true;
+                    myData.CrubrItem = true;
                     Debug.Log("HAMMER TIME");
                 }
 

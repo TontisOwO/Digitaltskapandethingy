@@ -305,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.y
-      value: 266.32904
+      value: 295.50238
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.z
@@ -1967,6 +1967,28 @@ MonoBehaviour:
   itemValue2: 0
   ThinkBubble: {fileID: 527822799}
   specialcase: 0
+--- !u!114 &897348014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897348004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b8fb06e88080c449b58643c249d2281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteSelect:
+  - {fileID: 21300000, guid: a3ffd42aaf9db7c4193d80cdd2832b09, type: 3}
+  - {fileID: 21300000, guid: 1831bfc5211ee844c8b26d78248e6105, type: 3}
+  spriteRenderer: {fileID: 897348019}
+  currentSprite: 0
+--- !u!212 &897348019 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6581619266829242984, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+  m_PrefabInstance: {fileID: 2052979986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1061136634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,7 +2477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3953918102339617726, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: wantedPos.y
-      value: -4.4
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 3953918102339617726, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: MainCharacter
@@ -2471,7 +2493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5856649106366590658, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 5856649106366590658, guid: ecf48c7c7ee620e43bd593920c60e71e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3888,6 +3910,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       insertIndex: -1
       addedObject: {fileID: 897348013}
+    - targetCorrespondingSourceObject: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 897348014}
   m_SourcePrefab: {fileID: 100100000, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

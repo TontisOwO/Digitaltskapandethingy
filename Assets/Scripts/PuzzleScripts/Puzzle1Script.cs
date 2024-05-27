@@ -18,6 +18,8 @@ public class Puzzle1Script : MonoBehaviour
 
     public float spikes;
 
+    public SavedData savedData;
+
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -25,26 +27,30 @@ public class Puzzle1Script : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Click");
-        if (doingTwoDifferentThingsWithSameCode == true)
+        if (savedData.CrubrItem == true)
         {
-            sceneLoader.LoadScene(scene);
+            Debug.Log("Click");
+            if (doingTwoDifferentThingsWithSameCode == true)
+            {
+                sceneLoader.LoadScene(scene);
+            }
+            Debug.Log("Click2");
+            if (spikes > 1)
+            {
+                rigidbody2.gravityScale = 1;
+                audioManager.PlaySFX(audioManager.nails);
+            }
+            Debug.Log("Click3");
+            if (doDelete == true)
+            {
+                Debug.Log("Deleting");
+                Destroy(thisObject);
+                firstPuzzleScript.spikesCount = firstPuzzleScript.spikesCount + 1;
+                audioManager.PlaySFX(audioManager.nails);
+            }
+            Debug.Log("LastClick");
         }
-        Debug.Log("Click2");
-        if (spikes > 1)
-        {
-            rigidbody2.gravityScale = 1;
-            audioManager.PlaySFX(audioManager.nails);
-        }
-        Debug.Log("Click3");
-        if (doDelete == true)
-        {
-            Debug.Log("Deleting");
-            Destroy(thisObject);
-            firstPuzzleScript.spikesCount = firstPuzzleScript.spikesCount + 1;
-            audioManager.PlaySFX(audioManager.nails);
-        }
-        Debug.Log("LastClick");
+        
     }
     
     
