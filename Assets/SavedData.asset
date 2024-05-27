@@ -26,7 +26,7 @@ MonoBehaviour:
   BuildingKey: 0
   AxeItem: 0
   MatchItem: 0
-  CrubrItem: 0
+  CrubrItem: 1
   NPCPos: {x: 2, y: -5, z: 0}
   CharPos: {x: -0.06453999, y: -4.789713, z: -1}
   exitedPuzzleScene: 0

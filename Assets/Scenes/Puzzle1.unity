@@ -258,6 +258,7 @@ MonoBehaviour:
   doingTwoDifferentThingsWithSameCode: 0
   doDelete: 0
   spikes: 0
+  savedData: {fileID: 0}
 --- !u!114 &277550301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,6 +587,7 @@ MonoBehaviour:
   doingTwoDifferentThingsWithSameCode: 0
   doDelete: 0
   spikes: 0
+  savedData: {fileID: 0}
 --- !u!114 &586222023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,7 +622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: pickUp
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: TextMesh
@@ -1022,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: pickUp
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: TextMesh
@@ -1227,6 +1229,7 @@ MonoBehaviour:
   doingTwoDifferentThingsWithSameCode: 0
   doDelete: 1
   spikes: 0
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1001 &1148914396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1647,12 +1650,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: pickUp
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: TextMesh
       value: 
       objectReference: {fileID: 2118093745}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1516135674}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: touchText
       value: 
@@ -1979,6 +1986,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+--- !u!114 &1516135674 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3258300058909440378, guid: 8626886b746a5ac4d9aac64bd1827f16, type: 3}
+  m_PrefabInstance: {fileID: 1398921930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3fc8e6b89134f47aacfc4e169e0a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1837242235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
@@ -2010,6 +2028,7 @@ MonoBehaviour:
   doingTwoDifferentThingsWithSameCode: 0
   doDelete: 1
   spikes: 0
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1 &1849931125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
@@ -2041,6 +2060,7 @@ MonoBehaviour:
   doingTwoDifferentThingsWithSameCode: 0
   doDelete: 1
   spikes: 0
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1 &1973387728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1401022781148717414, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
@@ -2072,6 +2092,7 @@ MonoBehaviour:
   doingTwoDifferentThingsWithSameCode: 0
   doDelete: 1
   spikes: 0
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
 --- !u!1001 &1986879330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2178,6 +2199,7 @@ MonoBehaviour:
   PlayerData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
   floor1: Totorial
   Player: {fileID: 0}
+  NPC: {fileID: 0}
 --- !u!114 &2050701710
 MonoBehaviour:
   m_ObjectHideFlags: 0
