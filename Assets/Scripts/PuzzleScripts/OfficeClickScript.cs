@@ -11,7 +11,7 @@ public class OfficeClickScript : MonoBehaviour
     public SceneLoader sceneLoader;
     public int whatObject;
     public bool Box = false;
-
+    public ThinkBubble ThinkBubble;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +27,11 @@ public class OfficeClickScript : MonoBehaviour
     void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetMouseButtonUp(0))
-        {
-            zoomScript.sprite = 0;
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    zoomScript.sprite = 0;
 
-        }
+        //}
         if (zoomScript.sprite == 1)
         {
             audioManager.PlaySFX(audioManager.paper);
@@ -60,6 +60,7 @@ public class OfficeClickScript : MonoBehaviour
                 return;
             }
                 zoomScript.sprite = whatObject;
+            ThinkBubble.SpriteChange(whatObject);
             }       
     }
 }

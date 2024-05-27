@@ -32,4 +32,4 @@ MonoBehaviour:
   CharPos: {x: -14.60383, y: -4.645535, z: -1}
   exitedPuzzleScene: 0
   codelockpuzzle: 0
-  OpenedBox: 1
+  OpenedBox: 0

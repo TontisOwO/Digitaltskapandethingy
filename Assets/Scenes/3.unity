@@ -1573,15 +1573,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.x
-      value: 1.8749514
+      value: 1.857791
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.y
-      value: 272.2371
+      value: 272.02258
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_TranslationOffset.z
-      value: 8337.484
+      value: 8333.623
       objectReference: {fileID: 0}
     - target: {fileID: 8653526560359786850, guid: 3f31b70154a54854d9c280b19e30424f, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
@@ -2172,10 +2172,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1069447643}
   - component: {fileID: 1069447642}
-  - component: {fileID: 1069447647}
   - component: {fileID: 1069447646}
   - component: {fileID: 1069447645}
   - component: {fileID: 1069447644}
+  - component: {fileID: 1069447648}
   m_Layer: 0
   m_Name: Exit Door
   m_TagString: Untagged
@@ -2318,7 +2318,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1069447647
+--- !u!114 &1069447648
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2327,30 +2327,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1069447640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351583647e31c32408633ef0e1e3e373, type: 3}
+  m_Script: {fileID: 11500000, guid: d493ce1f07d733444a9a3717728a3513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 78037917}
-  myData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
-  inventory: {fileID: 1196527679}
-  TextMesh: {fileID: 32871729}
-  textManipulation: {fileID: 32871728}
-  sceneLoader: {fileID: 1022536778}
-  scene: Credits
-  splashText: 
-  touchText: 
-  correctItemInInventory: 
-  requiredItem: 0
-  pickUp: 1
-  pickDown: 0
-  itemCondition: 1
-  switchScene: 1
-  isHammer: 0
-  isKey2: 0
-  isKey3: 0
-  isBuildingKey: 0
-  puzzleEntry: 1
-  puzzleExit: 0
+  savedData: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+  loader: {fileID: 1022536778}
+  credits: Credits
 --- !u!1 &1114274621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6796270561531941366, guid: 82b5b41a3dc009c42bd028989f82554a, type: 3}
@@ -2823,7 +2805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationAtRest.x
-      value: 83.00003
+      value: 82.99997
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationAtRest.y
@@ -2835,15 +2817,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.x
-      value: -0.37480927
+      value: -0.2890625
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.y
-      value: 130.29338
+      value: 130.10033
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_TranslationOffset.z
-      value: 8337.484
+      value: 8333.623
       objectReference: {fileID: 0}
     - target: {fileID: 6171656667230545893, guid: 85b5ad4cec3a777469503bd3f2371640, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform

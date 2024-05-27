@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickThing : MonoBehaviour
+public class OfficeClose : MonoBehaviour
 {
     public SpriteRenderer SpriteRenderer;
     public OfficeZoomScript background;
-    public int light;
-    public int dark;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +15,20 @@ public class ClickThing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (background.sprite == 0)
+        if (background.sprite == 0) 
         {
-            SpriteRenderer.sortingOrder = light;
+        SpriteRenderer.sortingOrder = -500;
+            SpriteRenderer.sortingLayerName = "Default";
         }
         else
         {
-            SpriteRenderer.sortingOrder = dark;
+            SpriteRenderer.sortingOrder = 500;
+            SpriteRenderer.sortingLayerName = "OnTop";
         }
     }
+    private void OnMouseDown()
+    {
+        background.sprite = 0;
+    }
 }
+
