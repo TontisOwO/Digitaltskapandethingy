@@ -14,10 +14,11 @@ public class GlassMovement : MonoBehaviour
     public GameObject right;
     public GameObject top;
     public GameObject bottom;
+    public Vector3 releasePos;
     // Start is called before the first frame update
     void Start()
     {
-
+        releasePos = transform.position;
     }
     private void Awake()
     {
@@ -49,11 +50,19 @@ public class GlassMovement : MonoBehaviour
         {
             transform.position = bottom.transform.position;
         }
-    }
+        if (!Input.GetKey(KeyCode.Mouse0))
+        {
+            transform.position = releasePos;
+        }
+        }
 
     void OnMouseDrag()
     {
         transform.position = mousePos;
         audioManager.PlaySFX(audioManager.glass);
+    }
+    void OnMouseUp()
+    {
+        releasePos = mousePos;
     }
 }
