@@ -444,6 +444,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9110596041926434357, guid: 79fad843c21d6974789e67b0f774a8d9, type: 3}
+      propertyPath: saveData
+      value: 
+      objectReference: {fileID: 11400000, guid: 690aef4666fac964487d2922aece19a6, type: 2}
+    - target: {fileID: 9110596041926434357, guid: 79fad843c21d6974789e67b0f774a8d9, type: 3}
       propertyPath: sceneLoader
       value: 
       objectReference: {fileID: 2050701709}
@@ -629,6 +633,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2118093745}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1516135674}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: touchText
       value: 
       objectReference: {fileID: 0}
@@ -644,6 +652,10 @@ PrefabInstance:
       propertyPath: switchScene
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1986879331}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: itemCondition
       value: 1
@@ -1031,6 +1043,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2118093745}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1516135674}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: touchText
       value: 
       objectReference: {fileID: 0}
@@ -1046,6 +1062,10 @@ PrefabInstance:
       propertyPath: switchScene
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1986879331}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: itemCondition
       value: 1
@@ -1255,6 +1275,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2118093745}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1516135674}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: touchText
       value: 
       objectReference: {fileID: 0}
@@ -1270,6 +1294,10 @@ PrefabInstance:
       propertyPath: switchScene
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1986879331}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: itemCondition
       value: 0
@@ -1676,6 +1704,10 @@ PrefabInstance:
       propertyPath: switchScene
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1986879331}
     - target: {fileID: 5353702596788223111, guid: 28ca50ef8b810c94d9fa4e814bb2ca17, type: 3}
       propertyPath: requiredItem
       value: 0
