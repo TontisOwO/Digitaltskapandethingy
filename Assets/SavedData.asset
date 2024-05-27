@@ -19,16 +19,17 @@ MonoBehaviour:
   dialogSpokenT: 0
   dialogSpokenF1: 0
   dialogSpokenF2: 0
-  dialogSpokenF3: 0
+  dialogSpokenF3: 1
+  floor3PuzzleDone: 1
   SampleItem: 0
   KeyItem: 0
   colorKey: 0
-  BuildingKey: 0
+  BuildingKey: 1
   AxeItem: 0
   MatchItem: 0
-  CrubrItem: 1
-  NPCPos: {x: 2, y: -5, z: 0}
-  CharPos: {x: -0.06453999, y: -4.789713, z: -1}
+  CrubrItem: 0
+  NPCPos: {x: 6, y: -5, z: 0}
+  CharPos: {x: -14.60383, y: -4.645535, z: -1}
   exitedPuzzleScene: 0
   codelockpuzzle: 0
-  OpenedBox: 0
+  OpenedBox: 1

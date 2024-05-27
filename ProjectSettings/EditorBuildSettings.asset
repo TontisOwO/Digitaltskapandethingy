@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Painting 3 F3.unity
     guid: 22def11b67a0dfc4cb7eacb7bb75523c
+  - enabled: 1
+    path: Assets/Scenes/KeySortingPuzzle.unity
+    guid: a39a1eeadd1876648977ab4ff7b90641
   m_configObjects: {}

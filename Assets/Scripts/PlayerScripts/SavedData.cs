@@ -20,6 +20,7 @@ public class SavedData : ScriptableObject
     public bool dialogSpokenF1 = false;
     public bool dialogSpokenF2 = false;
     public bool dialogSpokenF3 = false;
+    public bool floor3PuzzleDone = false;
 
     //Sample Item
     public bool SampleItem;
